@@ -1,0 +1,242 @@
+{
+  "meta": {
+    "product": "BondStats Daily Signal Brief",
+    "date": "2026-08-28",
+    "generatedAt": "2026-08-28T22:29:13.558346Z",
+    "version": "1.0.0",
+    "copyrightMethod": "Original deterministic analysis from factual/official and BondStats-owned data feeds; no third-party news articles or editorial text are ingested.",
+    "sourceHealth": {
+      "macro": "degraded",
+      "policy": "degraded",
+      "calendar": "degraded",
+      "yields": "unavailable"
+    }
+  },
+  "marketState": {
+    "label": "Mixed",
+    "freshDailyMarkets": 0,
+    "rising": 0,
+    "falling": 0
+  },
+  "signals": [
+    {
+      "kicker": "INFLATION",
+      "headline": "United States CPI eased",
+      "body": "Latest official observation: 3.4% versus 3.5% previously (Jul 2026).",
+      "strength": 72
+    },
+    {
+      "kicker": "INFLATION",
+      "headline": "United States Core CPI eased",
+      "body": "Latest official observation: 2.5% versus 2.6% previously (Jul 2026).",
+      "strength": 72
+    }
+  ],
+  "dislocations": [],
+  "markets": [],
+  "macro": [
+    {
+      "id": "US_CPI",
+      "name": "CPI",
+      "region": "United States",
+      "group": "Inflation",
+      "value": 3.4,
+      "previous": 3.5,
+      "unit": "%",
+      "transform": "YoY",
+      "period": "Jul 2026",
+      "direction": "down",
+      "relevance": "Critical",
+      "sourceName": "U.S. Bureau of Labor Statistics",
+      "sourceUrl": "https://www.bls.gov/news.release/cpi.htm"
+    },
+    {
+      "id": "US_CORE_CPI",
+      "name": "Core CPI",
+      "region": "United States",
+      "group": "Inflation",
+      "value": 2.5,
+      "previous": 2.6,
+      "unit": "%",
+      "transform": "YoY",
+      "period": "Jul 2026",
+      "direction": "down",
+      "relevance": "Critical",
+      "sourceName": "U.S. Bureau of Labor Statistics",
+      "sourceUrl": "https://www.bls.gov/news.release/cpi.htm"
+    },
+    {
+      "id": "US_PAYROLLS",
+      "name": "Nonfarm Payrolls",
+      "region": "United States",
+      "group": "Labour",
+      "value": -23.0,
+      "previous": 20.0,
+      "unit": "k",
+      "transform": "MoM",
+      "period": "Jul 2026",
+      "direction": "down",
+      "relevance": "Critical",
+      "sourceName": "U.S. Bureau of Labor Statistics",
+      "sourceUrl": "https://www.bls.gov/news.release/empsit.htm"
+    },
+    {
+      "id": "US_UNEMP",
+      "name": "Unemployment",
+      "region": "United States",
+      "group": "Labour",
+      "value": 4.1,
+      "previous": 4.1,
+      "unit": "%",
+      "transform": "Rate",
+      "period": "Jul 2026",
+      "direction": "flat",
+      "relevance": "High",
+      "sourceName": "U.S. Bureau of Labor Statistics",
+      "sourceUrl": "https://www.bls.gov/news.release/empsit.htm"
+    },
+    {
+      "id": "US_PCE",
+      "name": "PCE Inflation",
+      "region": "United States",
+      "group": "Inflation",
+      "value": 3.7,
+      "previous": 3.7,
+      "unit": "%",
+      "transform": "YoY",
+      "period": "Jul 2026",
+      "direction": "flat",
+      "relevance": "Critical",
+      "sourceName": "U.S. Bureau of Economic Analysis",
+      "sourceUrl": "https://www.bea.gov/data/personal-consumption-expenditures-price-index"
+    },
+    {
+      "id": "US_CORE_PCE",
+      "name": "Core PCE",
+      "region": "United States",
+      "group": "Inflation",
+      "value": 3.3,
+      "previous": 3.3,
+      "unit": "%",
+      "transform": "YoY",
+      "period": "Jul 2026",
+      "direction": "flat",
+      "relevance": "Critical",
+      "sourceName": "U.S. Bureau of Economic Analysis",
+      "sourceUrl": "https://www.bea.gov/data/personal-consumption-expenditures-price-index-excluding-food-and-energy"
+    },
+    {
+      "id": "US_GDP",
+      "name": "Real GDP",
+      "region": "United States",
+      "group": "Growth",
+      "value": 1.5,
+      "previous": 2.1,
+      "unit": "%",
+      "transform": "QoQ SAAR",
+      "period": "Q2 2026 · 2nd est.",
+      "direction": "down",
+      "relevance": "High",
+      "sourceName": "U.S. Bureau of Economic Analysis",
+      "sourceUrl": "https://www.bea.gov/data/gdp/gross-domestic-product"
+    },
+    {
+      "id": "EA_HICP",
+      "name": "HICP",
+      "region": "Euro Area",
+      "group": "Inflation",
+      "value": 2.9,
+      "previous": 2.8,
+      "unit": "%",
+      "transform": "YoY",
+      "period": "Jul 2026",
+      "direction": "up",
+      "relevance": "Critical",
+      "sourceName": "Eurostat",
+      "sourceUrl": "https://ec.europa.eu/eurostat/web/hicp"
+    },
+    {
+      "id": "EA_CORE_HICP",
+      "name": "Core HICP",
+      "region": "Euro Area",
+      "group": "Inflation",
+      "value": 2.5,
+      "previous": 2.4,
+      "unit": "%",
+      "transform": "YoY",
+      "period": "Jul 2026",
+      "direction": "up",
+      "relevance": "Critical",
+      "sourceName": "Eurostat",
+      "sourceUrl": "https://ec.europa.eu/eurostat/web/hicp"
+    },
+    {
+      "id": "EA_UNEMP",
+      "name": "Unemployment",
+      "region": "Euro Area",
+      "group": "Labour",
+      "value": 6.3,
+      "previous": 6.3,
+      "unit": "%",
+      "transform": "Rate",
+      "period": "Jun 2026",
+      "direction": "flat",
+      "relevance": "High",
+      "sourceName": "Eurostat",
+      "sourceUrl": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Unemployment_statistics"
+    },
+    {
+      "id": "EA_GDP",
+      "name": "Real GDP",
+      "region": "Euro Area",
+      "group": "Growth",
+      "value": 0.4,
+      "previous": 0.0,
+      "unit": "%",
+      "transform": "QoQ",
+      "period": "Q2 2026",
+      "direction": "up",
+      "relevance": "High",
+      "sourceName": "Eurostat",
+      "sourceUrl": "https://ec.europa.eu/eurostat/web/national-accounts"
+    }
+  ],
+  "nextEvents": [],
+  "nextPolicy": [
+    {
+      "bank": "Bank of Canada",
+      "date": "2026-09-02",
+      "rate": "2.25%",
+      "stance": "Neutral",
+      "sourceUrl": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/"
+    },
+    {
+      "bank": "European Central Bank",
+      "date": "2026-09-10",
+      "rate": "2.25%",
+      "stance": "Restrictive",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "bank": "Federal Reserve",
+      "date": "2026-09-16",
+      "rate": "3.50–3.75%",
+      "stance": "Restrictive",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "bank": "Bank of England",
+      "date": "2026-09-17",
+      "rate": "3.75%",
+      "stance": "Restrictive",
+      "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates"
+    }
+  ],
+  "methodology": [
+    "No news articles are scraped, copied, summarized or rewritten.",
+    "Narrative text is generated deterministically from structured facts and BondStats data.",
+    "Causality is not inferred from coincident market moves.",
+    "Stale, fallback or non-daily yield observations are excluded from daily-change claims.",
+    "Official source links remain attached to macro, policy and calendar facts."
+  ]
+}
