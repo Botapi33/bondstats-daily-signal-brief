@@ -1,0 +1,47 @@
+name: Update Daily Signal Brief
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '37 6 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-signal-brief-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Generate daily signal brief
+        run: python scripts/update_brief.py
+
+      - name: Run deterministic tests
+        run: python tests/test_brief.py
+
+      - name: Commit daily brief and archive
+        run: |
+          if git diff --quiet -- data/; then
+            echo "Daily brief already current."
+            exit 0
+          fi
+
+          git config user.name "bondstats-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          git add data/
+          git commit -m "Update Daily Signal Brief"
+          git push
