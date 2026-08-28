@@ -1,0 +1,461 @@
+{
+  "meta": {
+    "name": "BondStats Market Calendar",
+    "version": "2.0.0-final",
+    "generatedAt": "2026-08-28T00:29:00Z",
+    "timezone": "UTC",
+    "method": "Official-source ingestion + deterministic BondStats market-impact model",
+    "coverage": [
+      "Federal Reserve",
+      "BLS",
+      "BEA",
+      "ECB",
+      "Bank of England",
+      "Bank of Japan",
+      "Swiss National Bank",
+      "U.S. Treasury auctions"
+    ],
+    "principles": [
+      "Official sources only",
+      "No invented consensus data",
+      "Unknown times shown as TBA",
+      "Source health exposed"
+    ]
+  },
+  "events": [
+    {
+      "id": "us-bls-employment-2026-09-04",
+      "title": "U.S. Employment Situation",
+      "country": "US",
+      "region": "North America",
+      "category": "Labour",
+      "eventType": "macro",
+      "timestamp": "2026-09-04T12:30:00Z",
+      "timePrecision": "exact",
+      "impactScore": 98,
+      "impactLabel": "CRITICAL",
+      "primaryExposure": [
+        "Treasuries",
+        "USD",
+        "Rate expectations"
+      ],
+      "source": "U.S. Bureau of Labor Statistics",
+      "sourceShort": "BLS",
+      "sourceUrl": "https://www.bls.gov/schedule/2026/home.htm",
+      "official": true,
+      "status": "scheduled",
+      "description": "Monthly U.S. labour-market release including payrolls and unemployment."
+    },
+    {
+      "id": "ecb-mp-2026-09-10",
+      "title": "ECB Monetary Policy Decision",
+      "country": "EA",
+      "region": "Europe",
+      "category": "Central Bank",
+      "eventType": "policy",
+      "timestamp": "2026-09-10T12:15:00Z",
+      "timePrecision": "convention",
+      "impactScore": 100,
+      "impactLabel": "CRITICAL",
+      "primaryExposure": [
+        "Bunds",
+        "Euro-area sovereigns",
+        "EUR",
+        "Global rates"
+      ],
+      "source": "European Central Bank",
+      "sourceShort": "ECB",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
+      "official": true,
+      "status": "scheduled",
+      "description": "ECB Governing Council monetary-policy meeting, followed by press conference.",
+      "timingNote": "Meeting date is official. Decision time uses the ECB's standard monetary-policy publication convention and should be revalidated by the updater."
+    },
+    {
+      "id": "us-bls-ppi-2026-09-10",
+      "title": "U.S. Producer Price Index",
+      "country": "US",
+      "region": "North America",
+      "category": "Inflation",
+      "eventType": "macro",
+      "timestamp": "2026-09-10T12:30:00Z",
+      "timePrecision": "exact",
+      "impactScore": 78,
+      "impactLabel": "HIGH",
+      "primaryExposure": [
+        "Treasuries",
+        "USD",
+        "Inflation expectations"
+      ],
+      "source": "U.S. Bureau of Labor Statistics",
+      "sourceShort": "BLS",
+      "sourceUrl": "https://www.bls.gov/schedule/2026/home.htm",
+      "official": true,
+      "status": "scheduled",
+      "description": "Monthly producer-price inflation release."
+    },
+    {
+      "id": "us-bls-cpi-2026-09-11",
+      "title": "U.S. Consumer Price Index",
+      "country": "US",
+      "region": "North America",
+      "category": "Inflation",
+      "eventType": "macro",
+      "timestamp": "2026-09-11T12:30:00Z",
+      "timePrecision": "exact",
+      "impactScore": 100,
+      "impactLabel": "CRITICAL",
+      "primaryExposure": [
+        "Treasuries",
+        "USD",
+        "Real yields",
+        "Rate expectations"
+      ],
+      "source": "U.S. Bureau of Labor Statistics",
+      "sourceShort": "BLS",
+      "sourceUrl": "https://www.bls.gov/schedule/2026/home.htm",
+      "official": true,
+      "status": "scheduled",
+      "description": "Monthly U.S. consumer-price inflation release."
+    },
+    {
+      "id": "fed-fomc-2026-09-16",
+      "title": "Federal Reserve FOMC Decision",
+      "country": "US",
+      "region": "North America",
+      "category": "Central Bank",
+      "eventType": "policy",
+      "timestamp": "2026-09-16T18:00:00Z",
+      "timePrecision": "convention",
+      "impactScore": 100,
+      "impactLabel": "CRITICAL",
+      "primaryExposure": [
+        "Treasuries",
+        "USD",
+        "Global rates",
+        "Risk assets"
+      ],
+      "source": "Federal Reserve",
+      "sourceShort": "Fed",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "official": true,
+      "status": "scheduled",
+      "description": "Federal Open Market Committee policy decision.",
+      "timingNote": "Meeting date is official. Timestamp uses the standard scheduled FOMC decision-release convention."
+    },
+    {
+      "id": "boe-mpc-2026-09-17",
+      "title": "Bank of England MPC Decision",
+      "country": "GB",
+      "region": "Europe",
+      "category": "Central Bank",
+      "eventType": "policy",
+      "timestamp": "2026-09-17T11:00:00Z",
+      "timePrecision": "convention",
+      "impactScore": 96,
+      "impactLabel": "CRITICAL",
+      "primaryExposure": [
+        "Gilts",
+        "GBP",
+        "UK rates"
+      ],
+      "source": "Bank of England",
+      "sourceShort": "BoE",
+      "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
+      "official": true,
+      "status": "scheduled",
+      "description": "Monetary Policy Committee decision, summary and minutes.",
+      "timingNote": "Official decision date; timestamp follows the Bank's standard noon-London publication convention."
+    },
+    {
+      "id": "boj-mpm-2026-09-18",
+      "title": "Bank of Japan Monetary Policy Decision",
+      "country": "JP",
+      "region": "Asia",
+      "category": "Central Bank",
+      "eventType": "policy",
+      "timestamp": "2026-09-18T03:00:00Z",
+      "timePrecision": "date",
+      "impactScore": 94,
+      "impactLabel": "CRITICAL",
+      "primaryExposure": [
+        "JGBs",
+        "JPY",
+        "Global rates"
+      ],
+      "source": "Bank of Japan",
+      "sourceShort": "BoJ",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
+      "official": true,
+      "status": "scheduled",
+      "description": "Second day of the Bank of Japan Monetary Policy Meeting.",
+      "timingNote": "Official meeting date; the policy statement release time is not fixed. UI displays Time TBA."
+    },
+    {
+      "id": "snb-mpa-2026-09-24",
+      "title": "Swiss National Bank Monetary Policy Assessment",
+      "country": "CH",
+      "region": "Europe",
+      "category": "Central Bank",
+      "eventType": "policy",
+      "timestamp": "2026-09-24T07:30:00Z",
+      "timePrecision": "exact",
+      "impactScore": 91,
+      "impactLabel": "CRITICAL",
+      "primaryExposure": [
+        "Swiss government bonds",
+        "CHF",
+        "Swiss rates"
+      ],
+      "source": "Swiss National Bank",
+      "sourceShort": "SNB",
+      "sourceUrl": "https://www.snb.ch/en/services-events/digital-services/event-schedule",
+      "official": true,
+      "status": "scheduled",
+      "description": "SNB quarterly monetary-policy assessment and policy-rate decision."
+    },
+    {
+      "id": "bea-pio-2026-09-30",
+      "title": "U.S. Personal Income and Outlays",
+      "country": "US",
+      "region": "North America",
+      "category": "Inflation",
+      "eventType": "macro",
+      "timestamp": "2026-09-30T12:30:00Z",
+      "timePrecision": "exact",
+      "impactScore": 92,
+      "impactLabel": "CRITICAL",
+      "primaryExposure": [
+        "Treasuries",
+        "USD",
+        "PCE inflation",
+        "Rate expectations"
+      ],
+      "source": "U.S. Bureau of Economic Analysis",
+      "sourceShort": "BEA",
+      "sourceUrl": "https://www.bea.gov/news/schedule",
+      "official": true,
+      "status": "scheduled",
+      "description": "Personal income, spending and PCE inflation release."
+    },
+    {
+      "id": "boj-mpm-2026-10-30",
+      "title": "Bank of Japan Monetary Policy Decision",
+      "country": "JP",
+      "region": "Asia",
+      "category": "Central Bank",
+      "eventType": "policy",
+      "timestamp": "2026-10-30T03:00:00Z",
+      "timePrecision": "date",
+      "impactScore": 94,
+      "impactLabel": "CRITICAL",
+      "primaryExposure": [
+        "JGBs",
+        "JPY",
+        "Global rates"
+      ],
+      "source": "Bank of Japan",
+      "sourceShort": "BoJ",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
+      "official": true,
+      "status": "scheduled",
+      "description": "Second day of the Bank of Japan Monetary Policy Meeting.",
+      "timingNote": "Official meeting date; policy statement release time is not fixed. UI displays Time TBA."
+    },
+    {
+      "id": "ecb-mp-2026-10-29",
+      "title": "ECB Monetary Policy Decision",
+      "country": "EA",
+      "region": "Europe",
+      "category": "Central Bank",
+      "eventType": "policy",
+      "timestamp": "2026-10-29T13:15:00Z",
+      "timePrecision": "convention",
+      "impactScore": 100,
+      "impactLabel": "CRITICAL",
+      "primaryExposure": [
+        "Bunds",
+        "Euro-area sovereigns",
+        "EUR",
+        "Global rates"
+      ],
+      "source": "European Central Bank",
+      "sourceShort": "ECB",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
+      "official": true,
+      "status": "scheduled",
+      "description": "ECB Governing Council monetary-policy meeting, followed by press conference.",
+      "timingNote": "Meeting date is official. Decision time uses standard publication convention."
+    },
+    {
+      "id": "boe-mpc-2026-11-05",
+      "title": "Bank of England MPC Decision",
+      "country": "GB",
+      "region": "Europe",
+      "category": "Central Bank",
+      "eventType": "policy",
+      "timestamp": "2026-11-05T12:00:00Z",
+      "timePrecision": "convention",
+      "impactScore": 96,
+      "impactLabel": "CRITICAL",
+      "primaryExposure": [
+        "Gilts",
+        "GBP",
+        "UK rates"
+      ],
+      "source": "Bank of England",
+      "sourceShort": "BoE",
+      "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
+      "official": true,
+      "status": "scheduled",
+      "description": "Monetary Policy Committee decision, summary and Monetary Policy Report.",
+      "timingNote": "Official decision date; timestamp follows standard noon-London publication convention."
+    },
+    {
+      "id": "snb-mpa-2026-12-10",
+      "title": "Swiss National Bank Monetary Policy Assessment",
+      "country": "CH",
+      "region": "Europe",
+      "category": "Central Bank",
+      "eventType": "policy",
+      "timestamp": "2026-12-10T08:30:00Z",
+      "timePrecision": "exact",
+      "impactScore": 91,
+      "impactLabel": "CRITICAL",
+      "primaryExposure": [
+        "Swiss government bonds",
+        "CHF",
+        "Swiss rates"
+      ],
+      "source": "Swiss National Bank",
+      "sourceShort": "SNB",
+      "sourceUrl": "https://www.snb.ch/en/services-events/digital-services/event-schedule",
+      "official": true,
+      "status": "scheduled",
+      "description": "SNB quarterly monetary-policy assessment and policy-rate decision."
+    },
+    {
+      "id": "ecb-mp-2026-12-17",
+      "title": "ECB Monetary Policy Decision",
+      "country": "EA",
+      "region": "Europe",
+      "category": "Central Bank",
+      "eventType": "policy",
+      "timestamp": "2026-12-17T13:15:00Z",
+      "timePrecision": "convention",
+      "impactScore": 100,
+      "impactLabel": "CRITICAL",
+      "primaryExposure": [
+        "Bunds",
+        "Euro-area sovereigns",
+        "EUR",
+        "Global rates"
+      ],
+      "source": "European Central Bank",
+      "sourceShort": "ECB",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
+      "official": true,
+      "status": "scheduled",
+      "description": "ECB Governing Council monetary-policy meeting, followed by press conference.",
+      "timingNote": "Meeting date is official. Decision time uses standard publication convention."
+    },
+    {
+      "id": "boe-mpc-2026-12-17",
+      "title": "Bank of England MPC Decision",
+      "country": "GB",
+      "region": "Europe",
+      "category": "Central Bank",
+      "eventType": "policy",
+      "timestamp": "2026-12-17T12:00:00Z",
+      "timePrecision": "convention",
+      "impactScore": 96,
+      "impactLabel": "CRITICAL",
+      "primaryExposure": [
+        "Gilts",
+        "GBP",
+        "UK rates"
+      ],
+      "source": "Bank of England",
+      "sourceShort": "BoE",
+      "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
+      "official": true,
+      "status": "scheduled",
+      "description": "Monetary Policy Committee decision and minutes.",
+      "timingNote": "Official decision date; timestamp follows standard noon-London publication convention."
+    },
+    {
+      "id": "boj-mpm-2026-12-18",
+      "title": "Bank of Japan Monetary Policy Decision",
+      "country": "JP",
+      "region": "Asia",
+      "category": "Central Bank",
+      "eventType": "policy",
+      "timestamp": "2026-12-18T03:00:00Z",
+      "timePrecision": "date",
+      "impactScore": 94,
+      "impactLabel": "CRITICAL",
+      "primaryExposure": [
+        "JGBs",
+        "JPY",
+        "Global rates"
+      ],
+      "source": "Bank of Japan",
+      "sourceShort": "BoJ",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
+      "official": true,
+      "status": "scheduled",
+      "description": "Second day of the Bank of Japan Monetary Policy Meeting.",
+      "timingNote": "Official meeting date; policy statement release time is not fixed. UI displays Time TBA."
+    }
+  ],
+  "sources": [
+    {
+      "id": "fed",
+      "name": "Federal Reserve",
+      "status": "healthy",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "bls",
+      "name": "U.S. Bureau of Labor Statistics",
+      "status": "healthy",
+      "url": "https://www.bls.gov/schedule/2026/home.htm"
+    },
+    {
+      "id": "bea",
+      "name": "U.S. Bureau of Economic Analysis",
+      "status": "healthy",
+      "url": "https://www.bea.gov/news/schedule"
+    },
+    {
+      "id": "ecb",
+      "name": "European Central Bank",
+      "status": "healthy",
+      "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "id": "boe",
+      "name": "Bank of England",
+      "status": "healthy",
+      "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates"
+    },
+    {
+      "id": "boj",
+      "name": "Bank of Japan",
+      "status": "healthy",
+      "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+    },
+    {
+      "id": "snb",
+      "name": "Swiss National Bank",
+      "status": "healthy",
+      "url": "https://www.snb.ch/en/services-events/digital-services/event-schedule"
+    },
+    {
+      "id": "treasury",
+      "name": "U.S. Treasury Auctions",
+      "status": "configured",
+      "url": "https://www.treasurydirect.gov/xml/PendingAuctions.xml"
+    }
+  ]
+}

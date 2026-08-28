@@ -1,0 +1,16 @@
+{
+  "product": "BondStats Daily Signal Brief",
+  "version": "2.0.0",
+  "updatedAt": "2026-08-28T22:46:45.239915Z",
+  "days": [
+    {
+      "date": "2026-08-28",
+      "marketState": "Data Quiet",
+      "intensity": 18,
+      "oneThing": "Quiet is a signal when nothing qualifies",
+      "signals": 0,
+      "dislocations": 0,
+      "sourceIntegrity": "Partial"
+    }
+  ]
+}

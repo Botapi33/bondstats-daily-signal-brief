@@ -1,0 +1,559 @@
+{
+  "meta": {
+    "product": "BondStats Daily Signal Brief",
+    "date": "2026-08-28",
+    "generatedAt": "2026-08-28T22:46:45.239915Z",
+    "version": "2.0.0",
+    "engine": "BondStats Signal Engine v2",
+    "copyrightMethod": "Original deterministic analysis from factual official-source observations and BondStats data feeds; no third-party news articles, headlines, screenshots or editorial text are ingested, summarized or rewritten.",
+    "sourceHealth": {
+      "macro": {
+        "status": "degraded",
+        "checkedAt": "2026-08-28T22:46:45.239915Z",
+        "sourceUrl": "https://botapi33.github.io/bondstats-macro-data-watch/data/macro.json",
+        "fallback": true,
+        "snapshotSavedAt": null,
+        "errorClass": "RuntimeError"
+      },
+      "policy": {
+        "status": "degraded",
+        "checkedAt": "2026-08-28T22:46:45.239915Z",
+        "sourceUrl": "https://botapi33.github.io/bondstats-central-bank-watch/data/policy.json",
+        "fallback": true,
+        "snapshotSavedAt": null,
+        "errorClass": "RuntimeError"
+      },
+      "calendar": {
+        "status": "degraded",
+        "checkedAt": "2026-08-28T22:46:45.239915Z",
+        "sourceUrl": "https://botapi33.github.io/bondstats-market-calendar/data/events.json",
+        "fallback": true,
+        "snapshotSavedAt": null,
+        "errorClass": "RuntimeError"
+      },
+      "yields": {
+        "status": "unavailable",
+        "checkedAt": "2026-08-28T22:46:45.239915Z",
+        "sourceUrl": "https://botapi33.github.io/bondstats-global-yields/global_yields.json",
+        "fallback": false,
+        "snapshotSavedAt": null,
+        "errorClass": "RuntimeError"
+      }
+    },
+    "sourceIntegrity": {
+      "label": "Partial",
+      "live": 0,
+      "degraded": 3,
+      "unavailable": 1,
+      "total": 4
+    }
+  },
+  "marketState": {
+    "label": "Data Quiet",
+    "intensity": 18,
+    "reason": "No broad fresh daily rates signal currently qualifies.",
+    "previousLabel": null,
+    "freshDailyMarkets": 0,
+    "rising": 0,
+    "falling": 0
+  },
+  "oneThing": {
+    "kicker": "THE ONE THING",
+    "headline": "Quiet is a signal when nothing qualifies",
+    "body": "No broad fresh daily rates signal currently qualifies. BondStats does not manufacture a narrative simply to fill the page.",
+    "score": 35,
+    "tag": "QUIET SIGNAL"
+  },
+  "signalStack": [
+    {
+      "name": "Rates",
+      "value": "Awaiting",
+      "status": "limited"
+    },
+    {
+      "name": "Macro",
+      "value": "Mixed",
+      "status": "active"
+    },
+    {
+      "name": "Policy",
+      "value": "Mostly restrictive",
+      "status": "active"
+    },
+    {
+      "name": "Event risk",
+      "value": "Normal",
+      "status": "active"
+    },
+    {
+      "name": "Divergence",
+      "value": "None qualified",
+      "status": "active"
+    }
+  ],
+  "signalMemory": {
+    "previousState": null,
+    "lastSeenDate": null,
+    "daysSinceLastSeen": null,
+    "consecutiveDays": 1,
+    "archiveObservations": 0
+  },
+  "diagnostics": {
+    "rates": {
+      "label": "Awaiting",
+      "score": 0,
+      "fresh": 0,
+      "rising": 0,
+      "falling": 0,
+      "averageBp": null,
+      "breadth": 0
+    },
+    "macro": {
+      "label": "Mixed",
+      "score": -14,
+      "cooling": 4,
+      "heating": 3,
+      "unchanged": 4,
+      "evidence": [
+        "US_CPI",
+        "US_CORE_CPI",
+        "US_PAYROLLS",
+        "US_GDP",
+        "EA_HICP",
+        "EA_CORE_HICP",
+        "EA_GDP"
+      ]
+    },
+    "policy": {
+      "label": "Mostly restrictive",
+      "restrictive": 4,
+      "accommodative": 1,
+      "banks": 7,
+      "netRecentBp": 0.0
+    },
+    "eventRisk": {
+      "label": "Normal",
+      "score": 35,
+      "nextCriticalHours": 157.7,
+      "critical72h": 0
+    }
+  },
+  "signals": [],
+  "dislocations": [],
+  "markets": [],
+  "macro": [
+    {
+      "id": "US_CPI",
+      "name": "CPI",
+      "label": "Consumer Price Index",
+      "region": "United States",
+      "group": "Inflation",
+      "value": 3.4,
+      "previous": 3.5,
+      "unit": "%",
+      "transform": "YoY",
+      "period": "Jul 2026",
+      "frequency": "Monthly",
+      "direction": "down",
+      "relevance": "Critical",
+      "sourceName": "U.S. Bureau of Labor Statistics",
+      "sourceUrl": "https://www.bls.gov/news.release/cpi.htm",
+      "status": "official"
+    },
+    {
+      "id": "US_CORE_CPI",
+      "name": "Core CPI",
+      "label": "CPI excluding food and energy",
+      "region": "United States",
+      "group": "Inflation",
+      "value": 2.5,
+      "previous": 2.6,
+      "unit": "%",
+      "transform": "YoY",
+      "period": "Jul 2026",
+      "frequency": "Monthly",
+      "direction": "down",
+      "relevance": "Critical",
+      "sourceName": "U.S. Bureau of Labor Statistics",
+      "sourceUrl": "https://www.bls.gov/news.release/cpi.htm",
+      "status": "official"
+    },
+    {
+      "id": "US_PAYROLLS",
+      "name": "Nonfarm Payrolls",
+      "label": "Monthly change in nonfarm payroll employment",
+      "region": "United States",
+      "group": "Labour",
+      "value": -23.0,
+      "previous": 20.0,
+      "unit": "k",
+      "transform": "MoM",
+      "period": "Jul 2026",
+      "frequency": "Monthly",
+      "direction": "down",
+      "relevance": "Critical",
+      "sourceName": "U.S. Bureau of Labor Statistics",
+      "sourceUrl": "https://www.bls.gov/news.release/empsit.htm",
+      "status": "official"
+    },
+    {
+      "id": "US_UNEMP",
+      "name": "Unemployment",
+      "label": "Civilian unemployment rate",
+      "region": "United States",
+      "group": "Labour",
+      "value": 4.1,
+      "previous": 4.1,
+      "unit": "%",
+      "transform": "Rate",
+      "period": "Jul 2026",
+      "frequency": "Monthly",
+      "direction": "flat",
+      "relevance": "High",
+      "sourceName": "U.S. Bureau of Labor Statistics",
+      "sourceUrl": "https://www.bls.gov/news.release/empsit.htm",
+      "status": "official"
+    },
+    {
+      "id": "US_PCE",
+      "name": "PCE Inflation",
+      "label": "PCE price index",
+      "region": "United States",
+      "group": "Inflation",
+      "value": 3.7,
+      "previous": 3.7,
+      "unit": "%",
+      "transform": "YoY",
+      "period": "Jul 2026",
+      "frequency": "Monthly",
+      "direction": "flat",
+      "relevance": "Critical",
+      "sourceName": "U.S. Bureau of Economic Analysis",
+      "sourceUrl": "https://www.bea.gov/data/personal-consumption-expenditures-price-index",
+      "status": "official"
+    },
+    {
+      "id": "US_CORE_PCE",
+      "name": "Core PCE",
+      "label": "PCE price index excluding food and energy",
+      "region": "United States",
+      "group": "Inflation",
+      "value": 3.3,
+      "previous": 3.3,
+      "unit": "%",
+      "transform": "YoY",
+      "period": "Jul 2026",
+      "frequency": "Monthly",
+      "direction": "flat",
+      "relevance": "Critical",
+      "sourceName": "U.S. Bureau of Economic Analysis",
+      "sourceUrl": "https://www.bea.gov/data/personal-consumption-expenditures-price-index-excluding-food-and-energy",
+      "status": "official"
+    },
+    {
+      "id": "US_GDP",
+      "name": "Real GDP",
+      "label": "Real GDP growth, annualized",
+      "region": "United States",
+      "group": "Growth",
+      "value": 1.5,
+      "previous": 2.1,
+      "unit": "%",
+      "transform": "QoQ SAAR",
+      "period": "Q2 2026 · 2nd est.",
+      "frequency": "Quarterly",
+      "direction": "down",
+      "relevance": "High",
+      "sourceName": "U.S. Bureau of Economic Analysis",
+      "sourceUrl": "https://www.bea.gov/data/gdp/gross-domestic-product",
+      "status": "official"
+    },
+    {
+      "id": "EA_HICP",
+      "name": "HICP",
+      "label": "Harmonised Index of Consumer Prices",
+      "region": "Euro Area",
+      "group": "Inflation",
+      "value": 2.9,
+      "previous": 2.8,
+      "unit": "%",
+      "transform": "YoY",
+      "period": "Jul 2026",
+      "frequency": "Monthly",
+      "direction": "up",
+      "relevance": "Critical",
+      "sourceName": "Eurostat",
+      "sourceUrl": "https://ec.europa.eu/eurostat/web/hicp",
+      "status": "official"
+    },
+    {
+      "id": "EA_CORE_HICP",
+      "name": "Core HICP",
+      "label": "HICP excluding energy, food, alcohol and tobacco",
+      "region": "Euro Area",
+      "group": "Inflation",
+      "value": 2.5,
+      "previous": 2.4,
+      "unit": "%",
+      "transform": "YoY",
+      "period": "Jul 2026",
+      "frequency": "Monthly",
+      "direction": "up",
+      "relevance": "Critical",
+      "sourceName": "Eurostat",
+      "sourceUrl": "https://ec.europa.eu/eurostat/web/hicp",
+      "status": "official"
+    },
+    {
+      "id": "EA_UNEMP",
+      "name": "Unemployment",
+      "label": "Seasonally adjusted unemployment rate",
+      "region": "Euro Area",
+      "group": "Labour",
+      "value": 6.3,
+      "previous": 6.3,
+      "unit": "%",
+      "transform": "Rate",
+      "period": "Jun 2026",
+      "frequency": "Monthly",
+      "direction": "flat",
+      "relevance": "High",
+      "sourceName": "Eurostat",
+      "sourceUrl": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Unemployment_statistics",
+      "status": "official"
+    },
+    {
+      "id": "EA_GDP",
+      "name": "Real GDP",
+      "label": "Seasonally adjusted real GDP growth",
+      "region": "Euro Area",
+      "group": "Growth",
+      "value": 0.4,
+      "previous": 0.0,
+      "unit": "%",
+      "transform": "QoQ",
+      "period": "Q2 2026",
+      "frequency": "Quarterly",
+      "direction": "up",
+      "relevance": "High",
+      "sourceName": "Eurostat",
+      "sourceUrl": "https://ec.europa.eu/eurostat/web/national-accounts",
+      "status": "official"
+    }
+  ],
+  "policy": [
+    {
+      "id": "FED",
+      "name": "Federal Reserve",
+      "displayRate": "3.50–3.75%",
+      "decision": "Hold",
+      "decisionDate": "2026-07-29",
+      "changeBp": 0.0,
+      "stance": "Restrictive",
+      "nextMeeting": "2026-09-16",
+      "sourceName": "Federal Reserve",
+      "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm"
+    },
+    {
+      "id": "ECB",
+      "name": "European Central Bank",
+      "displayRate": "2.25%",
+      "decision": "Hold",
+      "decisionDate": "2026-07-23",
+      "changeBp": 0.0,
+      "stance": "Restrictive",
+      "nextMeeting": "2026-09-10",
+      "sourceName": "European Central Bank",
+      "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260723~29f24d99bc.en.html"
+    },
+    {
+      "id": "BOE",
+      "name": "Bank of England",
+      "displayRate": "3.75%",
+      "decision": "Hold",
+      "decisionDate": "2026-07-30",
+      "changeBp": 0.0,
+      "stance": "Restrictive",
+      "nextMeeting": "2026-09-17",
+      "sourceName": "Bank of England",
+      "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026"
+    },
+    {
+      "id": "BOJ",
+      "name": "Bank of Japan",
+      "displayRate": "~1.00%",
+      "decision": "Hold",
+      "decisionDate": "2026-07-31",
+      "changeBp": 0.0,
+      "stance": "Accommodative",
+      "nextMeeting": "2026-09-18",
+      "sourceName": "Bank of Japan",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2026/index.htm"
+    },
+    {
+      "id": "SNB",
+      "name": "Swiss National Bank",
+      "displayRate": "0.00%",
+      "decision": "Hold",
+      "decisionDate": "2026-06-18",
+      "changeBp": 0.0,
+      "stance": "Neutral",
+      "nextMeeting": "2026-09-24",
+      "sourceName": "Swiss National Bank",
+      "sourceUrl": "https://www.snb.ch/en/the-snb/mandates-goals/monetary-policy/decisions"
+    },
+    {
+      "id": "BOC",
+      "name": "Bank of Canada",
+      "displayRate": "2.25%",
+      "decision": "Hold",
+      "decisionDate": "2026-07-15",
+      "changeBp": 0.0,
+      "stance": "Neutral",
+      "nextMeeting": "2026-09-02",
+      "sourceName": "Bank of Canada",
+      "sourceUrl": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/"
+    },
+    {
+      "id": "RBA",
+      "name": "Reserve Bank of Australia",
+      "displayRate": "4.35%",
+      "decision": "Hold",
+      "decisionDate": "2026-08-11",
+      "changeBp": 0.0,
+      "stance": "Restrictive",
+      "nextMeeting": "2026-09-29",
+      "sourceName": "Reserve Bank of Australia",
+      "sourceUrl": "https://www.rba.gov.au/media-releases/2026/mr-26-19.html"
+    }
+  ],
+  "nextEvents": [
+    {
+      "id": "us-bls-employment-2026-09-04",
+      "title": "U.S. Employment Situation",
+      "dateTime": "2026-09-04T12:30:00Z",
+      "timePrecision": "exact",
+      "impactScore": 98.0,
+      "impact": "CRITICAL",
+      "category": "Labour",
+      "primaryExposure": [
+        "Treasuries",
+        "USD",
+        "Rate expectations"
+      ],
+      "sourceName": "U.S. Bureau of Labor Statistics",
+      "sourceUrl": "https://www.bls.gov/schedule/2026/home.htm",
+      "official": true
+    }
+  ],
+  "nextPolicy": [
+    {
+      "id": "BOC",
+      "bank": "Bank of Canada",
+      "date": "2026-09-02",
+      "displayRate": "2.25%",
+      "decision": "Hold",
+      "decisionDate": "2026-07-15",
+      "changeBp": 0.0,
+      "stance": "Neutral",
+      "direction": "Hold",
+      "sourceName": "Bank of Canada",
+      "sourceUrl": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/",
+      "scheduleUrl": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/"
+    },
+    {
+      "id": "ECB",
+      "bank": "European Central Bank",
+      "date": "2026-09-10",
+      "displayRate": "2.25%",
+      "decision": "Hold",
+      "decisionDate": "2026-07-23",
+      "changeBp": 0.0,
+      "stance": "Restrictive",
+      "direction": "Hold",
+      "sourceName": "European Central Bank",
+      "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260723~29f24d99bc.en.html",
+      "scheduleUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "id": "FED",
+      "bank": "Federal Reserve",
+      "date": "2026-09-16",
+      "displayRate": "3.50–3.75%",
+      "decision": "Hold",
+      "decisionDate": "2026-07-29",
+      "changeBp": 0.0,
+      "stance": "Restrictive",
+      "direction": "Hold",
+      "sourceName": "Federal Reserve",
+      "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+      "scheduleUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "BOE",
+      "bank": "Bank of England",
+      "date": "2026-09-17",
+      "displayRate": "3.75%",
+      "decision": "Hold",
+      "decisionDate": "2026-07-30",
+      "changeBp": 0.0,
+      "stance": "Restrictive",
+      "direction": "Hold",
+      "sourceName": "Bank of England",
+      "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+      "scheduleUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates"
+    },
+    {
+      "id": "BOJ",
+      "bank": "Bank of Japan",
+      "date": "2026-09-18",
+      "displayRate": "~1.00%",
+      "decision": "Hold",
+      "decisionDate": "2026-07-31",
+      "changeBp": 0.0,
+      "stance": "Accommodative",
+      "direction": "Hold",
+      "sourceName": "Bank of Japan",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2026/index.htm",
+      "scheduleUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
+    },
+    {
+      "id": "SNB",
+      "bank": "Swiss National Bank",
+      "date": "2026-09-24",
+      "displayRate": "0.00%",
+      "decision": "Hold",
+      "decisionDate": "2026-06-18",
+      "changeBp": 0.0,
+      "stance": "Neutral",
+      "direction": "Hold",
+      "sourceName": "Swiss National Bank",
+      "sourceUrl": "https://www.snb.ch/en/the-snb/mandates-goals/monetary-policy/decisions",
+      "scheduleUrl": "https://www.snb.ch/en/services-events/digital-services/event-schedule"
+    },
+    {
+      "id": "RBA",
+      "bank": "Reserve Bank of Australia",
+      "date": "2026-09-29",
+      "displayRate": "4.35%",
+      "decision": "Hold",
+      "decisionDate": "2026-08-11",
+      "changeBp": 0.0,
+      "stance": "Restrictive",
+      "direction": "Hold",
+      "sourceName": "Reserve Bank of Australia",
+      "sourceUrl": "https://www.rba.gov.au/media-releases/2026/mr-26-19.html",
+      "scheduleUrl": "https://www.rba.gov.au/coming-up/"
+    }
+  ],
+  "methodology": [
+    "No third-party news articles, headlines, screenshots or editorial text are scraped, copied, summarized or rewritten.",
+    "Narrative text is generated deterministically from structured facts, official-source observations and BondStats data feeds.",
+    "Causality is not inferred from coincident market moves; divergences are labeled as observations.",
+    "Daily yield-change claims require daily frequency, non-fallback status and staleness of seven days or less.",
+    "New macro and policy signals are emitted only when the structured upstream value changed versus the prior archived brief.",
+    "If a source fails, the engine may use a last-known-good snapshot and visibly marks the source degraded; unavailable sources are never silently treated as live.",
+    "A daily archive snapshot is immutable after creation, preserving what BondStats showed on that date.",
+    "No consensus forecasts are fabricated or inferred."
+  ]
+}
