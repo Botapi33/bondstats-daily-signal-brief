@@ -1,130 +1,1288 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="color-scheme" content="dark">
-<title>BondStats Daily Signal Brief — Homepage Widget</title>
-<style>
-:root{
-  --bg:#050706;--panel:#070a08;--ink:#f3f6f3;--soft:#c8cfca;--muted:#8c9790;
-  --line:#1a251d;--green:#66f59b;--green-dim:rgba(102,245,155,.12);
-  --serif:Georgia,"Times New Roman",serif;--sans:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
-}
-*{box-sizing:border-box;min-width:0}
-html,body{margin:0;width:100%;max-width:100%;background:transparent;color:var(--ink);font-family:var(--sans)}
-body{overflow-x:hidden;padding:0}
-a{color:inherit}
-.shell{
-  width:100%;max-width:100%;overflow:hidden;border:1px solid var(--line);border-radius:18px;
-  background:
-    radial-gradient(420px 260px at 88% 12%,rgba(102,245,155,.07),transparent 70%),
-    linear-gradient(180deg,#070a08 0%,#050706 100%);
-  box-shadow:0 16px 50px rgba(0,0,0,.20);
-}
-.inner{padding:24px}
-.eyebrow{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:24px;font-size:10px;line-height:1.2;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
-.brand{display:flex;align-items:center;gap:9px;color:var(--green);font-weight:700}
-.liveDot{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 14px rgba(102,245,155,.7);flex:0 0 auto}
-.hero{display:grid;grid-template-columns:minmax(0,1fr) 124px;gap:24px;align-items:center}
-.kicker{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--green);font-weight:700;margin-bottom:9px}
-h1{font:400 clamp(25px,4.4vw,39px)/1.04 var(--serif);letter-spacing:-.025em;margin:0;color:var(--ink);overflow-wrap:anywhere}
-.summary{margin:12px 0 0;color:var(--soft);font-size:13px;line-height:1.55;max-width:650px}
-.halo{width:116px;height:116px;border-radius:50%;position:relative;display:grid;place-items:center;justify-self:end;background:radial-gradient(circle,rgba(102,245,155,.035),transparent 61%)}
-.halo:before,.halo:after,.haloRing{content:"";position:absolute;border-radius:50%;border:1px solid rgba(102,245,155,.22)}
-.halo:before{inset:0}.halo:after{inset:12px;border-color:rgba(102,245,155,.34)}.haloRing{inset:24px;border-color:rgba(102,245,155,.18)}
-.haloCore{text-align:center;position:relative;z-index:2;padding:0 8px}.haloState{font:400 16px/1.08 var(--serif)}.haloScore{margin-top:5px;color:var(--muted);font-size:9px;letter-spacing:.11em;text-transform:uppercase}
-.rule{height:1px;background:var(--line);margin:22px 0 17px}
-.tape{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
-.metric{padding:0 15px;border-left:1px solid var(--line)}.metric:first-child{padding-left:0;border-left:0}.metric:last-child{padding-right:0}
-.metricLabel{font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}.metricValue{font-size:12px;line-height:1.35;color:var(--ink);font-weight:600;white-space:normal;overflow-wrap:anywhere}.metricValue.green{color:var(--green)}
-.next{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;margin-top:18px;padding-top:17px;border-top:1px solid var(--line)}
-.nextLeft{display:grid;grid-template-columns:auto 1fr;gap:11px;align-items:start}.nextBadge{font-size:9px;letter-spacing:.12em;color:var(--green);text-transform:uppercase;border:1px solid rgba(102,245,155,.25);padding:5px 7px;border-radius:999px;white-space:nowrap}.nextTitle{font:400 15px/1.2 var(--serif)}.nextMeta{font-size:10px;color:var(--muted);margin-top:4px;line-height:1.35}
-.cta{flex:0 0 auto;align-self:center;text-decoration:none;font-size:11px;font-weight:650;border-bottom:1px solid var(--green);padding-bottom:3px;white-space:nowrap}
-.footer{display:flex;justify-content:space-between;gap:14px;margin-top:16px;color:#6f7b73;font-size:9px;line-height:1.35}.integrity[data-state="Partial"],.integrity[data-state="Degraded"]{color:#b7a879}.integrity[data-state="Live"]{color:var(--green)}
-@media(max-width:620px){
-  .shell{border-radius:14px}.inner{padding:19px 18px 18px}.eyebrow{margin-bottom:18px;font-size:9px}.hero{grid-template-columns:1fr;gap:15px}.halo{width:84px;height:84px;justify-self:start;grid-row:1;margin-bottom:-1px}.halo:after{inset:9px}.haloRing{inset:18px}.haloState{font-size:13px}.haloScore{font-size:8px}.kicker{margin-top:0}h1{font-size:29px;line-height:1.02}.summary{font-size:12px;line-height:1.48;margin-top:10px}.rule{margin:18px 0 15px}.tape{grid-template-columns:1fr}.metric{border-left:0;border-top:1px solid var(--line);padding:11px 0}.metric:first-child{border-top:0;padding-top:0}.metric:last-child{padding-bottom:0}.metricLabel{margin-bottom:4px}.metricValue{font-size:12px}.next{display:block;margin-top:15px;padding-top:15px}.nextLeft{grid-template-columns:1fr;gap:7px}.nextBadge{width:max-content}.cta{display:inline-block;margin-top:15px}.footer{display:block}.footer span{display:block;margin-top:4px}.footer span:first-child{margin-top:0}
-}
-@media(max-width:360px){.inner{padding:17px 15px}h1{font-size:26px}.summary{font-size:11.5px}.eyebrow{gap:8px}.brand{gap:6px}}
-@media(prefers-reduced-motion:no-preference){.liveDot{animation:pulse 2.6s ease-in-out infinite}.halo:after{animation:halo 6s ease-in-out infinite}@keyframes pulse{50%{opacity:.45;box-shadow:0 0 7px rgba(102,245,155,.35)}}@keyframes halo{50%{transform:scale(1.035);opacity:.7}}}
-</style>
-</head>
-<body>
-<section class="shell" aria-label="BondStats Daily Signal Brief">
-  <div class="inner">
-    <div class="eyebrow"><div class="brand"><span class="liveDot" aria-hidden="true"></span>Daily Signal Brief</div><div id="date">Latest brief</div></div>
-    <div class="hero">
-      <div>
-        <div class="kicker">The One Thing</div>
-        <h1 id="headline">Follow what changed underneath the headlines.</h1>
-        <p class="summary" id="body">A concise daily read on the signals shaping rates, macro and monetary policy.</p>
-      </div>
-      <div class="halo" aria-label="Market state"><span class="haloRing"></span><div class="haloCore"><div class="haloState" id="state">—</div><div class="haloScore" id="score">Market state</div></div></div>
-    </div>
-    <div class="rule"></div>
-    <div class="tape" aria-label="Daily signal snapshot">
-      <div class="metric"><div class="metricLabel">Rates</div><div class="metricValue" id="rates">Awaiting fresh data</div></div>
-      <div class="metric"><div class="metricLabel">Macro</div><div class="metricValue" id="macro">—</div></div>
-      <div class="metric"><div class="metricLabel">Policy</div><div class="metricValue" id="policy">—</div></div>
-    </div>
-    <div class="next">
-      <div class="nextLeft"><div class="nextBadge">Next</div><div><div class="nextTitle" id="nextTitle">Next market-moving event</div><div class="nextMeta" id="nextMeta">Loading calendar…</div></div></div>
-      <a class="cta" id="cta" href="index.html" target="_blank" rel="noopener">Open today’s brief →</a>
-    </div>
-    <div class="footer"><div id="generated">Updated daily</div><span class="integrity" id="integrity">Structured data · Original BondStats analysis</span></div>
-  </div>
-</section>
-<script>
-(function(){
-  const $=id=>document.getElementById(id);
-  const params=new URLSearchParams(location.search);
-  const target=params.get('target');
-  if(target && /^https:\/\//i.test(target)) $('cta').href=target;
+  <meta charset="utf-8">
 
-  const text=(v,f='—') => (v===null||v===undefined||v==='')?f:String(v);
-  const formatDate=iso=>{
-    try{return new Intl.DateTimeFormat('en-GB',{day:'2-digit',month:'short',year:'numeric',timeZone:'UTC'}).format(new Date(iso));}catch{return 'Latest brief';}
-  };
-  const formatEvent=iso=>{
-    try{return new Intl.DateTimeFormat('en-GB',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit',timeZone:'UTC',hour12:false}).format(new Date(iso))+' UTC';}catch{return 'Time TBA';}
-  };
-  const stackValue=(d,name)=>{
-    const x=(d.signalStack||[]).find(i=>String(i.name||'').toLowerCase()===name.toLowerCase());
-    return x?text(x.value):'—';
-  };
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  >
 
-  fetch('data/latest.json?v='+Date.now(),{cache:'no-store'})
-    .then(r=>{if(!r.ok) throw new Error('feed');return r.json();})
-    .then(d=>{
-      $('headline').textContent=text(d.oneThing?.headline,'Follow what changed underneath the headlines.');
-      $('body').textContent=text(d.oneThing?.body,'A concise daily read on the signals shaping rates, macro and monetary policy.');
-      $('state').textContent=text(d.marketState?.label,'Unclassified');
-      $('score').textContent=(d.marketState?.intensity??'—')+' / 100';
-      $('date').textContent=formatDate(d.meta?.generatedAt||d.meta?.date);
-      $('rates').textContent=stackValue(d,'Rates');
-      $('macro').textContent=stackValue(d,'Macro');
-      $('policy').textContent=stackValue(d,'Policy');
-      const next=(d.nextEvents||[])[0] || (d.nextPolicy||[])[0];
-      if(next){
-        $('nextTitle').textContent=text(next.title||next.name,'Next market-moving event');
-        const when=next.dateTime?formatEvent(next.dateTime):(next.nextMeeting?formatDate(next.nextMeeting):'Time TBA');
-        const impact=next.impact||next.category||'Scheduled';
-        $('nextMeta').textContent=when+' · '+impact;
-      }else{
-        $('nextMeta').textContent='No qualified event currently in the feed.';
+  <meta name="color-scheme" content="dark">
+
+  <title>BondStats Daily Signal Brief</title>
+
+  <style>
+    :root {
+      --bg: #050706;
+      --panel: #070a08;
+      --text: #f3f6f3;
+      --soft: #c6cec8;
+      --muted: #818c85;
+      --line: #19221c;
+      --green: #66f59b;
+      --green-soft: rgba(102, 245, 155, 0.09);
+
+      --sans:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+      --serif:
+        Georgia,
+        "Times New Roman",
+        serif;
+    }
+
+    /* ------------------------------
+       GLOBAL RESET
+    ------------------------------ */
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+      background: transparent;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+
+      background: transparent;
+      color: var(--text);
+
+      font-family: var(--sans);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    button,
+    a {
+      font-family: inherit;
+    }
+
+    /* ------------------------------
+       WIDGET
+    ------------------------------ */
+
+    .widget {
+      width: 100%;
+      max-width: 100%;
+
+      margin: 0;
+      padding: 0;
+
+      overflow: hidden;
+
+      border: 1px solid var(--line);
+      border-radius: 16px;
+
+      background:
+        radial-gradient(
+          circle at 92% 4%,
+          rgba(102, 245, 155, 0.055),
+          transparent 30%
+        ),
+        linear-gradient(
+          180deg,
+          #070a08 0%,
+          #050706 100%
+        );
+    }
+
+    .content {
+      width: 100%;
+      max-width: 100%;
+
+      padding:
+        22px
+        22px
+        20px
+        22px;
+    }
+
+    /* ------------------------------
+       TOP BAR
+    ------------------------------ */
+
+    .top {
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 12px;
+
+      margin-bottom: 22px;
+    }
+
+    .brand {
+      min-width: 0;
+
+      display: flex;
+      align-items: center;
+
+      gap: 8px;
+
+      color: var(--green);
+
+      font-size: 10px;
+      line-height: 1.2;
+      font-weight: 700;
+
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .dot {
+      width: 6px;
+      height: 6px;
+
+      flex: 0 0 6px;
+
+      border-radius: 50%;
+
+      background: var(--green);
+
+      box-shadow:
+        0 0 12px rgba(102, 245, 155, 0.55);
+    }
+
+    .date {
+      flex: 0 1 auto;
+      min-width: 0;
+
+      color: var(--muted);
+
+      font-size: 9px;
+      line-height: 1.2;
+
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+
+      text-align: right;
+
+      white-space: nowrap;
+    }
+
+    /* ------------------------------
+       MARKET STATE
+    ------------------------------ */
+
+    .state-row {
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      gap: 8px;
+
+      margin-bottom: 15px;
+    }
+
+    .state-label {
+      color: var(--muted);
+
+      font-size: 9px;
+      line-height: 1.2;
+
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .state-pill {
+      display: inline-flex;
+      align-items: center;
+
+      max-width: 100%;
+
+      padding: 6px 9px;
+
+      border: 1px solid rgba(102, 245, 155, 0.18);
+      border-radius: 999px;
+
+      background: var(--green-soft);
+
+      color: var(--green);
+
+      font-size: 10px;
+      line-height: 1.2;
+      font-weight: 650;
+
+      letter-spacing: 0.04em;
+
+      overflow-wrap: anywhere;
+    }
+
+    .state-score {
+      color: var(--muted);
+
+      font-size: 9px;
+      line-height: 1.2;
+
+      white-space: nowrap;
+    }
+
+    /* ------------------------------
+       MAIN SIGNAL
+    ------------------------------ */
+
+    .eyebrow {
+      margin: 0 0 8px 0;
+
+      color: var(--green);
+
+      font-size: 9px;
+      line-height: 1.2;
+      font-weight: 700;
+
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .headline {
+      width: 100%;
+      max-width: 100%;
+
+      margin: 0;
+
+      color: var(--text);
+
+      font-family: var(--serif);
+      font-size: clamp(23px, 6vw, 34px);
+      line-height: 1.07;
+      font-weight: 400;
+
+      letter-spacing: -0.025em;
+
+      overflow-wrap: anywhere;
+      word-break: normal;
+    }
+
+    .summary {
+      width: 100%;
+      max-width: 680px;
+
+      margin: 12px 0 0 0;
+
+      color: var(--soft);
+
+      font-size: 12.5px;
+      line-height: 1.55;
+
+      overflow-wrap: anywhere;
+    }
+
+    /* ------------------------------
+       DIVIDER
+    ------------------------------ */
+
+    .divider {
+      width: 100%;
+      height: 1px;
+
+      margin: 20px 0 17px;
+
+      background: var(--line);
+    }
+
+    /* ------------------------------
+       NEXT EVENT
+    ------------------------------ */
+
+    .next {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .next-label {
+      margin-bottom: 7px;
+
+      color: var(--muted);
+
+      font-size: 9px;
+      line-height: 1.2;
+      font-weight: 650;
+
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .next-title {
+      width: 100%;
+      max-width: 100%;
+
+      color: var(--text);
+
+      font-family: var(--serif);
+      font-size: 16px;
+      line-height: 1.25;
+
+      overflow-wrap: anywhere;
+    }
+
+    .next-meta {
+      width: 100%;
+      max-width: 100%;
+
+      margin-top: 5px;
+
+      color: var(--muted);
+
+      font-size: 10px;
+      line-height: 1.4;
+
+      overflow-wrap: anywhere;
+    }
+
+    /* ------------------------------
+       CTA
+    ------------------------------ */
+
+    .actions {
+      width: 100%;
+
+      margin-top: 19px;
+    }
+
+    .cta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      width: 100%;
+      max-width: 100%;
+
+      gap: 12px;
+
+      padding: 13px 14px;
+
+      border: 1px solid rgba(102, 245, 155, 0.20);
+      border-radius: 10px;
+
+      background: rgba(102, 245, 155, 0.055);
+
+      color: var(--text);
+
+      text-decoration: none;
+
+      font-size: 11px;
+      line-height: 1.2;
+      font-weight: 650;
+
+      transition:
+        border-color 160ms ease,
+        background 160ms ease;
+    }
+
+    .cta:hover {
+      border-color: rgba(102, 245, 155, 0.42);
+      background: rgba(102, 245, 155, 0.085);
+    }
+
+    .cta-text {
+      min-width: 0;
+
+      overflow-wrap: anywhere;
+    }
+
+    .cta-arrow {
+      flex: 0 0 auto;
+
+      color: var(--green);
+
+      font-size: 16px;
+      line-height: 1;
+    }
+
+    /* ------------------------------
+       FOOTER
+    ------------------------------ */
+
+    .footer {
+      width: 100%;
+      max-width: 100%;
+
+      margin-top: 13px;
+
+      color: #69746d;
+
+      font-size: 8.5px;
+      line-height: 1.4;
+
+      overflow-wrap: anywhere;
+    }
+
+    .integrity-live {
+      color: var(--green);
+    }
+
+    .integrity-partial,
+    .integrity-degraded {
+      color: #a79f7a;
+    }
+
+    /* ------------------------------
+       MOBILE
+    ------------------------------ */
+
+    @media (max-width: 600px) {
+
+      .widget {
+        border-radius: 12px;
       }
-      const integ=d.meta?.sourceIntegrity?.label||'Unknown';
-      $('integrity').dataset.state=integ;
-      $('integrity').textContent='Source integrity: '+integ+' · Original BondStats analysis';
-      $('generated').textContent='Generated '+formatDate(d.meta?.generatedAt||d.meta?.date);
-    })
-    .catch(()=>{
-      $('state').textContent='Feed unavailable';
-      $('score').textContent='Retry later';
-      $('nextMeta').textContent='The Daily Brief feed could not be loaded.';
-      $('integrity').textContent='Source integrity unavailable';
-    });
-})();
-</script>
+
+      .content {
+        padding:
+          17px
+          16px
+          16px
+          16px;
+      }
+
+      .top {
+        margin-bottom: 18px;
+        gap: 8px;
+      }
+
+      .brand {
+        font-size: 9px;
+        letter-spacing: 0.11em;
+      }
+
+      .date {
+        font-size: 8px;
+      }
+
+      .state-row {
+        margin-bottom: 13px;
+      }
+
+      .headline {
+        font-size: 27px;
+        line-height: 1.06;
+      }
+
+      .summary {
+        margin-top: 10px;
+
+        font-size: 12px;
+        line-height: 1.5;
+      }
+
+      .divider {
+        margin:
+          17px
+          0
+          15px;
+      }
+
+      .next-title {
+        font-size: 15px;
+      }
+
+      .actions {
+        margin-top: 16px;
+      }
+
+      .cta {
+        padding: 12px;
+      }
+
+      .footer {
+        margin-top: 11px;
+      }
+    }
+
+    /* ------------------------------
+       VERY SMALL MOBILE
+    ------------------------------ */
+
+    @media (max-width: 360px) {
+
+      .content {
+        padding:
+          15px
+          13px
+          14px
+          13px;
+      }
+
+      .top {
+        align-items: flex-start;
+      }
+
+      .brand {
+        font-size: 8.5px;
+      }
+
+      .date {
+        font-size: 7.5px;
+      }
+
+      .headline {
+        font-size: 24px;
+      }
+
+      .summary {
+        font-size: 11.5px;
+      }
+
+      .state-pill {
+        font-size: 9px;
+      }
+    }
+
+    /* ------------------------------
+       ACCESSIBILITY
+    ------------------------------ */
+
+    @media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+        transition: none !important;
+        animation: none !important;
+      }
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+  <section
+    class="widget"
+    aria-label="BondStats Daily Signal Brief"
+  >
+
+    <div class="content">
+
+      <!-- TOP -->
+
+      <header class="top">
+
+        <div class="brand">
+          <span
+            class="dot"
+            aria-hidden="true"
+          ></span>
+
+          <span>
+            Daily Signal Brief
+          </span>
+        </div>
+
+        <div
+          class="date"
+          id="briefDate"
+        >
+          Latest
+        </div>
+
+      </header>
+
+
+      <!-- MARKET STATE -->
+
+      <div class="state-row">
+
+        <span class="state-label">
+          Market State
+        </span>
+
+        <span
+          class="state-pill"
+          id="marketState"
+        >
+          Loading
+        </span>
+
+        <span
+          class="state-score"
+          id="marketScore"
+        >
+          —
+        </span>
+
+      </div>
+
+
+      <!-- THE ONE THING -->
+
+      <main>
+
+        <div
+          class="eyebrow"
+          id="oneThingKicker"
+        >
+          The One Thing
+        </div>
+
+        <h1
+          class="headline"
+          id="headline"
+        >
+          Follow what changed underneath the headlines.
+        </h1>
+
+        <p
+          class="summary"
+          id="summary"
+        >
+          A concise daily read on the signals shaping rates,
+          macro and monetary policy.
+        </p>
+
+      </main>
+
+
+      <div class="divider"></div>
+
+
+      <!-- NEXT EVENT -->
+
+      <section
+        class="next"
+        aria-label="Next market event"
+      >
+
+        <div class="next-label">
+          What Matters Next
+        </div>
+
+        <div
+          class="next-title"
+          id="nextTitle"
+        >
+          Loading next market event…
+        </div>
+
+        <div
+          class="next-meta"
+          id="nextMeta"
+        >
+          —
+        </div>
+
+      </section>
+
+
+      <!-- CTA -->
+
+      <div class="actions">
+
+        <a
+          class="cta"
+          id="briefLink"
+          href="index.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          <span class="cta-text">
+            Open today's Daily Signal Brief
+          </span>
+
+          <span
+            class="cta-arrow"
+            aria-hidden="true"
+          >
+            →
+          </span>
+
+        </a>
+
+      </div>
+
+
+      <!-- FOOTER -->
+
+      <footer
+        class="footer"
+        id="footer"
+      >
+        BondStats · Structured market data · Original analysis
+      </footer>
+
+    </div>
+
+  </section>
+
+
+  <script>
+    (() => {
+
+      "use strict";
+
+
+      /* --------------------------------
+         DOM HELPERS
+      -------------------------------- */
+
+      const get = (id) =>
+        document.getElementById(id);
+
+
+      const setText = (id, value) => {
+
+        const element = get(id);
+
+        if (!element) {
+          return;
+        }
+
+        element.textContent =
+          value === null ||
+          value === undefined ||
+          value === ""
+            ? "—"
+            : String(value);
+      };
+
+
+      /* --------------------------------
+         SAFE VALUE
+      -------------------------------- */
+
+      const safeText = (
+        value,
+        fallback = "—"
+      ) => {
+
+        if (
+          value === null ||
+          value === undefined ||
+          value === ""
+        ) {
+          return fallback;
+        }
+
+        return String(value);
+      };
+
+
+      /* --------------------------------
+         DATE FORMAT
+      -------------------------------- */
+
+      const formatDate = (value) => {
+
+        if (!value) {
+          return "Latest";
+        }
+
+        try {
+
+          const date =
+            new Date(value);
+
+          if (
+            Number.isNaN(
+              date.getTime()
+            )
+          ) {
+            return "Latest";
+          }
+
+          return new Intl.DateTimeFormat(
+            "en-GB",
+            {
+              day: "2-digit",
+              month: "short",
+              year: "numeric",
+              timeZone: "UTC"
+            }
+          ).format(date);
+
+        } catch (error) {
+
+          return "Latest";
+
+        }
+      };
+
+
+      const formatDateTime = (value) => {
+
+        if (!value) {
+          return null;
+        }
+
+        try {
+
+          const date =
+            new Date(value);
+
+          if (
+            Number.isNaN(
+              date.getTime()
+            )
+          ) {
+            return null;
+          }
+
+          return new Intl.DateTimeFormat(
+            "en-GB",
+            {
+              day: "2-digit",
+              month: "short",
+              hour: "2-digit",
+              minute: "2-digit",
+              hour12: false,
+              timeZone: "UTC"
+            }
+          ).format(date) + " UTC";
+
+        } catch (error) {
+
+          return null;
+
+        }
+      };
+
+
+      /* --------------------------------
+         EVENT DATE FALLBACKS
+      -------------------------------- */
+
+      const getEventDate = (event) => {
+
+        if (!event) {
+          return null;
+        }
+
+        const possibleValues = [
+          event.dateTime,
+          event.datetime,
+          event.start,
+          event.date,
+          event.nextMeeting
+        ];
+
+        for (
+          const value
+          of possibleValues
+        ) {
+
+          if (value) {
+
+            const withTime =
+              formatDateTime(value);
+
+            if (withTime) {
+              return withTime;
+            }
+
+            const simple =
+              formatDate(value);
+
+            if (
+              simple &&
+              simple !== "Latest"
+            ) {
+              return simple;
+            }
+
+          }
+
+        }
+
+        return null;
+      };
+
+
+      /* --------------------------------
+         CTA PARAMETER
+
+         Optional:
+         widget.html?target=https://...
+      -------------------------------- */
+
+      const params =
+        new URLSearchParams(
+          window.location.search
+        );
+
+
+      const customTarget =
+        params.get("target");
+
+
+      if (
+        customTarget &&
+        /^https:\/\//i.test(
+          customTarget
+        )
+      ) {
+
+        get("briefLink").href =
+          customTarget;
+
+      }
+
+
+      /* --------------------------------
+         FETCH DAILY BRIEF
+      -------------------------------- */
+
+      const loadBrief =
+        async () => {
+
+          try {
+
+            const response =
+              await fetch(
+                "data/latest.json?v=" +
+                Date.now(),
+                {
+                  cache: "no-store"
+                }
+              );
+
+
+            if (!response.ok) {
+
+              throw new Error(
+                "Latest brief unavailable"
+              );
+
+            }
+
+
+            const data =
+              await response.json();
+
+
+            /* --------------------------
+               DATE
+            -------------------------- */
+
+            const generatedAt =
+              data?.meta?.generatedAt ||
+              data?.meta?.date ||
+              null;
+
+
+            setText(
+              "briefDate",
+              formatDate(
+                generatedAt
+              )
+            );
+
+
+            /* --------------------------
+               MARKET STATE
+            -------------------------- */
+
+            const stateLabel =
+              safeText(
+                data?.marketState?.label,
+                "Unclassified"
+              );
+
+
+            const intensity =
+              data?.marketState?.intensity;
+
+
+            setText(
+              "marketState",
+              stateLabel
+            );
+
+
+            if (
+              typeof intensity ===
+              "number"
+            ) {
+
+              setText(
+                "marketScore",
+                intensity + " / 100"
+              );
+
+            } else {
+
+              setText(
+                "marketScore",
+                "—"
+              );
+
+            }
+
+
+            /* --------------------------
+               ONE THING
+            -------------------------- */
+
+            setText(
+              "oneThingKicker",
+              safeText(
+                data?.oneThing?.kicker,
+                "THE ONE THING"
+              )
+            );
+
+
+            setText(
+              "headline",
+              safeText(
+                data?.oneThing?.headline,
+                "Follow what changed underneath the headlines."
+              )
+            );
+
+
+            setText(
+              "summary",
+              safeText(
+                data?.oneThing?.body,
+                "A concise daily read on the signals shaping rates, macro and monetary policy."
+              )
+            );
+
+
+            /* --------------------------
+               NEXT EVENT
+
+               First try nextEvents,
+               then nextPolicy.
+            -------------------------- */
+
+            let nextEvent = null;
+
+
+            if (
+              Array.isArray(
+                data?.nextEvents
+              ) &&
+              data.nextEvents.length
+            ) {
+
+              nextEvent =
+                data.nextEvents[0];
+
+            } else if (
+              Array.isArray(
+                data?.nextPolicy
+              ) &&
+              data.nextPolicy.length
+            ) {
+
+              nextEvent =
+                data.nextPolicy[0];
+
+            }
+
+
+            if (nextEvent) {
+
+              const title =
+                nextEvent.title ||
+                nextEvent.name ||
+                nextEvent.event ||
+                nextEvent.bank ||
+                "Next market-moving event";
+
+
+              setText(
+                "nextTitle",
+                title
+              );
+
+
+              const eventDate =
+                getEventDate(
+                  nextEvent
+                );
+
+
+              const classification =
+                nextEvent.impact ||
+                nextEvent.relevance ||
+                nextEvent.category ||
+                nextEvent.status ||
+                null;
+
+
+              const metadata = [];
+
+
+              if (eventDate) {
+                metadata.push(
+                  eventDate
+                );
+              }
+
+
+              if (classification) {
+                metadata.push(
+                  classification
+                );
+              }
+
+
+              setText(
+                "nextMeta",
+                metadata.length
+                  ? metadata.join(" · ")
+                  : "Scheduled"
+              );
+
+            } else {
+
+              setText(
+                "nextTitle",
+                "No immediate event currently qualifies"
+              );
+
+
+              setText(
+                "nextMeta",
+                "The event feed is currently quiet."
+              );
+
+            }
+
+
+            /* --------------------------
+               SOURCE INTEGRITY
+            -------------------------- */
+
+            const integrity =
+              safeText(
+                data
+                  ?.meta
+                  ?.sourceIntegrity
+                  ?.label,
+                "Unknown"
+              );
+
+
+            const footer =
+              get("footer");
+
+
+            footer.classList.remove(
+              "integrity-live",
+              "integrity-partial",
+              "integrity-degraded"
+            );
+
+
+            const integrityClass =
+              "integrity-" +
+              integrity
+                .toLowerCase()
+                .replace(
+                  /[^a-z0-9]+/g,
+                  "-"
+                );
+
+
+            footer.classList.add(
+              integrityClass
+            );
+
+
+            footer.textContent =
+              "Source integrity: " +
+              integrity +
+              " · Structured market data · Original BondStats analysis";
+
+
+          } catch (error) {
+
+
+            /* --------------------------
+               FALLBACK STATE
+            -------------------------- */
+
+            setText(
+              "briefDate",
+              "Latest"
+            );
+
+
+            setText(
+              "marketState",
+              "Feed unavailable"
+            );
+
+
+            setText(
+              "marketScore",
+              "—"
+            );
+
+
+            setText(
+              "headline",
+              "Daily signal feed temporarily unavailable"
+            );
+
+
+            setText(
+              "summary",
+              "The BondStats Daily Signal Brief could not be loaded. Open the full brief to retry."
+            );
+
+
+            setText(
+              "nextTitle",
+              "Market calendar unavailable"
+            );
+
+
+            setText(
+              "nextMeta",
+              "Please retry shortly."
+            );
+
+
+            const footer =
+              get("footer");
+
+
+            footer.textContent =
+              "Source integrity unavailable · BondStats";
+
+
+          }
+
+        };
+
+
+      /* --------------------------------
+         START
+      -------------------------------- */
+
+      loadBrief();
+
+
+    })();
+  </script>
+
 </body>
 </html>
