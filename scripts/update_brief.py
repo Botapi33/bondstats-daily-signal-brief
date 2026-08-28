@@ -428,7 +428,8 @@ def build_signals(markets: list[dict], macro: list[dict], policy_feed: dict | No
     for row in fresh[:5]:
         absolute = abs(row["changeBp"])
         memory = history_move_stats(histories, row["id"], absolute)
-        strength = min(98, round(38 + absolute * 4 + (10 if memory.get("percentile", 0) >= 90 else 0)))
+        percentile = memory.get("percentile")
+        strength = min(98, round(38 + absolute * 4 + (10 if isinstance(percentile, (int, float)) and percentile >= 90 else 0)))
         direction = "rose" if row["changeBp"] > 0 else "fell"
         memory_text = None
         if memory["observations"] >= 5:
