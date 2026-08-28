@@ -2,38 +2,151 @@
   "meta": {
     "product": "BondStats Daily Signal Brief",
     "date": "2026-08-28",
-    "generatedAt": "2026-08-28T22:29:13.558346Z",
+    "generatedAt": "2026-08-28T22:40:17.657056Z",
     "version": "1.0.0",
     "copyrightMethod": "Original deterministic analysis from factual/official and BondStats-owned data feeds; no third-party news articles or editorial text are ingested.",
     "sourceHealth": {
-      "macro": "degraded",
-      "policy": "degraded",
-      "calendar": "degraded",
-      "yields": "unavailable"
+      "macro": "ok",
+      "policy": "ok",
+      "calendar": "ok",
+      "yields": "ok"
     }
   },
   "marketState": {
-    "label": "Mixed",
-    "freshDailyMarkets": 0,
-    "rising": 0,
+    "label": "Yields rising broadly",
+    "freshDailyMarkets": 10,
+    "rising": 9,
     "falling": 0
   },
   "signals": [
     {
+      "kicker": "RATES",
+      "headline": "Euro Area yield rose 2.9 bp",
+      "body": "A fresh daily move in the sovereign yield feed. The brief reports the observed change without assigning a news-driven cause.",
+      "strength": 50
+    },
+    {
+      "kicker": "RATES",
+      "headline": "Denmark yield rose 2.1 bp",
+      "body": "A fresh daily move in the sovereign yield feed. The brief reports the observed change without assigning a news-driven cause.",
+      "strength": 46
+    },
+    {
+      "kicker": "RATES",
+      "headline": "United States yield rose 2.0 bp",
+      "body": "A fresh daily move in the sovereign yield feed. The brief reports the observed change without assigning a news-driven cause.",
+      "strength": 45
+    },
+    {
       "kicker": "INFLATION",
       "headline": "United States CPI eased",
       "body": "Latest official observation: 3.4% versus 3.5% previously (Jul 2026).",
-      "strength": 72
+      "strength": 72,
+      "sourceName": "U.S. Bureau of Labor Statistics",
+      "sourceUrl": "https://www.bls.gov/news.release/cpi.htm"
     },
     {
       "kicker": "INFLATION",
       "headline": "United States Core CPI eased",
       "body": "Latest official observation: 2.5% versus 2.6% previously (Jul 2026).",
-      "strength": 72
+      "strength": 72,
+      "sourceName": "U.S. Bureau of Labor Statistics",
+      "sourceUrl": "https://www.bls.gov/news.release/cpi.htm"
     }
   ],
   "dislocations": [],
-  "markets": [],
+  "markets": [
+    {
+      "id": "united_states",
+      "label": "United States",
+      "yield": 4.66,
+      "changeBp": 2.0,
+      "date": "2026-08-26",
+      "freshDaily": true,
+      "source": "fred"
+    },
+    {
+      "id": "euro_area",
+      "label": "Euro Area",
+      "yield": 3.2773,
+      "changeBp": 2.9,
+      "date": "2026-08-27",
+      "freshDaily": true,
+      "source": "ecb"
+    },
+    {
+      "id": "united_kingdom",
+      "label": "United Kingdom",
+      "yield": 5.0408,
+      "changeBp": 0.1,
+      "date": "2026-08-27",
+      "freshDaily": true,
+      "source": "riksbank"
+    },
+    {
+      "id": "sweden",
+      "label": "Sweden",
+      "yield": 3.026,
+      "changeBp": 1.9,
+      "date": "2026-08-27",
+      "freshDaily": true,
+      "source": "riksbank"
+    },
+    {
+      "id": "germany",
+      "label": "Germany",
+      "yield": 3.2514,
+      "changeBp": 1.3,
+      "date": "2026-08-27",
+      "freshDaily": true,
+      "source": "riksbank"
+    },
+    {
+      "id": "france",
+      "label": "France",
+      "yield": 4.0998,
+      "changeBp": 0.2,
+      "date": "2026-08-27",
+      "freshDaily": true,
+      "source": "riksbank"
+    },
+    {
+      "id": "netherlands",
+      "label": "Netherlands",
+      "yield": 3.3302,
+      "changeBp": 0.0,
+      "date": "2026-08-27",
+      "freshDaily": true,
+      "source": "riksbank"
+    },
+    {
+      "id": "finland",
+      "label": "Finland",
+      "yield": 3.5694,
+      "changeBp": 1.3,
+      "date": "2026-08-27",
+      "freshDaily": true,
+      "source": "riksbank"
+    },
+    {
+      "id": "denmark",
+      "label": "Denmark",
+      "yield": 3.0933,
+      "changeBp": 2.1,
+      "date": "2026-08-27",
+      "freshDaily": true,
+      "source": "riksbank"
+    },
+    {
+      "id": "norway",
+      "label": "Norway",
+      "yield": 4.4251,
+      "changeBp": 1.4,
+      "date": "2026-08-27",
+      "freshDaily": true,
+      "source": "riksbank"
+    }
+  ],
   "macro": [
     {
       "id": "US_CPI",
@@ -134,7 +247,7 @@
       "previous": 2.1,
       "unit": "%",
       "transform": "QoQ SAAR",
-      "period": "Q2 2026 · 2nd est.",
+      "period": "Q2 2026",
       "direction": "down",
       "relevance": "High",
       "sourceName": "U.S. Bureau of Economic Analysis",

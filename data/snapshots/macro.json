@@ -2,18 +2,36 @@
   "meta": {
     "product": "BondStats Macro Data Watch",
     "version": "1.0.0",
-    "lastChecked": null,
-    "lastSuccessfulDataUpdate": "2026-08-28T20:00:00Z",
-    "lastUpdated": "2026-08-28T20:00:00Z",
-    "healthySources": 3,
-    "degradedSources": 0,
+    "lastChecked": "2026-08-28T22:04:27Z",
+    "lastSuccessfulDataUpdate": "2026-08-28T22:04:27Z",
+    "lastUpdated": "2026-08-28T22:04:27Z",
+    "healthySources": 1,
+    "degradedSources": 2,
     "methodology": "Official-source-only. No consensus forecasts. No third-party editorial data. Last-known-good values are retained on parser/source failure.",
     "regions": [
       "United States",
       "Euro Area"
     ],
     "verifiedAgainstOfficialSources": "2026-08-28",
-    "verificationNote": "Current seed observations verified against BLS, BEA and Eurostat official releases before production build."
+    "verificationNote": "Current seed observations verified against BLS, BEA and Eurostat official releases before production build.",
+    "refreshResults": {
+      "BLS": {
+        "state": "degraded",
+        "error": "could not convert string to float: '-'"
+      },
+      "BEA": {
+        "state": "ok",
+        "indicators": [
+          "US_CORE_PCE",
+          "US_GDP",
+          "US_PCE"
+        ]
+      },
+      "EUROSTAT": {
+        "state": "degraded",
+        "error": "Eurostat query not singleton on geo"
+      }
+    }
   },
   "indicators": [
     {
@@ -134,7 +152,7 @@
       "previous": 2.1,
       "unit": "%",
       "transform": "QoQ SAAR",
-      "period": "Q2 2026 · 2nd est.",
+      "period": "Q2 2026",
       "frequency": "Quarterly",
       "direction": "down",
       "marketRelevance": "High",
@@ -217,16 +235,18 @@
   ],
   "sourceHealth": {
     "BLS": {
-      "state": "seed",
-      "lastChecked": null
+      "state": "degraded",
+      "lastChecked": "2026-08-28T22:04:27Z",
+      "error": "could not convert string to float: '-'"
     },
     "BEA": {
-      "state": "seed",
-      "lastChecked": null
+      "state": "ok",
+      "lastChecked": "2026-08-28T22:04:27Z"
     },
     "EUROSTAT": {
-      "state": "seed",
-      "lastChecked": null
+      "state": "degraded",
+      "lastChecked": "2026-08-28T22:04:27Z",
+      "error": "Eurostat query not singleton on geo"
     }
   }
 }
