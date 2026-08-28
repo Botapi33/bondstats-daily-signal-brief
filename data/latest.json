@@ -2,73 +2,65 @@
   "meta": {
     "product": "BondStats Daily Signal Brief",
     "date": "2026-08-28",
-    "generatedAt": "2026-08-28T22:46:45.239915Z",
+    "generatedAt": "2026-08-28T22:59:28.496072Z",
     "version": "2.0.0",
     "engine": "BondStats Signal Engine v2",
     "copyrightMethod": "Original deterministic analysis from factual official-source observations and BondStats data feeds; no third-party news articles, headlines, screenshots or editorial text are ingested, summarized or rewritten.",
     "sourceHealth": {
       "macro": {
-        "status": "degraded",
-        "checkedAt": "2026-08-28T22:46:45.239915Z",
+        "status": "live",
+        "checkedAt": "2026-08-28T22:59:28.496072Z",
         "sourceUrl": "https://botapi33.github.io/bondstats-macro-data-watch/data/macro.json",
-        "fallback": true,
-        "snapshotSavedAt": null,
-        "errorClass": "RuntimeError"
+        "fallback": false
       },
       "policy": {
-        "status": "degraded",
-        "checkedAt": "2026-08-28T22:46:45.239915Z",
+        "status": "live",
+        "checkedAt": "2026-08-28T22:59:28.496072Z",
         "sourceUrl": "https://botapi33.github.io/bondstats-central-bank-watch/data/policy.json",
-        "fallback": true,
-        "snapshotSavedAt": null,
-        "errorClass": "RuntimeError"
+        "fallback": false
       },
       "calendar": {
-        "status": "degraded",
-        "checkedAt": "2026-08-28T22:46:45.239915Z",
+        "status": "live",
+        "checkedAt": "2026-08-28T22:59:28.496072Z",
         "sourceUrl": "https://botapi33.github.io/bondstats-market-calendar/data/events.json",
-        "fallback": true,
-        "snapshotSavedAt": null,
-        "errorClass": "RuntimeError"
+        "fallback": false
       },
       "yields": {
-        "status": "unavailable",
-        "checkedAt": "2026-08-28T22:46:45.239915Z",
+        "status": "live",
+        "checkedAt": "2026-08-28T22:59:28.496072Z",
         "sourceUrl": "https://botapi33.github.io/bondstats-global-yields/global_yields.json",
-        "fallback": false,
-        "snapshotSavedAt": null,
-        "errorClass": "RuntimeError"
+        "fallback": false
       }
     },
     "sourceIntegrity": {
-      "label": "Partial",
-      "live": 0,
-      "degraded": 3,
-      "unavailable": 1,
+      "label": "Verified live",
+      "live": 4,
+      "degraded": 0,
+      "unavailable": 0,
       "total": 4
     }
   },
   "marketState": {
-    "label": "Data Quiet",
-    "intensity": 18,
-    "reason": "No broad fresh daily rates signal currently qualifies.",
-    "previousLabel": null,
-    "freshDailyMarkets": 0,
-    "rising": 0,
+    "label": "Rates Repricing Higher",
+    "intensity": 60,
+    "reason": "Qualified sovereign yields are moving higher with meaningful breadth.",
+    "previousLabel": "Data Quiet",
+    "freshDailyMarkets": 10,
+    "rising": 9,
     "falling": 0
   },
   "oneThing": {
     "kicker": "THE ONE THING",
-    "headline": "Quiet is a signal when nothing qualifies",
-    "body": "No broad fresh daily rates signal currently qualifies. BondStats does not manufacture a narrative simply to fill the page.",
-    "score": 35,
-    "tag": "QUIET SIGNAL"
+    "headline": "Euro Area yield rose 2.9 bp",
+    "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause.",
+    "score": 50,
+    "tag": "RATES"
   },
   "signalStack": [
     {
       "name": "Rates",
-      "value": "Awaiting",
-      "status": "limited"
+      "value": "Higher",
+      "status": "active"
     },
     {
       "name": "Macro",
@@ -82,8 +74,8 @@
     },
     {
       "name": "Event risk",
-      "value": "Normal",
-      "status": "active"
+      "value": "Elevated",
+      "status": "watch"
     },
     {
       "name": "Divergence",
@@ -92,21 +84,21 @@
     }
   ],
   "signalMemory": {
-    "previousState": null,
+    "previousState": "Data Quiet",
     "lastSeenDate": null,
     "daysSinceLastSeen": null,
     "consecutiveDays": 1,
-    "archiveObservations": 0
+    "archiveObservations": 1
   },
   "diagnostics": {
     "rates": {
-      "label": "Awaiting",
-      "score": 0,
-      "fresh": 0,
-      "rising": 0,
+      "label": "Higher",
+      "score": 44,
+      "fresh": 10,
+      "rising": 9,
       "falling": 0,
-      "averageBp": null,
-      "breadth": 0
+      "averageBp": 1.3,
+      "breadth": 0.9
     },
     "macro": {
       "label": "Mixed",
@@ -132,15 +124,212 @@
       "netRecentBp": 0.0
     },
     "eventRisk": {
-      "label": "Normal",
-      "score": 35,
-      "nextCriticalHours": 157.7,
-      "critical72h": 0
+      "label": "Elevated",
+      "score": 80,
+      "nextCriticalHours": 28.0,
+      "critical72h": 1
     }
   },
-  "signals": [],
+  "signals": [
+    {
+      "id": "rates:euro_area",
+      "kicker": "RATES",
+      "headline": "Euro Area yield rose 2.9 bp",
+      "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause.",
+      "strength": 50,
+      "novelty": null,
+      "memory": null,
+      "sourceName": "ecb",
+      "sourceUrl": null
+    },
+    {
+      "id": "rates:denmark",
+      "kicker": "RATES",
+      "headline": "Denmark yield rose 2.1 bp",
+      "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause.",
+      "strength": 46,
+      "novelty": null,
+      "memory": null,
+      "sourceName": "riksbank",
+      "sourceUrl": null
+    },
+    {
+      "id": "rates:united_states",
+      "kicker": "RATES",
+      "headline": "United States yield rose 2.0 bp",
+      "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause.",
+      "strength": 46,
+      "novelty": null,
+      "memory": null,
+      "sourceName": "fred",
+      "sourceUrl": null
+    },
+    {
+      "id": "rates:sweden",
+      "kicker": "RATES",
+      "headline": "Sweden yield rose 1.9 bp",
+      "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause.",
+      "strength": 46,
+      "novelty": null,
+      "memory": null,
+      "sourceName": "riksbank",
+      "sourceUrl": null
+    },
+    {
+      "id": "rates:norway",
+      "kicker": "RATES",
+      "headline": "Norway yield rose 1.4 bp",
+      "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause.",
+      "strength": 44,
+      "novelty": null,
+      "memory": null,
+      "sourceName": "riksbank",
+      "sourceUrl": null
+    }
+  ],
   "dislocations": [],
-  "markets": [],
+  "markets": [
+    {
+      "id": "united_states",
+      "label": "United States",
+      "yield": 4.66,
+      "previousYield": 4.64,
+      "changeBp": 2.0,
+      "date": "2026-08-26",
+      "previousDate": "2026-08-25",
+      "frequency": "Daily",
+      "stalenessDays": 2.0,
+      "freshDaily": true,
+      "source": "fred",
+      "tier": "delayed"
+    },
+    {
+      "id": "euro_area",
+      "label": "Euro Area",
+      "yield": 3.2773,
+      "previousYield": 3.2485,
+      "changeBp": 2.9,
+      "date": "2026-08-27",
+      "previousDate": "2026-08-26",
+      "frequency": "Daily",
+      "stalenessDays": 1.0,
+      "freshDaily": true,
+      "source": "ecb",
+      "tier": "daily"
+    },
+    {
+      "id": "united_kingdom",
+      "label": "United Kingdom",
+      "yield": 5.0408,
+      "previousYield": 5.0396,
+      "changeBp": 0.1,
+      "date": "2026-08-27",
+      "previousDate": "2026-08-26",
+      "frequency": "Daily",
+      "stalenessDays": 1.0,
+      "freshDaily": true,
+      "source": "riksbank",
+      "tier": "daily"
+    },
+    {
+      "id": "sweden",
+      "label": "Sweden",
+      "yield": 3.026,
+      "previousYield": 3.007,
+      "changeBp": 1.9,
+      "date": "2026-08-27",
+      "previousDate": "2026-08-26",
+      "frequency": "Daily",
+      "stalenessDays": 1.0,
+      "freshDaily": true,
+      "source": "riksbank",
+      "tier": "daily"
+    },
+    {
+      "id": "germany",
+      "label": "Germany",
+      "yield": 3.2514,
+      "previousYield": 3.2384,
+      "changeBp": 1.3,
+      "date": "2026-08-27",
+      "previousDate": "2026-08-26",
+      "frequency": "Daily",
+      "stalenessDays": 1.0,
+      "freshDaily": true,
+      "source": "riksbank",
+      "tier": "daily"
+    },
+    {
+      "id": "france",
+      "label": "France",
+      "yield": 4.0998,
+      "previousYield": 4.0974,
+      "changeBp": 0.2,
+      "date": "2026-08-27",
+      "previousDate": "2026-08-26",
+      "frequency": "Daily",
+      "stalenessDays": 1.0,
+      "freshDaily": true,
+      "source": "riksbank",
+      "tier": "daily"
+    },
+    {
+      "id": "netherlands",
+      "label": "Netherlands",
+      "yield": 3.3302,
+      "previousYield": 3.33,
+      "changeBp": 0.0,
+      "date": "2026-08-27",
+      "previousDate": "2026-08-26",
+      "frequency": "Daily",
+      "stalenessDays": 1.0,
+      "freshDaily": true,
+      "source": "riksbank",
+      "tier": "daily"
+    },
+    {
+      "id": "finland",
+      "label": "Finland",
+      "yield": 3.5694,
+      "previousYield": 3.5565,
+      "changeBp": 1.3,
+      "date": "2026-08-27",
+      "previousDate": "2026-08-26",
+      "frequency": "Daily",
+      "stalenessDays": 1.0,
+      "freshDaily": true,
+      "source": "riksbank",
+      "tier": "daily"
+    },
+    {
+      "id": "denmark",
+      "label": "Denmark",
+      "yield": 3.0933,
+      "previousYield": 3.0727,
+      "changeBp": 2.1,
+      "date": "2026-08-27",
+      "previousDate": "2026-08-26",
+      "frequency": "Daily",
+      "stalenessDays": 1.0,
+      "freshDaily": true,
+      "source": "riksbank",
+      "tier": "daily"
+    },
+    {
+      "id": "norway",
+      "label": "Norway",
+      "yield": 4.4251,
+      "previousYield": 4.4115,
+      "changeBp": 1.4,
+      "date": "2026-08-27",
+      "previousDate": "2026-08-26",
+      "frequency": "Daily",
+      "stalenessDays": 1.0,
+      "freshDaily": true,
+      "source": "riksbank",
+      "tier": "daily"
+    }
+  ],
   "macro": [
     {
       "id": "US_CPI",
@@ -260,7 +449,7 @@
       "previous": 2.1,
       "unit": "%",
       "transform": "QoQ SAAR",
-      "period": "Q2 2026 · 2nd est.",
+      "period": "Q2 2026",
       "frequency": "Quarterly",
       "direction": "down",
       "relevance": "High",
@@ -428,6 +617,73 @@
     }
   ],
   "nextEvents": [
+    {
+      "id": "boj-72de0050ddfe",
+      "title": "Bank of Japan Monetary Policy Decision",
+      "dateTime": "2026-08-30T03:00:00Z",
+      "timePrecision": "date",
+      "impactScore": 94.0,
+      "impact": "CRITICAL",
+      "category": "Central Bank",
+      "primaryExposure": [
+        "Sovereign bonds",
+        "FX",
+        "Rate expectations"
+      ],
+      "sourceName": "Bank of Japan",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
+      "official": true
+    },
+    {
+      "id": "treasury-2f84d7f018b3",
+      "title": "U.S. Treasury BILL Auction",
+      "dateTime": "2026-09-02T17:00:00Z",
+      "timePrecision": "date",
+      "impactScore": 58.0,
+      "impact": "MEDIUM",
+      "category": "Sovereign Funding",
+      "primaryExposure": [
+        "Treasuries",
+        "Term premium",
+        "Funding conditions"
+      ],
+      "sourceName": "U.S. Treasury Auctions",
+      "sourceUrl": "https://www.treasurydirect.gov/xml/PendingAuctions.xml",
+      "official": true
+    },
+    {
+      "id": "bea-18ecebfb4de2",
+      "title": "U.S. International Trade in Goods and Services",
+      "dateTime": "2026-09-03T12:30:00Z",
+      "timePrecision": "exact",
+      "impactScore": 65.0,
+      "impact": "MEDIUM",
+      "category": "Macro",
+      "primaryExposure": [
+        "Sovereign bonds",
+        "FX"
+      ],
+      "sourceName": "U.S. Bureau of Economic Analysis",
+      "sourceUrl": "https://www.bea.gov/news/schedule",
+      "official": true
+    },
+    {
+      "id": "treasury-86f8ad29db1d",
+      "title": "U.S. Treasury BILL Auction",
+      "dateTime": "2026-09-03T17:00:00Z",
+      "timePrecision": "date",
+      "impactScore": 58.0,
+      "impact": "MEDIUM",
+      "category": "Sovereign Funding",
+      "primaryExposure": [
+        "Treasuries",
+        "Term premium",
+        "Funding conditions"
+      ],
+      "sourceName": "U.S. Treasury Auctions",
+      "sourceUrl": "https://www.treasurydirect.gov/xml/PendingAuctions.xml",
+      "official": true
+    },
     {
       "id": "us-bls-employment-2026-09-04",
       "title": "U.S. Employment Situation",
