@@ -1,8 +1,17 @@
 {
   "product": "BondStats Daily Signal Brief",
   "version": "2.0.0",
-  "updatedAt": "2026-08-28T22:59:28.496072Z",
+  "updatedAt": "2026-08-29T12:48:51.191895Z",
   "days": [
+    {
+      "date": "2026-08-29",
+      "marketState": "Rates Repricing Higher",
+      "intensity": 60,
+      "oneThing": "Sweden yield rose 4.2 bp",
+      "signals": 5,
+      "dislocations": 0,
+      "sourceIntegrity": "Verified live"
+    },
     {
       "date": "2026-08-28",
       "marketState": "Data Quiet",
