@@ -1,8 +1,17 @@
 {
   "product": "BondStats Daily Signal Brief",
   "version": "2.0.0",
-  "updatedAt": "2026-08-30T12:10:41.236752Z",
+  "updatedAt": "2026-08-31T14:21:39.220286Z",
   "days": [
+    {
+      "date": "2026-08-31",
+      "marketState": "Mixed",
+      "intensity": 23,
+      "oneThing": "United States yield rose 1.0 bp",
+      "signals": 5,
+      "dislocations": 0,
+      "sourceIntegrity": "Verified live"
+    },
     {
       "date": "2026-08-30",
       "marketState": "Mixed",
