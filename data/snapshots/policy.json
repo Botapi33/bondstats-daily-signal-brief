@@ -1,20 +1,64 @@
 {
   "_bondstatsSnapshot": {
     "source": "policy",
-    "savedAt": "2026-09-04T11:41:32.229589Z",
+    "savedAt": "2026-09-05T10:53:00.957489Z",
     "url": "https://botapi33.github.io/bondstats-central-bank-watch/data/policy.json"
   },
   "payload": {
     "meta": {
       "title": "BondStats Central Bank Watch",
-      "lastUpdated": "2026-08-28T16:30:00Z",
+      "lastUpdated": "2026-09-04T22:44:40Z",
       "methodology": "Official central-bank sources only. Last-known-good values are retained if a refresh fails.",
       "version": "2.0.0",
       "automation": "V3 autonomous official-source discovery: latest/current policy source, decision date and next meeting are rediscovered on each scheduled run. Last-known-good data is retained on source/parser failure.",
-      "lastChecked": null,
-      "lastSuccessfulDataUpdate": "2026-08-28T16:30:00Z",
+      "lastChecked": "2026-09-05T10:37:30Z",
+      "lastSuccessfulDataUpdate": "2026-09-04T22:44:40Z",
       "verifiedAgainstOfficialSources": "2026-08-28",
-      "verificationNote": "Seed policy rates and next-meeting dates verified against official central-bank sources before release."
+      "verificationNote": "Seed policy rates and next-meeting dates verified against official central-bank sources before release.",
+      "refreshResults": {
+        "FED": {
+          "state": "ok",
+          "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+          "decisionDate": "2026-07-29",
+          "nextMeeting": "2026-09-16"
+        },
+        "ECB": {
+          "state": "degraded",
+          "error": "HTTP Error 404: Not Found"
+        },
+        "BOE": {
+          "state": "ok",
+          "source": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+          "decisionDate": "2026-07-30",
+          "nextMeeting": "2026-09-17"
+        },
+        "BOJ": {
+          "state": "ok",
+          "source": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2026/k260123a.htm",
+          "decisionDate": "2026-07-31",
+          "nextMeeting": "2026-09-18"
+        },
+        "SNB": {
+          "state": "ok",
+          "source": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260618",
+          "decisionDate": "2026-06-18",
+          "nextMeeting": "2026-09-24"
+        },
+        "BOC": {
+          "state": "ok",
+          "source": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/",
+          "decisionDate": "2026-09-03",
+          "nextMeeting": "2026-09-20"
+        },
+        "RBA": {
+          "state": "ok",
+          "source": "https://www.rba.gov.au/media-releases/2026/mr-26-19.html",
+          "decisionDate": "2026-08-11",
+          "nextMeeting": "2026-09-29"
+        }
+      },
+      "healthySources": 6,
+      "degradedSources": 1
     },
     "banks": [
       {
@@ -39,7 +83,9 @@
         "sourceName": "Federal Reserve",
         "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
         "scheduleUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
-        "status": "official"
+        "status": "official",
+        "lastChecked": "2026-09-05T10:37:30Z",
+        "refreshState": "ok"
       },
       {
         "id": "ECB",
@@ -72,7 +118,9 @@
         "sourceName": "European Central Bank",
         "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260723~29f24d99bc.en.html",
         "scheduleUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
-        "status": "official"
+        "status": "official",
+        "refreshState": "degraded",
+        "lastChecked": "2026-09-05T10:37:30Z"
       },
       {
         "id": "BOE",
@@ -96,7 +144,9 @@
         "sourceName": "Bank of England",
         "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
         "scheduleUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
-        "status": "official"
+        "status": "official",
+        "lastChecked": "2026-09-05T10:37:30Z",
+        "refreshState": "ok"
       },
       {
         "id": "BOJ",
@@ -117,9 +167,11 @@
         "stance": "Accommodative",
         "direction": "Hold",
         "sourceName": "Bank of Japan",
-        "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2026/index.htm",
+        "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2026/k260123a.htm",
         "scheduleUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/",
-        "status": "official"
+        "status": "official",
+        "lastChecked": "2026-09-05T10:37:30Z",
+        "refreshState": "ok"
       },
       {
         "id": "SNB",
@@ -140,9 +192,11 @@
         "stance": "Neutral",
         "direction": "Hold",
         "sourceName": "Swiss National Bank",
-        "sourceUrl": "https://www.snb.ch/en/the-snb/mandates-goals/monetary-policy/decisions",
+        "sourceUrl": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260618",
         "scheduleUrl": "https://www.snb.ch/en/services-events/digital-services/event-schedule",
-        "status": "official"
+        "status": "official",
+        "lastChecked": "2026-09-05T10:37:30Z",
+        "refreshState": "ok"
       },
       {
         "id": "BOC",
@@ -151,8 +205,8 @@
         "currency": "CAD",
         "rateLabel": "Target for the overnight rate",
         "rateType": "single",
-        "rate": 2.25,
-        "displayRate": "2.25%",
+        "rate": 2.0,
+        "displayRate": "2.00%",
         "secondaryRates": [
           [
             "Bank Rate",
@@ -164,18 +218,21 @@
           ]
         ],
         "decision": "Hold",
-        "decisionDate": "2026-07-15",
+        "decisionDate": "2026-09-03",
         "previousDisplayRate": "2.25%",
         "changeBp": 0,
-        "nextMeeting": "2026-09-02",
-        "nextMeetingLabel": "2 September 2026",
+        "nextMeeting": "2026-09-20",
+        "nextMeetingLabel": "20 September 2026",
         "target": "2% inflation, midpoint of 1–3% range",
         "stance": "Neutral",
         "direction": "Hold",
         "sourceName": "Bank of Canada",
         "sourceUrl": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/",
         "scheduleUrl": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/",
-        "status": "official"
+        "status": "official",
+        "lastChecked": "2026-09-05T10:37:30Z",
+        "refreshState": "ok",
+        "lastSuccessfulDataUpdate": "2026-09-04T22:44:40Z"
       },
       {
         "id": "RBA",
@@ -191,14 +248,16 @@
         "previousDisplayRate": "4.35%",
         "changeBp": 0,
         "nextMeeting": "2026-09-29",
-        "nextMeetingLabel": "28–29 September 2026",
+        "nextMeetingLabel": "26–29 September 2026",
         "target": "2–3% inflation range",
         "stance": "Restrictive",
         "direction": "Hold",
         "sourceName": "Reserve Bank of Australia",
         "sourceUrl": "https://www.rba.gov.au/media-releases/2026/mr-26-19.html",
         "scheduleUrl": "https://www.rba.gov.au/coming-up/",
-        "status": "official"
+        "status": "official",
+        "lastChecked": "2026-09-05T10:37:30Z",
+        "refreshState": "ok"
       }
     ]
   }

@@ -1,14 +1,14 @@
 {
   "_bondstatsSnapshot": {
     "source": "calendar",
-    "savedAt": "2026-09-04T11:41:32.229589Z",
+    "savedAt": "2026-09-05T10:53:00.957489Z",
     "url": "https://botapi33.github.io/bondstats-market-calendar/data/events.json"
   },
   "payload": {
     "meta": {
       "name": "BondStats Market Calendar",
       "version": "2.0.0-final",
-      "generatedAt": "2026-09-04T11:16:09.328855Z",
+      "generatedAt": "2026-09-05T10:33:42.048156Z",
       "timezone": "UTC",
       "method": "Official-source ingestion + deterministic BondStats market-impact model",
       "coverage": [
@@ -29,56 +29,6 @@
       ]
     },
     "events": [
-      {
-        "id": "treasury-2f84d7f018b3",
-        "title": "U.S. Treasury BILL Auction",
-        "country": "US",
-        "region": "North America",
-        "category": "Sovereign Funding",
-        "eventType": "auction",
-        "timestamp": "2026-09-02T17:00:00Z",
-        "timePrecision": "date",
-        "impactScore": 58,
-        "impactLabel": "MEDIUM",
-        "primaryExposure": [
-          "Treasuries",
-          "Term premium",
-          "Funding conditions"
-        ],
-        "source": "U.S. Treasury Auctions",
-        "sourceShort": "Treasury",
-        "sourceUrl": "https://www.treasurydirect.gov/xml/PendingAuctions.xml",
-        "official": true,
-        "status": "scheduled",
-        "description": "Officially announced or tentatively scheduled U.S. Treasury marketable-security auction.",
-        "timingNote": "Auction date is sourced from TreasuryDirect. Exact competitive close time is not inferred by BondStats.",
-        "cusip": "912797WN3"
-      },
-      {
-        "id": "treasury-86f8ad29db1d",
-        "title": "U.S. Treasury BILL Auction",
-        "country": "US",
-        "region": "North America",
-        "category": "Sovereign Funding",
-        "eventType": "auction",
-        "timestamp": "2026-09-03T17:00:00Z",
-        "timePrecision": "date",
-        "impactScore": 58,
-        "impactLabel": "MEDIUM",
-        "primaryExposure": [
-          "Treasuries",
-          "Term premium",
-          "Funding conditions"
-        ],
-        "source": "U.S. Treasury Auctions",
-        "sourceShort": "Treasury",
-        "sourceUrl": "https://www.treasurydirect.gov/xml/PendingAuctions.xml",
-        "official": true,
-        "status": "scheduled",
-        "description": "Officially announced or tentatively scheduled U.S. Treasury marketable-security auction.",
-        "timingNote": "Auction date is sourced from TreasuryDirect. Exact competitive close time is not inferred by BondStats.",
-        "cusip": "912797VP9"
-      },
       {
         "id": "us-bls-employment-2026-09-04",
         "title": "U.S. Employment Situation",
@@ -103,58 +53,8 @@
         "description": "Monthly U.S. labour-market release including payrolls and unemployment."
       },
       {
-        "id": "treasury-15cb0512badf",
+        "id": "treasury-4b4b9d762d28",
         "title": "U.S. Treasury BILL Auction",
-        "country": "US",
-        "region": "North America",
-        "category": "Sovereign Funding",
-        "eventType": "auction",
-        "timestamp": "2026-09-08T17:00:00Z",
-        "timePrecision": "date",
-        "impactScore": 58,
-        "impactLabel": "MEDIUM",
-        "primaryExposure": [
-          "Treasuries",
-          "Term premium",
-          "Funding conditions"
-        ],
-        "source": "U.S. Treasury Auctions",
-        "sourceShort": "Treasury",
-        "sourceUrl": "https://www.treasurydirect.gov/xml/PendingAuctions.xml",
-        "official": true,
-        "status": "scheduled",
-        "description": "Officially announced or tentatively scheduled U.S. Treasury marketable-security auction.",
-        "timingNote": "Auction date is sourced from TreasuryDirect. Exact competitive close time is not inferred by BondStats.",
-        "cusip": "912797WK9"
-      },
-      {
-        "id": "treasury-479412a51795",
-        "title": "U.S. Treasury NOTE Auction",
-        "country": "US",
-        "region": "North America",
-        "category": "Sovereign Funding",
-        "eventType": "auction",
-        "timestamp": "2026-09-08T17:00:00Z",
-        "timePrecision": "date",
-        "impactScore": 58,
-        "impactLabel": "MEDIUM",
-        "primaryExposure": [
-          "Treasuries",
-          "Term premium",
-          "Funding conditions"
-        ],
-        "source": "U.S. Treasury Auctions",
-        "sourceShort": "Treasury",
-        "sourceUrl": "https://www.treasurydirect.gov/xml/PendingAuctions.xml",
-        "official": true,
-        "status": "scheduled",
-        "description": "Officially announced or tentatively scheduled U.S. Treasury marketable-security auction.",
-        "timingNote": "Auction date is sourced from TreasuryDirect. Exact competitive close time is not inferred by BondStats.",
-        "cusip": "91282CRL7"
-      },
-      {
-        "id": "treasury-622051169144",
-        "title": "U.S. Treasury NOTE Auction",
         "country": "US",
         "region": "North America",
         "category": "Sovereign Funding",
@@ -175,7 +75,7 @@
         "status": "scheduled",
         "description": "Officially announced or tentatively scheduled U.S. Treasury marketable-security auction.",
         "timingNote": "Auction date is sourced from TreasuryDirect. Exact competitive close time is not inferred by BondStats.",
-        "cusip": "91282CRF0"
+        "cusip": "912797WP8"
       },
       {
         "id": "ecb-mp-2026-09-10",
@@ -226,8 +126,8 @@
         "description": "Monthly producer-price inflation release."
       },
       {
-        "id": "treasury-b51321c64f66",
-        "title": "U.S. Treasury BOND Auction",
+        "id": "treasury-d9e90c17d681",
+        "title": "U.S. Treasury BILL Auction",
         "country": "US",
         "region": "North America",
         "category": "Sovereign Funding",
@@ -248,7 +148,7 @@
         "status": "scheduled",
         "description": "Officially announced or tentatively scheduled U.S. Treasury marketable-security auction.",
         "timingNote": "Auction date is sourced from TreasuryDirect. Exact competitive close time is not inferred by BondStats.",
-        "cusip": "912810UW6"
+        "cusip": "912797VW4"
       },
       {
         "id": "us-bls-cpi-2026-09-11",
@@ -273,6 +173,81 @@
         "official": true,
         "status": "scheduled",
         "description": "Monthly U.S. consumer-price inflation release."
+      },
+      {
+        "id": "treasury-67346f2d00bd",
+        "title": "U.S. Treasury BILL Auction",
+        "country": "US",
+        "region": "North America",
+        "category": "Sovereign Funding",
+        "eventType": "auction",
+        "timestamp": "2026-09-14T17:00:00Z",
+        "timePrecision": "date",
+        "impactScore": 58,
+        "impactLabel": "MEDIUM",
+        "primaryExposure": [
+          "Treasuries",
+          "Term premium",
+          "Funding conditions"
+        ],
+        "source": "U.S. Treasury Auctions",
+        "sourceShort": "Treasury",
+        "sourceUrl": "https://www.treasurydirect.gov/xml/PendingAuctions.xml",
+        "official": true,
+        "status": "scheduled",
+        "description": "Officially announced or tentatively scheduled U.S. Treasury marketable-security auction.",
+        "timingNote": "Auction date is sourced from TreasuryDirect. Exact competitive close time is not inferred by BondStats.",
+        "cusip": "912797UD7"
+      },
+      {
+        "id": "treasury-9e8da62986e8",
+        "title": "U.S. Treasury BILL Auction",
+        "country": "US",
+        "region": "North America",
+        "category": "Sovereign Funding",
+        "eventType": "auction",
+        "timestamp": "2026-09-15T17:00:00Z",
+        "timePrecision": "date",
+        "impactScore": 58,
+        "impactLabel": "MEDIUM",
+        "primaryExposure": [
+          "Treasuries",
+          "Term premium",
+          "Funding conditions"
+        ],
+        "source": "U.S. Treasury Auctions",
+        "sourceShort": "Treasury",
+        "sourceUrl": "https://www.treasurydirect.gov/xml/PendingAuctions.xml",
+        "official": true,
+        "status": "scheduled",
+        "description": "Officially announced or tentatively scheduled U.S. Treasury marketable-security auction.",
+        "timingNote": "Auction date is sourced from TreasuryDirect. Exact competitive close time is not inferred by BondStats.",
+        "cusip": "912797SK4"
+      },
+      {
+        "id": "treasury-f787bbf9edea",
+        "title": "U.S. Treasury BOND Auction",
+        "country": "US",
+        "region": "North America",
+        "category": "Sovereign Funding",
+        "eventType": "auction",
+        "timestamp": "2026-09-15T17:00:00Z",
+        "timePrecision": "date",
+        "impactScore": 58,
+        "impactLabel": "MEDIUM",
+        "primaryExposure": [
+          "Treasuries",
+          "Term premium",
+          "Funding conditions"
+        ],
+        "source": "U.S. Treasury Auctions",
+        "sourceShort": "Treasury",
+        "sourceUrl": "https://www.treasurydirect.gov/xml/PendingAuctions.xml",
+        "official": true,
+        "status": "scheduled",
+        "description": "Officially announced or tentatively scheduled U.S. Treasury marketable-security auction.",
+        "timingNote": "Auction date is sourced from TreasuryDirect. Exact competitive close time is not inferred by BondStats.",
+        "cusip": "912810UX4"
       },
       {
         "id": "boe-cb280731b472",
@@ -345,6 +320,31 @@
         "status": "scheduled",
         "description": "Monetary Policy Committee decision, summary and minutes.",
         "timingNote": "Official decision date; timestamp follows the Bank's standard noon-London publication convention."
+      },
+      {
+        "id": "treasury-c6060d5471e6",
+        "title": "U.S. Treasury NOTE Auction",
+        "country": "US",
+        "region": "North America",
+        "category": "Sovereign Funding",
+        "eventType": "auction",
+        "timestamp": "2026-09-17T17:00:00Z",
+        "timePrecision": "date",
+        "impactScore": 58,
+        "impactLabel": "MEDIUM",
+        "primaryExposure": [
+          "Treasuries",
+          "Term premium",
+          "Funding conditions"
+        ],
+        "source": "U.S. Treasury Auctions",
+        "sourceShort": "Treasury",
+        "sourceUrl": "https://www.treasurydirect.gov/xml/PendingAuctions.xml",
+        "official": true,
+        "status": "scheduled",
+        "description": "Officially announced or tentatively scheduled U.S. Treasury marketable-security auction.",
+        "timingNote": "Auction date is sourced from TreasuryDirect. Exact competitive close time is not inferred by BondStats.",
+        "cusip": "91282CRE3"
       },
       {
         "id": "fed-95c392156cda",
@@ -1827,7 +1827,7 @@
         "name": "Federal Reserve",
         "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
         "status": "healthy",
-        "lastChecked": "2026-09-04T11:16:09.328855Z",
+        "lastChecked": "2026-09-05T10:33:42.048156Z",
         "eventsParsed": 92
       },
       {
@@ -1835,7 +1835,7 @@
         "name": "U.S. Bureau of Labor Statistics",
         "url": "https://www.bls.gov/schedule/news_release/bls.ics",
         "status": "degraded",
-        "lastChecked": "2026-09-04T11:16:09.328855Z",
+        "lastChecked": "2026-09-05T10:33:42.048156Z",
         "warning": "'No time zone found with key US-Eastern'",
         "eventsParsed": 3,
         "fallback": "previous feed"
@@ -1845,7 +1845,7 @@
         "name": "U.S. Bureau of Economic Analysis",
         "url": "https://www.bea.gov/news/schedule",
         "status": "healthy",
-        "lastChecked": "2026-09-04T11:16:09.328855Z",
+        "lastChecked": "2026-09-05T10:33:42.048156Z",
         "eventsParsed": 7
       },
       {
@@ -1853,7 +1853,7 @@
         "name": "European Central Bank",
         "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
         "status": "degraded",
-        "lastChecked": "2026-09-04T11:16:09.328855Z",
+        "lastChecked": "2026-09-05T10:33:42.048156Z",
         "warning": "'No time zone found with key Europe/Frankfurt'",
         "eventsParsed": 3,
         "fallback": "previous feed"
@@ -1863,7 +1863,7 @@
         "name": "Bank of England",
         "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
         "status": "healthy",
-        "lastChecked": "2026-09-04T11:16:09.328855Z",
+        "lastChecked": "2026-09-05T10:33:42.048156Z",
         "eventsParsed": 16
       },
       {
@@ -1871,7 +1871,7 @@
         "name": "Bank of Japan",
         "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
         "status": "healthy",
-        "lastChecked": "2026-09-04T11:16:09.328855Z",
+        "lastChecked": "2026-09-05T10:33:42.048156Z",
         "eventsParsed": 26
       },
       {
@@ -1879,7 +1879,7 @@
         "name": "Swiss National Bank",
         "url": "https://www.snb.ch/en/services-events/digital-services/event-schedule",
         "status": "healthy",
-        "lastChecked": "2026-09-04T11:16:09.328855Z",
+        "lastChecked": "2026-09-05T10:33:42.048156Z",
         "eventsParsed": 12
       },
       {
@@ -1887,7 +1887,7 @@
         "name": "U.S. Treasury Auctions",
         "url": "https://www.treasurydirect.gov/xml/PendingAuctions.xml",
         "status": "healthy",
-        "lastChecked": "2026-09-04T11:16:09.328855Z",
+        "lastChecked": "2026-09-05T10:33:42.048156Z",
         "eventsParsed": 6
       }
     ]
