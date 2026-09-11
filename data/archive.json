@@ -1,8 +1,17 @@
 {
   "product": "BondStats Daily Signal Brief",
   "version": "2.0.0",
-  "updatedAt": "2026-09-10T11:45:08.598608Z",
+  "updatedAt": "2026-09-11T11:44:29.455052Z",
   "days": [
+    {
+      "date": "2026-09-11",
+      "marketState": "Rates Repricing Higher",
+      "intensity": 68,
+      "oneThing": "United Kingdom yield rose 13.1 bp",
+      "signals": 6,
+      "dislocations": 0,
+      "sourceIntegrity": "Verified live"
+    },
     {
       "date": "2026-09-10",
       "marketState": "Rates Repricing Higher",
