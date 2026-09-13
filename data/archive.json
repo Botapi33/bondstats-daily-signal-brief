@@ -1,8 +1,17 @@
 {
   "product": "BondStats Daily Signal Brief",
   "version": "2.0.0",
-  "updatedAt": "2026-09-12T11:12:35.960091Z",
+  "updatedAt": "2026-09-13T12:14:33.768107Z",
   "days": [
+    {
+      "date": "2026-09-13",
+      "marketState": "Mixed",
+      "intensity": 37,
+      "oneThing": "United States yield rose 12.0 bp",
+      "signals": 5,
+      "dislocations": 0,
+      "sourceIntegrity": "Verified live"
+    },
     {
       "date": "2026-09-12",
       "marketState": "Mixed",

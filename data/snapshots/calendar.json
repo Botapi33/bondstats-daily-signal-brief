@@ -1,14 +1,14 @@
 {
   "_bondstatsSnapshot": {
     "source": "calendar",
-    "savedAt": "2026-09-12T11:12:35.960091Z",
+    "savedAt": "2026-09-13T12:14:33.768107Z",
     "url": "https://botapi33.github.io/bondstats-market-calendar/data/events.json"
   },
   "payload": {
     "meta": {
       "name": "BondStats Market Calendar",
       "version": "2.0.0-final",
-      "generatedAt": "2026-09-12T10:44:12.309640Z",
+      "generatedAt": "2026-09-13T11:49:54.172099Z",
       "timezone": "UTC",
       "method": "Official-source ingestion + deterministic BondStats market-impact model",
       "coverage": [
@@ -29,54 +29,6 @@
       ]
     },
     "events": [
-      {
-        "id": "ecb-mp-2026-09-10",
-        "title": "ECB Monetary Policy Decision",
-        "country": "EA",
-        "region": "Europe",
-        "category": "Central Bank",
-        "eventType": "policy",
-        "timestamp": "2026-09-10T12:15:00Z",
-        "timePrecision": "convention",
-        "impactScore": 100,
-        "impactLabel": "CRITICAL",
-        "primaryExposure": [
-          "Bunds",
-          "Euro-area sovereigns",
-          "EUR",
-          "Global rates"
-        ],
-        "source": "European Central Bank",
-        "sourceShort": "ECB",
-        "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
-        "official": true,
-        "status": "scheduled",
-        "description": "ECB Governing Council monetary-policy meeting, followed by press conference.",
-        "timingNote": "Meeting date is official. Decision time uses the ECB's standard monetary-policy publication convention and should be revalidated by the updater."
-      },
-      {
-        "id": "us-bls-ppi-2026-09-10",
-        "title": "U.S. Producer Price Index",
-        "country": "US",
-        "region": "North America",
-        "category": "Inflation",
-        "eventType": "macro",
-        "timestamp": "2026-09-10T12:30:00Z",
-        "timePrecision": "exact",
-        "impactScore": 78,
-        "impactLabel": "HIGH",
-        "primaryExposure": [
-          "Treasuries",
-          "USD",
-          "Inflation expectations"
-        ],
-        "source": "U.S. Bureau of Labor Statistics",
-        "sourceShort": "BLS",
-        "sourceUrl": "https://www.bls.gov/schedule/2026/home.htm",
-        "official": true,
-        "status": "scheduled",
-        "description": "Monthly producer-price inflation release."
-      },
       {
         "id": "us-bls-cpi-2026-09-11",
         "title": "U.S. Consumer Price Index",
@@ -1829,7 +1781,7 @@
         "name": "Federal Reserve",
         "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
         "status": "healthy",
-        "lastChecked": "2026-09-12T10:44:12.309640Z",
+        "lastChecked": "2026-09-13T11:49:54.172099Z",
         "eventsParsed": 92
       },
       {
@@ -1837,9 +1789,9 @@
         "name": "U.S. Bureau of Labor Statistics",
         "url": "https://www.bls.gov/schedule/news_release/bls.ics",
         "status": "degraded",
-        "lastChecked": "2026-09-12T10:44:12.309640Z",
+        "lastChecked": "2026-09-13T11:49:54.172099Z",
         "warning": "'No time zone found with key US-Eastern'",
-        "eventsParsed": 2,
+        "eventsParsed": 1,
         "fallback": "previous feed"
       },
       {
@@ -1847,7 +1799,7 @@
         "name": "U.S. Bureau of Economic Analysis",
         "url": "https://www.bea.gov/news/schedule",
         "status": "healthy",
-        "lastChecked": "2026-09-12T10:44:12.309640Z",
+        "lastChecked": "2026-09-13T11:49:54.172099Z",
         "eventsParsed": 7
       },
       {
@@ -1855,9 +1807,9 @@
         "name": "European Central Bank",
         "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
         "status": "degraded",
-        "lastChecked": "2026-09-12T10:44:12.309640Z",
+        "lastChecked": "2026-09-13T11:49:54.172099Z",
         "warning": "'No time zone found with key Europe/Frankfurt'",
-        "eventsParsed": 3,
+        "eventsParsed": 2,
         "fallback": "previous feed"
       },
       {
@@ -1865,7 +1817,7 @@
         "name": "Bank of England",
         "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
         "status": "healthy",
-        "lastChecked": "2026-09-12T10:44:12.309640Z",
+        "lastChecked": "2026-09-13T11:49:54.172099Z",
         "eventsParsed": 16
       },
       {
@@ -1873,7 +1825,7 @@
         "name": "Bank of Japan",
         "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
         "status": "healthy",
-        "lastChecked": "2026-09-12T10:44:12.309640Z",
+        "lastChecked": "2026-09-13T11:49:54.172099Z",
         "eventsParsed": 26
       },
       {
@@ -1881,7 +1833,7 @@
         "name": "Swiss National Bank",
         "url": "https://www.snb.ch/en/services-events/digital-services/event-schedule",
         "status": "healthy",
-        "lastChecked": "2026-09-12T10:44:12.309640Z",
+        "lastChecked": "2026-09-13T11:49:54.172099Z",
         "eventsParsed": 12
       },
       {
@@ -1889,7 +1841,7 @@
         "name": "U.S. Treasury Auctions",
         "url": "https://www.treasurydirect.gov/xml/PendingAuctions.xml",
         "status": "healthy",
-        "lastChecked": "2026-09-12T10:44:12.309640Z",
+        "lastChecked": "2026-09-13T11:49:54.172099Z",
         "eventsParsed": 7
       }
     ]
