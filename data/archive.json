@@ -1,8 +1,17 @@
 {
   "product": "BondStats Daily Signal Brief",
   "version": "2.0.0",
-  "updatedAt": "2026-09-14T13:16:35.377932Z",
+  "updatedAt": "2026-09-15T12:02:39.733352Z",
   "days": [
+    {
+      "date": "2026-09-15",
+      "marketState": "Rates Repricing Higher",
+      "intensity": 60,
+      "oneThing": "Norway yield rose 6.0 bp",
+      "signals": 5,
+      "dislocations": 0,
+      "sourceIntegrity": "Verified live"
+    },
     {
       "date": "2026-09-14",
       "marketState": "Mixed",
