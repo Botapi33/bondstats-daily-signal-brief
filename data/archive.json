@@ -1,8 +1,17 @@
 {
   "product": "BondStats Daily Signal Brief",
   "version": "2.0.0",
-  "updatedAt": "2026-09-16T11:58:42.923829Z",
+  "updatedAt": "2026-09-17T12:00:02.965570Z",
   "days": [
+    {
+      "date": "2026-09-17",
+      "marketState": "Rates Repricing Lower",
+      "intensity": 60,
+      "oneThing": "Bank of England policy setting updated",
+      "signals": 6,
+      "dislocations": 0,
+      "sourceIntegrity": "Verified live"
+    },
     {
       "date": "2026-09-16",
       "marketState": "Rates Repricing Higher",
