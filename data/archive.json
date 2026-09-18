@@ -1,8 +1,17 @@
 {
   "product": "BondStats Daily Signal Brief",
   "version": "2.0.0",
-  "updatedAt": "2026-09-17T12:00:02.965570Z",
+  "updatedAt": "2026-09-18T11:43:40.603734Z",
   "days": [
+    {
+      "date": "2026-09-18",
+      "marketState": "Rates Repricing Lower",
+      "intensity": 60,
+      "oneThing": "Bank of Japan policy setting updated",
+      "signals": 6,
+      "dislocations": 0,
+      "sourceIntegrity": "Verified live"
+    },
     {
       "date": "2026-09-17",
       "marketState": "Rates Repricing Lower",
