@@ -1,14 +1,14 @@
 {
   "_bondstatsSnapshot": {
     "source": "calendar",
-    "savedAt": "2026-09-19T11:26:49.040018Z",
+    "savedAt": "2026-09-20T11:45:14.772080Z",
     "url": "https://botapi33.github.io/bondstats-market-calendar/data/events.json"
   },
   "payload": {
     "meta": {
       "name": "BondStats Market Calendar",
       "version": "2.0.0-final",
-      "generatedAt": "2026-09-19T10:56:52.807133Z",
+      "generatedAt": "2026-09-20T11:21:18.645437Z",
       "timezone": "UTC",
       "method": "Official-source ingestion + deterministic BondStats market-impact model",
       "coverage": [
@@ -29,78 +29,6 @@
       ]
     },
     "events": [
-      {
-        "id": "boe-52db2cbaa2aa",
-        "title": "Bank of England MPC Decision",
-        "country": "GB",
-        "region": "Europe",
-        "category": "Central Bank",
-        "eventType": "policy",
-        "timestamp": "2026-09-17T11:00:00Z",
-        "timePrecision": "convention",
-        "impactScore": 96,
-        "impactLabel": "CRITICAL",
-        "primaryExposure": [
-          "Sovereign bonds",
-          "FX",
-          "Rate expectations"
-        ],
-        "source": "Bank of England",
-        "sourceShort": "BoE",
-        "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
-        "official": true,
-        "status": "scheduled",
-        "description": "Monetary Policy Committee decision, summary and minutes.",
-        "timingNote": "Official decision date; timestamp follows the Bank's standard noon-London publication convention."
-      },
-      {
-        "id": "fed-95c392156cda",
-        "title": "Federal Reserve FOMC Decision",
-        "country": "US",
-        "region": "North America",
-        "category": "Central Bank",
-        "eventType": "policy",
-        "timestamp": "2026-09-17T18:00:00Z",
-        "timePrecision": "convention",
-        "impactScore": 100,
-        "impactLabel": "CRITICAL",
-        "primaryExposure": [
-          "Sovereign bonds",
-          "FX",
-          "Rate expectations"
-        ],
-        "source": "Federal Reserve",
-        "sourceShort": "Fed",
-        "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
-        "official": true,
-        "status": "scheduled",
-        "description": "Federal Open Market Committee policy decision.",
-        "timingNote": "Meeting date is official. Timestamp uses the standard scheduled FOMC decision-release convention."
-      },
-      {
-        "id": "boj-42a3de45a7da",
-        "title": "Bank of Japan Monetary Policy Decision",
-        "country": "JP",
-        "region": "Asia",
-        "category": "Central Bank",
-        "eventType": "policy",
-        "timestamp": "2026-09-18T03:00:00Z",
-        "timePrecision": "date",
-        "impactScore": 94,
-        "impactLabel": "CRITICAL",
-        "primaryExposure": [
-          "Sovereign bonds",
-          "FX",
-          "Rate expectations"
-        ],
-        "source": "Bank of Japan",
-        "sourceShort": "BoJ",
-        "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
-        "official": true,
-        "status": "scheduled",
-        "description": "Second day of the Bank of Japan Monetary Policy Meeting.",
-        "timingNote": "Official meeting date; policy-statement release time is not fixed and is displayed as Time TBA."
-      },
       {
         "id": "fed-faa2df3d0117",
         "title": "Federal Reserve FOMC Decision",
@@ -1634,7 +1562,7 @@
         "name": "Federal Reserve",
         "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
         "status": "healthy",
-        "lastChecked": "2026-09-19T10:56:52.807133Z",
+        "lastChecked": "2026-09-20T11:21:18.645437Z",
         "eventsParsed": 92
       },
       {
@@ -1642,7 +1570,7 @@
         "name": "U.S. Bureau of Labor Statistics",
         "url": "https://www.bls.gov/schedule/news_release/bls.ics",
         "status": "degraded",
-        "lastChecked": "2026-09-19T10:56:52.807133Z",
+        "lastChecked": "2026-09-20T11:21:18.645437Z",
         "warning": "'No time zone found with key US-Eastern'",
         "eventsParsed": 0,
         "fallback": "previous feed"
@@ -1652,7 +1580,7 @@
         "name": "U.S. Bureau of Economic Analysis",
         "url": "https://www.bea.gov/news/schedule",
         "status": "healthy",
-        "lastChecked": "2026-09-19T10:56:52.807133Z",
+        "lastChecked": "2026-09-20T11:21:18.645437Z",
         "eventsParsed": 7
       },
       {
@@ -1660,7 +1588,7 @@
         "name": "European Central Bank",
         "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
         "status": "degraded",
-        "lastChecked": "2026-09-19T10:56:52.807133Z",
+        "lastChecked": "2026-09-20T11:21:18.645437Z",
         "warning": "'No time zone found with key Europe/Frankfurt'",
         "eventsParsed": 2,
         "fallback": "previous feed"
@@ -1670,7 +1598,7 @@
         "name": "Bank of England",
         "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
         "status": "healthy",
-        "lastChecked": "2026-09-19T10:56:52.807133Z",
+        "lastChecked": "2026-09-20T11:21:18.645437Z",
         "eventsParsed": 16
       },
       {
@@ -1678,7 +1606,7 @@
         "name": "Bank of Japan",
         "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
         "status": "healthy",
-        "lastChecked": "2026-09-19T10:56:52.807133Z",
+        "lastChecked": "2026-09-20T11:21:18.645437Z",
         "eventsParsed": 26
       },
       {
@@ -1686,7 +1614,7 @@
         "name": "Swiss National Bank",
         "url": "https://www.snb.ch/en/services-events/digital-services/event-schedule",
         "status": "healthy",
-        "lastChecked": "2026-09-19T10:56:52.807133Z",
+        "lastChecked": "2026-09-20T11:21:18.645437Z",
         "eventsParsed": 12
       },
       {
@@ -1694,7 +1622,7 @@
         "name": "U.S. Treasury Auctions",
         "url": "https://www.treasurydirect.gov/xml/PendingAuctions.xml",
         "status": "healthy",
-        "lastChecked": "2026-09-19T10:56:52.807133Z",
+        "lastChecked": "2026-09-20T11:21:18.645437Z",
         "eventsParsed": 4
       }
     ]

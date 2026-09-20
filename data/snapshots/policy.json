@@ -1,7 +1,7 @@
 {
   "_bondstatsSnapshot": {
     "source": "policy",
-    "savedAt": "2026-09-19T11:26:49.040018Z",
+    "savedAt": "2026-09-20T11:45:14.772080Z",
     "url": "https://botapi33.github.io/bondstats-central-bank-watch/data/policy.json"
   },
   "payload": {
@@ -11,7 +11,7 @@
       "methodology": "Official central-bank sources only. Last-known-good values are retained if a refresh fails.",
       "version": "2.0.0",
       "automation": "V3 autonomous official-source discovery: latest/current policy source, decision date and next meeting are rediscovered on each scheduled run. Last-known-good data is retained on source/parser failure.",
-      "lastChecked": "2026-09-19T11:02:01Z",
+      "lastChecked": "2026-09-20T11:27:00Z",
       "lastSuccessfulDataUpdate": "2026-09-18T16:25:46Z",
       "verifiedAgainstOfficialSources": "2026-08-28",
       "verificationNote": "Seed policy rates and next-meeting dates verified against official central-bank sources before release.",
@@ -82,7 +82,7 @@
         "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
         "scheduleUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
         "status": "official",
-        "lastChecked": "2026-09-19T11:02:01Z",
+        "lastChecked": "2026-09-20T11:27:00Z",
         "refreshState": "degraded",
         "lastSuccessfulDataUpdate": "2026-09-16T08:25:00Z"
       },
@@ -119,7 +119,7 @@
         "scheduleUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
         "status": "official",
         "refreshState": "degraded",
-        "lastChecked": "2026-09-19T11:02:01Z"
+        "lastChecked": "2026-09-20T11:27:00Z"
       },
       {
         "id": "BOE",
@@ -144,7 +144,7 @@
         "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
         "scheduleUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
         "status": "official",
-        "lastChecked": "2026-09-19T11:02:01Z",
+        "lastChecked": "2026-09-20T11:27:00Z",
         "refreshState": "ok",
         "lastSuccessfulDataUpdate": "2026-09-17T11:44:22Z"
       },
@@ -170,7 +170,7 @@
         "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2026/k260123a.htm",
         "scheduleUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/",
         "status": "official",
-        "lastChecked": "2026-09-19T11:02:01Z",
+        "lastChecked": "2026-09-20T11:27:00Z",
         "refreshState": "ok",
         "lastSuccessfulDataUpdate": "2026-09-18T11:17:53Z"
       },
@@ -196,7 +196,7 @@
         "sourceUrl": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260618",
         "scheduleUrl": "https://www.snb.ch/en/services-events/digital-services/event-schedule",
         "status": "official",
-        "lastChecked": "2026-09-19T11:02:01Z",
+        "lastChecked": "2026-09-20T11:27:00Z",
         "refreshState": "ok"
       },
       {
@@ -231,7 +231,7 @@
         "sourceUrl": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/",
         "scheduleUrl": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/",
         "status": "official",
-        "lastChecked": "2026-09-19T11:02:01Z",
+        "lastChecked": "2026-09-20T11:27:00Z",
         "refreshState": "ok",
         "lastSuccessfulDataUpdate": "2026-09-18T16:25:46Z"
       },
@@ -257,7 +257,7 @@
         "sourceUrl": "https://www.rba.gov.au/media-releases/2026/mr-26-19.html",
         "scheduleUrl": "https://www.rba.gov.au/coming-up/",
         "status": "official",
-        "lastChecked": "2026-09-19T11:02:01Z",
+        "lastChecked": "2026-09-20T11:27:00Z",
         "refreshState": "ok"
       }
     ]
