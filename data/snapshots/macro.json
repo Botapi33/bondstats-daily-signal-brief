@@ -1,14 +1,14 @@
 {
   "_bondstatsSnapshot": {
     "source": "macro",
-    "savedAt": "2026-09-20T11:45:14.772080Z",
+    "savedAt": "2026-09-21T13:16:26.159178Z",
     "url": "https://botapi33.github.io/bondstats-macro-data-watch/data/macro.json"
   },
   "payload": {
     "meta": {
       "product": "BondStats Macro Data Watch",
       "version": "1.0.0",
-      "lastChecked": "2026-09-20T11:35:32Z",
+      "lastChecked": "2026-09-21T12:59:50Z",
       "lastSuccessfulDataUpdate": "2026-08-28T22:04:27Z",
       "lastUpdated": "2026-08-28T22:04:27Z",
       "healthySources": 1,
@@ -23,7 +23,7 @@
       "refreshResults": {
         "BLS": {
           "state": "degraded",
-          "error": "BLS API request failed"
+          "error": "could not convert string to float: '-'"
         },
         "BEA": {
           "state": "ok",
@@ -242,16 +242,16 @@
     "sourceHealth": {
       "BLS": {
         "state": "degraded",
-        "lastChecked": "2026-09-20T11:35:32Z",
-        "error": "BLS API request failed"
+        "lastChecked": "2026-09-21T12:59:50Z",
+        "error": "could not convert string to float: '-'"
       },
       "BEA": {
         "state": "ok",
-        "lastChecked": "2026-09-20T11:35:32Z"
+        "lastChecked": "2026-09-21T12:59:50Z"
       },
       "EUROSTAT": {
         "state": "degraded",
-        "lastChecked": "2026-09-20T11:35:32Z",
+        "lastChecked": "2026-09-21T12:59:50Z",
         "error": "Eurostat query not singleton on geo"
       }
     }
