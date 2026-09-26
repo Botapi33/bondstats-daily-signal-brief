@@ -1,8 +1,17 @@
 {
   "product": "BondStats Daily Signal Brief",
   "version": "2.0.0",
-  "updatedAt": "2026-09-25T12:07:52.929667Z",
+  "updatedAt": "2026-09-26T11:43:04.968468Z",
   "days": [
+    {
+      "date": "2026-09-26",
+      "marketState": "Rates Repricing Higher",
+      "intensity": 60,
+      "oneThing": "United States yield rose 7.0 bp",
+      "signals": 5,
+      "dislocations": 0,
+      "sourceIntegrity": "Verified live"
+    },
     {
       "date": "2026-09-25",
       "marketState": "Rates Repricing Higher",
