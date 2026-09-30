@@ -1,14 +1,14 @@
 {
   "_bondstatsSnapshot": {
     "source": "calendar",
-    "savedAt": "2026-09-28T14:24:02.853959Z",
+    "savedAt": "2026-09-30T12:57:07.080357Z",
     "url": "https://botapi33.github.io/bondstats-market-calendar/data/events.json"
   },
   "payload": {
     "meta": {
       "name": "BondStats Market Calendar",
       "version": "2.0.0-final",
-      "generatedAt": "2026-09-28T13:51:43.162250Z",
+      "generatedAt": "2026-09-30T12:32:37.278874Z",
       "timezone": "UTC",
       "method": "Official-source ingestion + deterministic BondStats market-impact model",
       "coverage": [
@@ -29,30 +29,6 @@
       ]
     },
     "events": [
-      {
-        "id": "bea-421e675cc90a",
-        "title": "Personal Income and Outlays",
-        "country": "US",
-        "region": "North America",
-        "category": "Inflation",
-        "eventType": "macro",
-        "timestamp": "2026-09-30T12:30:00Z",
-        "timePrecision": "exact",
-        "impactScore": 92,
-        "impactLabel": "CRITICAL",
-        "primaryExposure": [
-          "Sovereign bonds",
-          "FX",
-          "Inflation expectations",
-          "Rate expectations"
-        ],
-        "source": "U.S. Bureau of Economic Analysis",
-        "sourceShort": "BEA",
-        "sourceUrl": "https://www.bea.gov/news/schedule",
-        "official": true,
-        "status": "scheduled",
-        "description": ""
-      },
       {
         "id": "treasury-74a423fc5859",
         "title": "U.S. Treasury BILL Auction",
@@ -175,6 +151,28 @@
         "description": "Officially announced or tentatively scheduled U.S. Treasury marketable-security auction.",
         "timingNote": "Auction date is sourced from TreasuryDirect. Exact competitive close time is not inferred by BondStats.",
         "cusip": "912797WU7"
+      },
+      {
+        "id": "bea-26e17f540982",
+        "title": "U.S. International Trade in Goods and Services",
+        "country": "US",
+        "region": "North America",
+        "category": "Macro",
+        "eventType": "macro",
+        "timestamp": "2026-10-06T12:30:00Z",
+        "timePrecision": "exact",
+        "impactScore": 65,
+        "impactLabel": "MEDIUM",
+        "primaryExposure": [
+          "Sovereign bonds",
+          "FX"
+        ],
+        "source": "U.S. Bureau of Economic Analysis",
+        "sourceShort": "BEA",
+        "sourceUrl": "https://www.bea.gov/news/schedule",
+        "official": true,
+        "status": "scheduled",
+        "description": ""
       },
       {
         "id": "treasury-9b227d41c348",
@@ -1425,7 +1423,7 @@
         "name": "Federal Reserve",
         "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
         "status": "healthy",
-        "lastChecked": "2026-09-28T13:51:43.162250Z",
+        "lastChecked": "2026-09-30T12:32:37.278874Z",
         "eventsParsed": 92
       },
       {
@@ -1433,7 +1431,7 @@
         "name": "U.S. Bureau of Labor Statistics",
         "url": "https://www.bls.gov/schedule/news_release/bls.ics",
         "status": "degraded",
-        "lastChecked": "2026-09-28T13:51:43.162250Z",
+        "lastChecked": "2026-09-30T12:32:37.278874Z",
         "warning": "'No time zone found with key US-Eastern'",
         "eventsParsed": 0,
         "fallback": "previous feed"
@@ -1443,15 +1441,15 @@
         "name": "U.S. Bureau of Economic Analysis",
         "url": "https://www.bea.gov/news/schedule",
         "status": "healthy",
-        "lastChecked": "2026-09-28T13:51:43.162250Z",
-        "eventsParsed": 7
+        "lastChecked": "2026-09-30T12:32:37.278874Z",
+        "eventsParsed": 6
       },
       {
         "id": "ecb",
         "name": "European Central Bank",
         "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
         "status": "degraded",
-        "lastChecked": "2026-09-28T13:51:43.162250Z",
+        "lastChecked": "2026-09-30T12:32:37.278874Z",
         "warning": "'No time zone found with key Europe/Frankfurt'",
         "eventsParsed": 2,
         "fallback": "previous feed"
@@ -1461,7 +1459,7 @@
         "name": "Bank of England",
         "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
         "status": "healthy",
-        "lastChecked": "2026-09-28T13:51:43.162250Z",
+        "lastChecked": "2026-09-30T12:32:37.278874Z",
         "eventsParsed": 16
       },
       {
@@ -1469,7 +1467,7 @@
         "name": "Bank of Japan",
         "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
         "status": "healthy",
-        "lastChecked": "2026-09-28T13:51:43.162250Z",
+        "lastChecked": "2026-09-30T12:32:37.278874Z",
         "eventsParsed": 26
       },
       {
@@ -1477,7 +1475,7 @@
         "name": "Swiss National Bank",
         "url": "https://www.snb.ch/en/services-events/digital-services/event-schedule",
         "status": "healthy",
-        "lastChecked": "2026-09-28T13:51:43.162250Z",
+        "lastChecked": "2026-09-30T12:32:37.278874Z",
         "eventsParsed": 10
       },
       {
@@ -1485,7 +1483,7 @@
         "name": "U.S. Treasury Auctions",
         "url": "https://www.treasurydirect.gov/xml/PendingAuctions.xml",
         "status": "healthy",
-        "lastChecked": "2026-09-28T13:51:43.162250Z",
+        "lastChecked": "2026-09-30T12:32:37.278874Z",
         "eventsParsed": 7
       }
     ]

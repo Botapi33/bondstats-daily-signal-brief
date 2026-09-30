@@ -1,8 +1,17 @@
 {
   "product": "BondStats Daily Signal Brief",
   "version": "2.0.0",
-  "updatedAt": "2026-09-28T14:24:02.853959Z",
+  "updatedAt": "2026-09-30T12:57:07.080357Z",
   "days": [
+    {
+      "date": "2026-09-30",
+      "marketState": "Mixed",
+      "intensity": 22,
+      "oneThing": "Bank of Canada policy setting updated",
+      "signals": 7,
+      "dislocations": 0,
+      "sourceIntegrity": "Verified live"
+    },
     {
       "date": "2026-09-28",
       "marketState": "Mixed",
