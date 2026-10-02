@@ -1,8 +1,17 @@
 {
   "product": "BondStats Daily Signal Brief",
   "version": "2.0.0",
-  "updatedAt": "2026-10-01T13:49:45.019740Z",
+  "updatedAt": "2026-10-02T13:05:33.324417Z",
   "days": [
+    {
+      "date": "2026-10-02",
+      "marketState": "Mixed",
+      "intensity": 33,
+      "oneThing": "Germany yield fell 8.2 bp",
+      "signals": 5,
+      "dislocations": 0,
+      "sourceIntegrity": "Verified live"
+    },
     {
       "date": "2026-10-01",
       "marketState": "Mixed",
