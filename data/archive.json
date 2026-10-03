@@ -1,8 +1,17 @@
 {
   "product": "BondStats Daily Signal Brief",
   "version": "2.0.0",
-  "updatedAt": "2026-10-02T13:05:33.324417Z",
+  "updatedAt": "2026-10-03T11:57:58.693009Z",
   "days": [
+    {
+      "date": "2026-10-03",
+      "marketState": "Rates Repricing Lower",
+      "intensity": 60,
+      "oneThing": "Sweden yield fell 12.4 bp",
+      "signals": 5,
+      "dislocations": 0,
+      "sourceIntegrity": "Verified live"
+    },
     {
       "date": "2026-10-02",
       "marketState": "Mixed",
