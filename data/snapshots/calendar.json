@@ -1,14 +1,14 @@
 {
   "_bondstatsSnapshot": {
     "source": "calendar",
-    "savedAt": "2026-10-03T11:57:58.693009Z",
+    "savedAt": "2026-10-04T12:48:51.009913Z",
     "url": "https://botapi33.github.io/bondstats-market-calendar/data/events.json"
   },
   "payload": {
     "meta": {
       "name": "BondStats Market Calendar",
       "version": "2.0.0-final",
-      "generatedAt": "2026-10-03T11:37:51.813050Z",
+      "generatedAt": "2026-10-04T12:20:13.836190Z",
       "timezone": "UTC",
       "method": "Official-source ingestion + deterministic BondStats market-impact model",
       "coverage": [
@@ -1323,7 +1323,7 @@
         "name": "Federal Reserve",
         "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
         "status": "healthy",
-        "lastChecked": "2026-10-03T11:37:51.813050Z",
+        "lastChecked": "2026-10-04T12:20:13.836190Z",
         "eventsParsed": 92
       },
       {
@@ -1331,7 +1331,7 @@
         "name": "U.S. Bureau of Labor Statistics",
         "url": "https://www.bls.gov/schedule/news_release/bls.ics",
         "status": "degraded",
-        "lastChecked": "2026-10-03T11:37:51.813050Z",
+        "lastChecked": "2026-10-04T12:20:13.836190Z",
         "warning": "'No time zone found with key US-Eastern'",
         "eventsParsed": 0,
         "fallback": "previous feed"
@@ -1341,7 +1341,7 @@
         "name": "U.S. Bureau of Economic Analysis",
         "url": "https://www.bea.gov/news/schedule",
         "status": "healthy",
-        "lastChecked": "2026-10-03T11:37:51.813050Z",
+        "lastChecked": "2026-10-04T12:20:13.836190Z",
         "eventsParsed": 6
       },
       {
@@ -1349,7 +1349,7 @@
         "name": "European Central Bank",
         "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
         "status": "degraded",
-        "lastChecked": "2026-10-03T11:37:51.813050Z",
+        "lastChecked": "2026-10-04T12:20:13.836190Z",
         "warning": "'No time zone found with key Europe/Frankfurt'",
         "eventsParsed": 2,
         "fallback": "previous feed"
@@ -1359,7 +1359,7 @@
         "name": "Bank of England",
         "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
         "status": "healthy",
-        "lastChecked": "2026-10-03T11:37:51.813050Z",
+        "lastChecked": "2026-10-04T12:20:13.836190Z",
         "eventsParsed": 16
       },
       {
@@ -1367,7 +1367,7 @@
         "name": "Bank of Japan",
         "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
         "status": "healthy",
-        "lastChecked": "2026-10-03T11:37:51.813050Z",
+        "lastChecked": "2026-10-04T12:20:13.836190Z",
         "eventsParsed": 26
       },
       {
@@ -1375,7 +1375,7 @@
         "name": "Swiss National Bank",
         "url": "https://www.snb.ch/en/services-events/digital-services/event-schedule",
         "status": "healthy",
-        "lastChecked": "2026-10-03T11:37:51.813050Z",
+        "lastChecked": "2026-10-04T12:20:13.836190Z",
         "eventsParsed": 10
       },
       {
@@ -1383,7 +1383,7 @@
         "name": "U.S. Treasury Auctions",
         "url": "https://www.treasurydirect.gov/xml/PendingAuctions.xml",
         "status": "healthy",
-        "lastChecked": "2026-10-03T11:37:51.813050Z",
+        "lastChecked": "2026-10-04T12:20:13.836190Z",
         "eventsParsed": 3
       }
     ]
