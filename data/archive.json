@@ -1,8 +1,17 @@
 {
   "product": "BondStats Daily Signal Brief",
   "version": "2.0.0",
-  "updatedAt": "2026-10-04T12:48:51.009913Z",
+  "updatedAt": "2026-10-05T15:12:24.189696Z",
   "days": [
+    {
+      "date": "2026-10-05",
+      "marketState": "Mixed",
+      "intensity": 27,
+      "oneThing": "Euro Area yield fell 12.8 bp",
+      "signals": 5,
+      "dislocations": 0,
+      "sourceIntegrity": "Verified live"
+    },
     {
       "date": "2026-10-04",
       "marketState": "Policy Event Window",
