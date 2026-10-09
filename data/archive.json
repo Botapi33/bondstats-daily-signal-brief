@@ -1,8 +1,17 @@
 {
   "product": "BondStats Daily Signal Brief",
   "version": "2.0.0",
-  "updatedAt": "2026-10-08T13:57:04.999957Z",
+  "updatedAt": "2026-10-09T13:40:43.072008Z",
   "days": [
+    {
+      "date": "2026-10-09",
+      "marketState": "Policy Event Window",
+      "intensity": 66,
+      "oneThing": "Bank of Canada policy setting updated",
+      "signals": 6,
+      "dislocations": 0,
+      "sourceIntegrity": "Verified live"
+    },
     {
       "date": "2026-10-08",
       "marketState": "Rates Repricing Higher",
