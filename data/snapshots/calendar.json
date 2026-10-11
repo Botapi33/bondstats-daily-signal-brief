@@ -1,14 +1,14 @@
 {
   "_bondstatsSnapshot": {
     "source": "calendar",
-    "savedAt": "2026-10-10T12:59:23.343027Z",
+    "savedAt": "2026-10-11T13:25:59.357116Z",
     "url": "https://botapi33.github.io/bondstats-market-calendar/data/events.json"
   },
   "payload": {
     "meta": {
       "name": "BondStats Market Calendar",
       "version": "2.0.0-final",
-      "generatedAt": "2026-10-10T12:29:30.651082Z",
+      "generatedAt": "2026-10-11T12:47:17.642198Z",
       "timezone": "UTC",
       "method": "Official-source ingestion + deterministic BondStats market-impact model",
       "coverage": [
@@ -29,54 +29,6 @@
       ]
     },
     "events": [
-      {
-        "id": "fed-e0159f45c9f5",
-        "title": "Federal Reserve FOMC Decision",
-        "country": "US",
-        "region": "North America",
-        "category": "Central Bank",
-        "eventType": "policy",
-        "timestamp": "2026-10-08T18:00:00Z",
-        "timePrecision": "convention",
-        "impactScore": 100,
-        "impactLabel": "CRITICAL",
-        "primaryExposure": [
-          "Sovereign bonds",
-          "FX",
-          "Rate expectations"
-        ],
-        "source": "Federal Reserve",
-        "sourceShort": "Fed",
-        "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
-        "official": true,
-        "status": "scheduled",
-        "description": "Federal Open Market Committee policy decision.",
-        "timingNote": "Meeting date is official. Timestamp uses the standard scheduled FOMC decision-release convention."
-      },
-      {
-        "id": "boj-0f174baf70bc",
-        "title": "Bank of Japan Monetary Policy Decision",
-        "country": "JP",
-        "region": "Asia",
-        "category": "Central Bank",
-        "eventType": "policy",
-        "timestamp": "2026-10-09T03:00:00Z",
-        "timePrecision": "date",
-        "impactScore": 94,
-        "impactLabel": "CRITICAL",
-        "primaryExposure": [
-          "Sovereign bonds",
-          "FX",
-          "Rate expectations"
-        ],
-        "source": "Bank of Japan",
-        "sourceShort": "BoJ",
-        "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
-        "official": true,
-        "status": "scheduled",
-        "description": "Second day of the Bank of Japan Monetary Policy Meeting.",
-        "timingNote": "Official meeting date; policy-statement release time is not fixed and is displayed as Time TBA."
-      },
       {
         "id": "fed-76e209d9756d",
         "title": "Federal Reserve FOMC Decision",
@@ -1352,7 +1304,7 @@
         "name": "Federal Reserve",
         "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
         "status": "healthy",
-        "lastChecked": "2026-10-10T12:29:30.651082Z",
+        "lastChecked": "2026-10-11T12:47:17.642198Z",
         "eventsParsed": 93
       },
       {
@@ -1360,7 +1312,7 @@
         "name": "U.S. Bureau of Labor Statistics",
         "url": "https://www.bls.gov/schedule/news_release/bls.ics",
         "status": "degraded",
-        "lastChecked": "2026-10-10T12:29:30.651082Z",
+        "lastChecked": "2026-10-11T12:47:17.642198Z",
         "warning": "'No time zone found with key US-Eastern'",
         "eventsParsed": 0,
         "fallback": "previous feed"
@@ -1370,7 +1322,7 @@
         "name": "U.S. Bureau of Economic Analysis",
         "url": "https://www.bea.gov/news/schedule",
         "status": "healthy",
-        "lastChecked": "2026-10-10T12:29:30.651082Z",
+        "lastChecked": "2026-10-11T12:47:17.642198Z",
         "eventsParsed": 5
       },
       {
@@ -1378,7 +1330,7 @@
         "name": "European Central Bank",
         "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
         "status": "degraded",
-        "lastChecked": "2026-10-10T12:29:30.651082Z",
+        "lastChecked": "2026-10-11T12:47:17.642198Z",
         "warning": "'No time zone found with key Europe/Frankfurt'",
         "eventsParsed": 2,
         "fallback": "previous feed"
@@ -1388,7 +1340,7 @@
         "name": "Bank of England",
         "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
         "status": "healthy",
-        "lastChecked": "2026-10-10T12:29:30.651082Z",
+        "lastChecked": "2026-10-11T12:47:17.642198Z",
         "eventsParsed": 16
       },
       {
@@ -1396,7 +1348,7 @@
         "name": "Bank of Japan",
         "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
         "status": "healthy",
-        "lastChecked": "2026-10-10T12:29:30.651082Z",
+        "lastChecked": "2026-10-11T12:47:17.642198Z",
         "eventsParsed": 26
       },
       {
@@ -1404,7 +1356,7 @@
         "name": "Swiss National Bank",
         "url": "https://www.snb.ch/en/services-events/digital-services/event-schedule",
         "status": "healthy",
-        "lastChecked": "2026-10-10T12:29:30.651082Z",
+        "lastChecked": "2026-10-11T12:47:17.642198Z",
         "eventsParsed": 10
       },
       {
@@ -1412,7 +1364,7 @@
         "name": "U.S. Treasury Auctions",
         "url": "https://www.treasurydirect.gov/xml/PendingAuctions.xml",
         "status": "healthy",
-        "lastChecked": "2026-10-10T12:29:30.651082Z",
+        "lastChecked": "2026-10-11T12:47:17.642198Z",
         "eventsParsed": 6
       }
     ]
