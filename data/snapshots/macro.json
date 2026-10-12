@@ -1,16 +1,16 @@
 {
   "_bondstatsSnapshot": {
     "source": "macro",
-    "savedAt": "2026-10-11T13:25:59.357116Z",
+    "savedAt": "2026-10-12T16:00:34.515161Z",
     "url": "https://botapi33.github.io/bondstats-macro-data-watch/data/macro.json"
   },
   "payload": {
     "meta": {
       "product": "BondStats Macro Data Watch",
       "version": "1.0.0",
-      "lastChecked": "2026-09-30T05:42:38Z",
-      "lastSuccessfulDataUpdate": "2026-08-28T22:04:27Z",
-      "lastUpdated": "2026-08-28T22:04:27Z",
+      "lastChecked": "2026-10-12T15:43:36Z",
+      "lastSuccessfulDataUpdate": "2026-10-11T22:16:17Z",
+      "lastUpdated": "2026-10-11T22:16:17Z",
       "healthySources": 1,
       "degradedSources": 2,
       "methodology": "Official-source-only. No consensus forecasts. No third-party editorial data. Last-known-good values are retained on parser/source failure.",
@@ -118,11 +118,11 @@
         "group": "Inflation",
         "name": "PCE Inflation",
         "label": "PCE price index",
-        "value": 3.7,
-        "previous": 3.7,
+        "value": 3.4,
+        "previous": 3.4,
         "unit": "%",
         "transform": "YoY",
-        "period": "Jul 2026",
+        "period": "Aug 2026",
         "frequency": "Monthly",
         "direction": "flat",
         "marketRelevance": "Critical",
@@ -136,11 +136,11 @@
         "group": "Inflation",
         "name": "Core PCE",
         "label": "PCE price index excluding food and energy",
-        "value": 3.3,
-        "previous": 3.3,
+        "value": 3.0,
+        "previous": 3.0,
         "unit": "%",
         "transform": "YoY",
-        "period": "Jul 2026",
+        "period": "Aug 2026",
         "frequency": "Monthly",
         "direction": "flat",
         "marketRelevance": "Critical",
@@ -154,8 +154,8 @@
         "group": "Growth",
         "name": "Real GDP",
         "label": "Real GDP growth, annualized",
-        "value": 1.5,
-        "previous": 2.1,
+        "value": 2.2,
+        "previous": 2.5,
         "unit": "%",
         "transform": "QoQ SAAR",
         "period": "Q2 2026",
@@ -242,16 +242,16 @@
     "sourceHealth": {
       "BLS": {
         "state": "degraded",
-        "lastChecked": "2026-09-30T05:42:38Z",
+        "lastChecked": "2026-10-12T15:43:36Z",
         "error": "could not convert string to float: '-'"
       },
       "BEA": {
         "state": "ok",
-        "lastChecked": "2026-09-30T05:42:38Z"
+        "lastChecked": "2026-10-12T15:43:36Z"
       },
       "EUROSTAT": {
         "state": "degraded",
-        "lastChecked": "2026-09-30T05:42:38Z",
+        "lastChecked": "2026-10-12T15:43:36Z",
         "error": "Eurostat query not singleton on geo"
       }
     }

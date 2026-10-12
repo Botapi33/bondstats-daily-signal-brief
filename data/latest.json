@@ -1,33 +1,33 @@
 {
   "meta": {
     "product": "BondStats Daily Signal Brief",
-    "date": "2026-10-11",
-    "generatedAt": "2026-10-11T13:25:59.357116Z",
+    "date": "2026-10-12",
+    "generatedAt": "2026-10-12T16:00:34.515161Z",
     "version": "2.0.0",
     "engine": "BondStats Signal Engine v2",
     "copyrightMethod": "Original deterministic analysis from factual official-source observations and BondStats data feeds; no third-party news articles, headlines, screenshots or editorial text are ingested, summarized or rewritten.",
     "sourceHealth": {
       "macro": {
         "status": "live",
-        "checkedAt": "2026-10-11T13:25:59.357116Z",
+        "checkedAt": "2026-10-12T16:00:34.515161Z",
         "sourceUrl": "https://botapi33.github.io/bondstats-macro-data-watch/data/macro.json",
         "fallback": false
       },
       "policy": {
         "status": "live",
-        "checkedAt": "2026-10-11T13:25:59.357116Z",
+        "checkedAt": "2026-10-12T16:00:34.515161Z",
         "sourceUrl": "https://botapi33.github.io/bondstats-central-bank-watch/data/policy.json",
         "fallback": false
       },
       "calendar": {
         "status": "live",
-        "checkedAt": "2026-10-11T13:25:59.357116Z",
+        "checkedAt": "2026-10-12T16:00:34.515161Z",
         "sourceUrl": "https://botapi33.github.io/bondstats-market-calendar/data/events.json",
         "fallback": false
       },
       "yields": {
         "status": "live",
-        "checkedAt": "2026-10-11T13:25:59.357116Z",
+        "checkedAt": "2026-10-12T16:00:34.515161Z",
         "sourceUrl": "https://botapi33.github.io/bondstats-global-yields/global_yields.json",
         "fallback": false
       }
@@ -44,17 +44,17 @@
     "label": "Policy Event Window",
     "intensity": 66,
     "reason": "A critical scheduled event is inside the next 24 hours.",
-    "previousLabel": "Mixed",
+    "previousLabel": "Policy Event Window",
     "freshDailyMarkets": 10,
     "rising": 0,
     "falling": 2
   },
   "oneThing": {
     "kicker": "THE ONE THING",
-    "headline": "United States yield fell 6.0 bp",
-    "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause. Move ranks around the 71th percentile of 42 prior archived observations.",
-    "score": 62,
-    "tag": "RATES"
+    "headline": "New United States PCE Inflation observation",
+    "body": "PCE Inflation rose to 3.4% from 3.4% (Aug 2026). New official observation versus the previous archived Daily Signal Brief.",
+    "score": 82,
+    "tag": "INFLATION"
   },
   "signalStack": [
     {
@@ -84,20 +84,20 @@
     }
   ],
   "signalMemory": {
-    "previousState": "Mixed",
-    "lastSeenDate": "2026-10-09",
-    "daysSinceLastSeen": 2,
-    "consecutiveDays": 1,
-    "archiveObservations": 43
+    "previousState": "Policy Event Window",
+    "lastSeenDate": "2026-10-11",
+    "daysSinceLastSeen": 1,
+    "consecutiveDays": 2,
+    "archiveObservations": 44
   },
   "diagnostics": {
     "rates": {
       "label": "Mixed",
-      "score": -13,
+      "score": -12,
       "fresh": 10,
       "rising": 0,
       "falling": 2,
-      "averageBp": -0.8,
+      "averageBp": -0.7,
       "breadth": -0.2
     },
     "macro": {
@@ -126,30 +126,63 @@
     "eventRisk": {
       "label": "Immediate",
       "score": 95,
-      "nextCriticalHours": 4.6,
-      "critical72h": 3
+      "nextCriticalHours": 2.0,
+      "critical72h": 2
     }
   },
   "signals": [
+    {
+      "id": "macro:US_PCE",
+      "kicker": "INFLATION",
+      "headline": "New United States PCE Inflation observation",
+      "body": "PCE Inflation rose to 3.4% from 3.4% (Aug 2026).",
+      "strength": 82,
+      "novelty": 100,
+      "memory": "New official observation versus the previous archived Daily Signal Brief.",
+      "sourceName": "U.S. Bureau of Economic Analysis",
+      "sourceUrl": "https://www.bea.gov/data/personal-consumption-expenditures-price-index"
+    },
+    {
+      "id": "macro:US_CORE_PCE",
+      "kicker": "INFLATION",
+      "headline": "New United States Core PCE observation",
+      "body": "Core PCE rose to 3% from 3% (Aug 2026).",
+      "strength": 82,
+      "novelty": 100,
+      "memory": "New official observation versus the previous archived Daily Signal Brief.",
+      "sourceName": "U.S. Bureau of Economic Analysis",
+      "sourceUrl": "https://www.bea.gov/data/personal-consumption-expenditures-price-index-excluding-food-and-energy"
+    },
+    {
+      "id": "macro:US_GDP",
+      "kicker": "GROWTH",
+      "headline": "New United States Real GDP observation",
+      "body": "Real GDP fell to 2.2% from 2.5% (Q2 2026).",
+      "strength": 70,
+      "novelty": 100,
+      "memory": "New official observation versus the previous archived Daily Signal Brief.",
+      "sourceName": "U.S. Bureau of Economic Analysis",
+      "sourceUrl": "https://www.bea.gov/data/gdp/gross-domestic-product"
+    },
     {
       "id": "rates:united_states",
       "kicker": "RATES",
       "headline": "United States yield fell 6.0 bp",
       "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause.",
       "strength": 62,
-      "novelty": 71,
-      "memory": "Move ranks around the 71th percentile of 42 prior archived observations.",
+      "novelty": 72,
+      "memory": "Move ranks around the 72th percentile of 43 prior archived observations.",
       "sourceName": "fred",
       "sourceUrl": null
     },
     {
       "id": "rates:euro_area",
       "kicker": "RATES",
-      "headline": "Euro Area yield fell 1.9 bp",
+      "headline": "Euro Area yield fell 0.8 bp",
       "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause.",
-      "strength": 46,
-      "novelty": 31,
-      "memory": "Move ranks around the 31th percentile of 42 prior archived observations.",
+      "strength": 41,
+      "novelty": 5,
+      "memory": "Move ranks around the 5th percentile of 43 prior archived observations.",
       "sourceName": "ecb",
       "sourceUrl": null
     },
@@ -159,8 +192,8 @@
       "headline": "Sweden yield fell 0.0 bp",
       "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause.",
       "strength": 38,
-      "novelty": 31,
-      "memory": "Move ranks around the 31th percentile of 42 prior archived observations.",
+      "novelty": 33,
+      "memory": "Move ranks around the 33th percentile of 43 prior archived observations.",
       "sourceName": "riksbank",
       "sourceUrl": null
     },
@@ -170,8 +203,8 @@
       "headline": "United Kingdom yield fell 0.0 bp",
       "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause.",
       "strength": 38,
-      "novelty": 29,
-      "memory": "Move ranks around the 29th percentile of 42 prior archived observations.",
+      "novelty": 30,
+      "memory": "Move ranks around the 30th percentile of 43 prior archived observations.",
       "sourceName": "riksbank",
       "sourceUrl": null
     },
@@ -181,8 +214,8 @@
       "headline": "Germany yield fell 0.0 bp",
       "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause.",
       "strength": 38,
-      "novelty": 29,
-      "memory": "Move ranks around the 29th percentile of 42 prior archived observations.",
+      "novelty": 30,
+      "memory": "Move ranks around the 30th percentile of 43 prior archived observations.",
       "sourceName": "riksbank",
       "sourceUrl": null
     }
@@ -198,7 +231,7 @@
       "date": "2026-10-08",
       "previousDate": "2026-10-07",
       "frequency": "Daily",
-      "stalenessDays": 3.0,
+      "stalenessDays": 4.0,
       "freshDaily": true,
       "source": "fred",
       "tier": "delayed"
@@ -206,11 +239,11 @@
     {
       "id": "euro_area",
       "label": "Euro Area",
-      "yield": 3.5192,
-      "previousYield": 3.5384,
-      "changeBp": -1.9,
-      "date": "2026-10-08",
-      "previousDate": "2026-10-07",
+      "yield": 3.5112,
+      "previousYield": 3.5192,
+      "changeBp": -0.8,
+      "date": "2026-10-09",
+      "previousDate": "2026-10-08",
       "frequency": "Daily",
       "stalenessDays": 3.0,
       "freshDaily": true,
@@ -226,7 +259,7 @@
       "date": "2026-10-09",
       "previousDate": "2026-10-09",
       "frequency": "Daily",
-      "stalenessDays": 2.0,
+      "stalenessDays": 3.0,
       "freshDaily": true,
       "source": "riksbank",
       "tier": "delayed"
@@ -240,7 +273,7 @@
       "date": "2026-10-09",
       "previousDate": "2026-10-09",
       "frequency": "Daily",
-      "stalenessDays": 2.0,
+      "stalenessDays": 3.0,
       "freshDaily": true,
       "source": "riksbank",
       "tier": "delayed"
@@ -254,7 +287,7 @@
       "date": "2026-10-09",
       "previousDate": "2026-10-09",
       "frequency": "Daily",
-      "stalenessDays": 2.0,
+      "stalenessDays": 3.0,
       "freshDaily": true,
       "source": "riksbank",
       "tier": "delayed"
@@ -268,7 +301,7 @@
       "date": "2026-10-09",
       "previousDate": "2026-10-09",
       "frequency": "Daily",
-      "stalenessDays": 2.0,
+      "stalenessDays": 3.0,
       "freshDaily": true,
       "source": "riksbank",
       "tier": "delayed"
@@ -282,7 +315,7 @@
       "date": "2026-10-09",
       "previousDate": "2026-10-09",
       "frequency": "Daily",
-      "stalenessDays": 2.0,
+      "stalenessDays": 3.0,
       "freshDaily": true,
       "source": "riksbank",
       "tier": "delayed"
@@ -296,7 +329,7 @@
       "date": "2026-10-09",
       "previousDate": "2026-10-09",
       "frequency": "Daily",
-      "stalenessDays": 2.0,
+      "stalenessDays": 3.0,
       "freshDaily": true,
       "source": "riksbank",
       "tier": "delayed"
@@ -310,7 +343,7 @@
       "date": "2026-10-09",
       "previousDate": "2026-10-09",
       "frequency": "Daily",
-      "stalenessDays": 2.0,
+      "stalenessDays": 3.0,
       "freshDaily": true,
       "source": "riksbank",
       "tier": "delayed"
@@ -324,7 +357,7 @@
       "date": "2026-10-09",
       "previousDate": "2026-10-09",
       "frequency": "Daily",
-      "stalenessDays": 2.0,
+      "stalenessDays": 3.0,
       "freshDaily": true,
       "source": "riksbank",
       "tier": "delayed"
@@ -409,11 +442,11 @@
       "label": "PCE price index",
       "region": "United States",
       "group": "Inflation",
-      "value": 3.7,
-      "previous": 3.7,
+      "value": 3.4,
+      "previous": 3.4,
       "unit": "%",
       "transform": "YoY",
-      "period": "Jul 2026",
+      "period": "Aug 2026",
       "frequency": "Monthly",
       "direction": "flat",
       "relevance": "Critical",
@@ -427,11 +460,11 @@
       "label": "PCE price index excluding food and energy",
       "region": "United States",
       "group": "Inflation",
-      "value": 3.3,
-      "previous": 3.3,
+      "value": 3.0,
+      "previous": 3.0,
       "unit": "%",
       "transform": "YoY",
-      "period": "Jul 2026",
+      "period": "Aug 2026",
       "frequency": "Monthly",
       "direction": "flat",
       "relevance": "Critical",
@@ -445,8 +478,8 @@
       "label": "Real GDP growth, annualized",
       "region": "United States",
       "group": "Growth",
-      "value": 1.5,
-      "previous": 2.1,
+      "value": 2.2,
+      "previous": 2.5,
       "unit": "%",
       "transform": "QoQ SAAR",
       "period": "Q2 2026",
@@ -617,23 +650,6 @@
     }
   ],
   "nextEvents": [
-    {
-      "id": "fed-95d8aa98215a",
-      "title": "Federal Reserve FOMC Decision",
-      "dateTime": "2026-10-11T18:00:00Z",
-      "timePrecision": "convention",
-      "impactScore": 100.0,
-      "impact": "CRITICAL",
-      "category": "Central Bank",
-      "primaryExposure": [
-        "Sovereign bonds",
-        "FX",
-        "Rate expectations"
-      ],
-      "sourceName": "Federal Reserve",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
-      "official": true
-    },
     {
       "id": "fed-2ac22ddbcce7",
       "title": "Federal Reserve FOMC Decision",
