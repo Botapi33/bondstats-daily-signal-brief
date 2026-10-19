@@ -1,33 +1,33 @@
 {
   "meta": {
     "product": "BondStats Daily Signal Brief",
-    "date": "2026-10-18",
-    "generatedAt": "2026-10-18T11:38:10.509860Z",
+    "date": "2026-10-19",
+    "generatedAt": "2026-10-19T13:51:37.915890Z",
     "version": "2.0.0",
     "engine": "BondStats Signal Engine v2",
     "copyrightMethod": "Original deterministic analysis from factual official-source observations and BondStats data feeds; no third-party news articles, headlines, screenshots or editorial text are ingested, summarized or rewritten.",
     "sourceHealth": {
       "macro": {
         "status": "live",
-        "checkedAt": "2026-10-18T11:38:10.509860Z",
+        "checkedAt": "2026-10-19T13:51:37.915890Z",
         "sourceUrl": "https://botapi33.github.io/bondstats-macro-data-watch/data/macro.json",
         "fallback": false
       },
       "policy": {
         "status": "live",
-        "checkedAt": "2026-10-18T11:38:10.509860Z",
+        "checkedAt": "2026-10-19T13:51:37.915890Z",
         "sourceUrl": "https://botapi33.github.io/bondstats-central-bank-watch/data/policy.json",
         "fallback": false
       },
       "calendar": {
         "status": "live",
-        "checkedAt": "2026-10-18T11:38:10.509860Z",
+        "checkedAt": "2026-10-19T13:51:37.915890Z",
         "sourceUrl": "https://botapi33.github.io/bondstats-market-calendar/data/events.json",
         "fallback": false
       },
       "yields": {
         "status": "live",
-        "checkedAt": "2026-10-18T11:38:10.509860Z",
+        "checkedAt": "2026-10-19T13:51:37.915890Z",
         "sourceUrl": "https://botapi33.github.io/bondstats-global-yields/global_yields.json",
         "fallback": false
       }
@@ -42,18 +42,18 @@
   },
   "marketState": {
     "label": "Mixed",
-    "intensity": 27,
+    "intensity": 21,
     "reason": "No single qualified cross-market direction dominates the current signal set.",
-    "previousLabel": "Rates Repricing Higher",
+    "previousLabel": "Mixed",
     "freshDailyMarkets": 10,
-    "rising": 0,
-    "falling": 2
+    "rising": 1,
+    "falling": 1
   },
   "oneThing": {
     "kicker": "THE ONE THING",
-    "headline": "Euro Area yield fell 12.0 bp",
-    "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause. Move ranks around the 94th percentile of 49 prior archived observations.",
-    "score": 96,
+    "headline": "United States yield fell 9.0 bp",
+    "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause. Move ranks around the 92th percentile of 50 prior archived observations.",
+    "score": 84,
     "tag": "RATES"
   },
   "signalStack": [
@@ -84,21 +84,21 @@
     }
   ],
   "signalMemory": {
-    "previousState": "Rates Repricing Higher",
-    "lastSeenDate": "2026-10-15",
-    "daysSinceLastSeen": 3,
-    "consecutiveDays": 1,
-    "archiveObservations": 50
+    "previousState": "Mixed",
+    "lastSeenDate": "2026-10-18",
+    "daysSinceLastSeen": 1,
+    "consecutiveDays": 2,
+    "archiveObservations": 51
   },
   "diagnostics": {
     "rates": {
       "label": "Mixed",
-      "score": -21,
+      "score": -2,
       "fresh": 10,
-      "rising": 0,
-      "falling": 2,
-      "averageBp": -2.1,
-      "breadth": -0.2
+      "rising": 1,
+      "falling": 1,
+      "averageBp": -0.4,
+      "breadth": 0.0
     },
     "macro": {
       "label": "Mixed",
@@ -132,25 +132,25 @@
   },
   "signals": [
     {
-      "id": "rates:euro_area",
-      "kicker": "RATES",
-      "headline": "Euro Area yield fell 12.0 bp",
-      "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause.",
-      "strength": 96,
-      "novelty": 94,
-      "memory": "Move ranks around the 94th percentile of 49 prior archived observations.",
-      "sourceName": "ecb",
-      "sourceUrl": null
-    },
-    {
       "id": "rates:united_states",
       "kicker": "RATES",
       "headline": "United States yield fell 9.0 bp",
       "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause.",
       "strength": 84,
       "novelty": 92,
-      "memory": "Move ranks around the 92th percentile of 49 prior archived observations.",
+      "memory": "Move ranks around the 92th percentile of 50 prior archived observations.",
       "sourceName": "fred",
+      "sourceUrl": null
+    },
+    {
+      "id": "rates:euro_area",
+      "kicker": "RATES",
+      "headline": "Euro Area yield rose 5.4 bp",
+      "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause.",
+      "strength": 60,
+      "novelty": 76,
+      "memory": "Move ranks around the 76th percentile of 50 prior archived observations.",
+      "sourceName": "ecb",
       "sourceUrl": null
     },
     {
@@ -159,8 +159,8 @@
       "headline": "Sweden yield fell 0.0 bp",
       "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause.",
       "strength": 38,
-      "novelty": 31,
-      "memory": "Move ranks around the 31th percentile of 49 prior archived observations.",
+      "novelty": 32,
+      "memory": "Move ranks around the 32th percentile of 50 prior archived observations.",
       "sourceName": "riksbank",
       "sourceUrl": null
     },
@@ -170,8 +170,8 @@
       "headline": "United Kingdom yield fell 0.0 bp",
       "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause.",
       "strength": 38,
-      "novelty": 29,
-      "memory": "Move ranks around the 29th percentile of 49 prior archived observations.",
+      "novelty": 30,
+      "memory": "Move ranks around the 30th percentile of 50 prior archived observations.",
       "sourceName": "riksbank",
       "sourceUrl": null
     },
@@ -181,8 +181,8 @@
       "headline": "Germany yield fell 0.0 bp",
       "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause.",
       "strength": 38,
-      "novelty": 29,
-      "memory": "Move ranks around the 29th percentile of 49 prior archived observations.",
+      "novelty": 30,
+      "memory": "Move ranks around the 30th percentile of 50 prior archived observations.",
       "sourceName": "riksbank",
       "sourceUrl": null
     }
@@ -198,7 +198,7 @@
       "date": "2026-10-15",
       "previousDate": "2026-10-14",
       "frequency": "Daily",
-      "stalenessDays": 3.0,
+      "stalenessDays": 4.0,
       "freshDaily": true,
       "source": "fred",
       "tier": "delayed"
@@ -206,11 +206,11 @@
     {
       "id": "euro_area",
       "label": "Euro Area",
-      "yield": 3.3904,
-      "previousYield": 3.5108,
-      "changeBp": -12.0,
-      "date": "2026-10-15",
-      "previousDate": "2026-10-14",
+      "yield": 3.4445,
+      "previousYield": 3.3904,
+      "changeBp": 5.4,
+      "date": "2026-10-16",
+      "previousDate": "2026-10-15",
       "frequency": "Daily",
       "stalenessDays": 3.0,
       "freshDaily": true,
@@ -226,7 +226,7 @@
       "date": "2026-10-16",
       "previousDate": "2026-10-16",
       "frequency": "Daily",
-      "stalenessDays": 2.0,
+      "stalenessDays": 3.0,
       "freshDaily": true,
       "source": "riksbank",
       "tier": "delayed"
@@ -240,7 +240,7 @@
       "date": "2026-10-16",
       "previousDate": "2026-10-16",
       "frequency": "Daily",
-      "stalenessDays": 2.0,
+      "stalenessDays": 3.0,
       "freshDaily": true,
       "source": "riksbank",
       "tier": "delayed"
@@ -254,7 +254,7 @@
       "date": "2026-10-16",
       "previousDate": "2026-10-16",
       "frequency": "Daily",
-      "stalenessDays": 2.0,
+      "stalenessDays": 3.0,
       "freshDaily": true,
       "source": "riksbank",
       "tier": "delayed"
@@ -268,7 +268,7 @@
       "date": "2026-10-16",
       "previousDate": "2026-10-16",
       "frequency": "Daily",
-      "stalenessDays": 2.0,
+      "stalenessDays": 3.0,
       "freshDaily": true,
       "source": "riksbank",
       "tier": "delayed"
@@ -282,7 +282,7 @@
       "date": "2026-10-16",
       "previousDate": "2026-10-16",
       "frequency": "Daily",
-      "stalenessDays": 2.0,
+      "stalenessDays": 3.0,
       "freshDaily": true,
       "source": "riksbank",
       "tier": "delayed"
@@ -296,7 +296,7 @@
       "date": "2026-10-16",
       "previousDate": "2026-10-16",
       "frequency": "Daily",
-      "stalenessDays": 2.0,
+      "stalenessDays": 3.0,
       "freshDaily": true,
       "source": "riksbank",
       "tier": "delayed"
@@ -310,7 +310,7 @@
       "date": "2026-10-16",
       "previousDate": "2026-10-16",
       "frequency": "Daily",
-      "stalenessDays": 2.0,
+      "stalenessDays": 3.0,
       "freshDaily": true,
       "source": "riksbank",
       "tier": "delayed"
@@ -324,7 +324,7 @@
       "date": "2026-10-16",
       "previousDate": "2026-10-16",
       "frequency": "Daily",
-      "stalenessDays": 2.0,
+      "stalenessDays": 3.0,
       "freshDaily": true,
       "source": "riksbank",
       "tier": "delayed"
