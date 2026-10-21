@@ -1,8 +1,17 @@
 {
   "product": "BondStats Daily Signal Brief",
   "version": "2.0.0",
-  "updatedAt": "2026-10-20T12:02:08.402827Z",
+  "updatedAt": "2026-10-21T12:17:09.010101Z",
   "days": [
+    {
+      "date": "2026-10-21",
+      "marketState": "Rates Repricing Lower",
+      "intensity": 60,
+      "oneThing": "Denmark yield fell 7.6 bp",
+      "signals": 5,
+      "dislocations": 0,
+      "sourceIntegrity": "Verified live"
+    },
     {
       "date": "2026-10-20",
       "marketState": "Rates Repricing Higher",
