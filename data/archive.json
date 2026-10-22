@@ -1,8 +1,17 @@
 {
   "product": "BondStats Daily Signal Brief",
   "version": "2.0.0",
-  "updatedAt": "2026-10-21T12:17:09.010101Z",
+  "updatedAt": "2026-10-22T12:18:08.817418Z",
   "days": [
+    {
+      "date": "2026-10-22",
+      "marketState": "Policy Event Window",
+      "intensity": 66,
+      "oneThing": "France yield rose 8.0 bp",
+      "signals": 5,
+      "dislocations": 0,
+      "sourceIntegrity": "Verified live"
+    },
     {
       "date": "2026-10-21",
       "marketState": "Rates Repricing Lower",
