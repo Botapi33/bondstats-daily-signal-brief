@@ -1,8 +1,17 @@
 {
   "product": "BondStats Daily Signal Brief",
   "version": "2.0.0",
-  "updatedAt": "2026-10-24T11:31:12.596049Z",
+  "updatedAt": "2026-10-25T11:56:28.626191Z",
   "days": [
+    {
+      "date": "2026-10-25",
+      "marketState": "Mixed",
+      "intensity": 27,
+      "oneThing": "United States yield fell 17.0 bp",
+      "signals": 5,
+      "dislocations": 0,
+      "sourceIntegrity": "Verified live"
+    },
     {
       "date": "2026-10-24",
       "marketState": "Rates Repricing Lower",

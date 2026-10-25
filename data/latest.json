@@ -1,33 +1,33 @@
 {
   "meta": {
     "product": "BondStats Daily Signal Brief",
-    "date": "2026-10-24",
-    "generatedAt": "2026-10-24T11:31:12.596049Z",
+    "date": "2026-10-25",
+    "generatedAt": "2026-10-25T11:56:28.626191Z",
     "version": "2.0.0",
     "engine": "BondStats Signal Engine v2",
     "copyrightMethod": "Original deterministic analysis from factual official-source observations and BondStats data feeds; no third-party news articles, headlines, screenshots or editorial text are ingested, summarized or rewritten.",
     "sourceHealth": {
       "macro": {
         "status": "live",
-        "checkedAt": "2026-10-24T11:31:12.596049Z",
+        "checkedAt": "2026-10-25T11:56:28.626191Z",
         "sourceUrl": "https://botapi33.github.io/bondstats-macro-data-watch/data/macro.json",
         "fallback": false
       },
       "policy": {
         "status": "live",
-        "checkedAt": "2026-10-24T11:31:12.596049Z",
+        "checkedAt": "2026-10-25T11:56:28.626191Z",
         "sourceUrl": "https://botapi33.github.io/bondstats-central-bank-watch/data/policy.json",
         "fallback": false
       },
       "calendar": {
         "status": "live",
-        "checkedAt": "2026-10-24T11:31:12.596049Z",
+        "checkedAt": "2026-10-25T11:56:28.626191Z",
         "sourceUrl": "https://botapi33.github.io/bondstats-market-calendar/data/events.json",
         "fallback": false
       },
       "yields": {
         "status": "live",
-        "checkedAt": "2026-10-24T11:31:12.596049Z",
+        "checkedAt": "2026-10-25T11:56:28.626191Z",
         "sourceUrl": "https://botapi33.github.io/bondstats-global-yields/global_yields.json",
         "fallback": false
       }
@@ -41,25 +41,25 @@
     }
   },
   "marketState": {
-    "label": "Rates Repricing Lower",
-    "intensity": 60,
-    "reason": "Qualified sovereign yields are moving lower with meaningful breadth.",
+    "label": "Mixed",
+    "intensity": 27,
+    "reason": "No single qualified cross-market direction dominates the current signal set.",
     "previousLabel": "Rates Repricing Lower",
     "freshDailyMarkets": 10,
-    "rising": 3,
-    "falling": 7
+    "rising": 0,
+    "falling": 2
   },
   "oneThing": {
     "kicker": "THE ONE THING",
     "headline": "United States yield fell 17.0 bp",
-    "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause. Largest absolute move in the last 56 archived observations.",
+    "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause. Move ranks around the 100th percentile of 56 prior archived observations.",
     "score": 98,
     "tag": "RATES"
   },
   "signalStack": [
     {
       "name": "Rates",
-      "value": "Lower",
+      "value": "Mixed",
       "status": "active"
     },
     {
@@ -85,20 +85,20 @@
   ],
   "signalMemory": {
     "previousState": "Rates Repricing Lower",
-    "lastSeenDate": "2026-10-23",
-    "daysSinceLastSeen": 1,
-    "consecutiveDays": 2,
-    "archiveObservations": 56
+    "lastSeenDate": "2026-10-19",
+    "daysSinceLastSeen": 6,
+    "consecutiveDays": 1,
+    "archiveObservations": 57
   },
   "diagnostics": {
     "rates": {
-      "label": "Lower",
-      "score": -34,
+      "label": "Mixed",
+      "score": -21,
       "fresh": 10,
-      "rising": 3,
-      "falling": 7,
-      "averageBp": -3.0,
-      "breadth": -0.4
+      "rising": 0,
+      "falling": 2,
+      "averageBp": -2.1,
+      "breadth": -0.2
     },
     "macro": {
       "label": "Mixed",
@@ -126,7 +126,7 @@
     "eventRisk": {
       "label": "Normal",
       "score": 35,
-      "nextCriticalHours": 102.5,
+      "nextCriticalHours": 78.1,
       "critical72h": 0
     }
   },
@@ -138,30 +138,8 @@
       "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause.",
       "strength": 98,
       "novelty": 100,
-      "memory": "Largest absolute move in the last 56 archived observations.",
+      "memory": "Move ranks around the 100th percentile of 56 prior archived observations.",
       "sourceName": "fred",
-      "sourceUrl": null
-    },
-    {
-      "id": "policy:BOC",
-      "kicker": "POLICY",
-      "headline": "Bank of Canada policy setting updated",
-      "body": "Latest decision: Hold · 2.00% · decision date 2026-10-20.",
-      "strength": 78,
-      "novelty": 100,
-      "memory": "New central-bank decision versus the previous archived Daily Signal Brief.",
-      "sourceName": "Bank of Canada",
-      "sourceUrl": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/"
-    },
-    {
-      "id": "rates:france",
-      "kicker": "RATES",
-      "headline": "France yield fell 7.5 bp",
-      "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause.",
-      "strength": 68,
-      "novelty": 80,
-      "memory": "Move ranks around the 80th percentile of 55 prior archived observations.",
-      "sourceName": "riksbank",
       "sourceUrl": null
     },
     {
@@ -170,30 +148,41 @@
       "headline": "Euro Area yield fell 4.5 bp",
       "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause.",
       "strength": 56,
-      "novelty": 67,
-      "memory": "Move ranks around the 67th percentile of 55 prior archived observations.",
+      "novelty": 68,
+      "memory": "Move ranks around the 68th percentile of 56 prior archived observations.",
       "sourceName": "ecb",
+      "sourceUrl": null
+    },
+    {
+      "id": "rates:sweden",
+      "kicker": "RATES",
+      "headline": "Sweden yield fell 0.0 bp",
+      "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause.",
+      "strength": 38,
+      "novelty": 30,
+      "memory": "Move ranks around the 30th percentile of 56 prior archived observations.",
+      "sourceName": "riksbank",
       "sourceUrl": null
     },
     {
       "id": "rates:united_kingdom",
       "kicker": "RATES",
-      "headline": "United Kingdom yield rose 3.5 bp",
+      "headline": "United Kingdom yield fell 0.0 bp",
       "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause.",
-      "strength": 52,
-      "novelty": 67,
-      "memory": "Move ranks around the 67th percentile of 55 prior archived observations.",
+      "strength": 38,
+      "novelty": 29,
+      "memory": "Move ranks around the 29th percentile of 56 prior archived observations.",
       "sourceName": "riksbank",
       "sourceUrl": null
     },
     {
-      "id": "rates:finland",
+      "id": "rates:germany",
       "kicker": "RATES",
-      "headline": "Finland yield fell 1.9 bp",
+      "headline": "Germany yield fell 0.0 bp",
       "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause.",
-      "strength": 46,
-      "novelty": 58,
-      "memory": "Move ranks around the 58th percentile of 55 prior archived observations.",
+      "strength": 38,
+      "novelty": 29,
+      "memory": "Move ranks around the 29th percentile of 56 prior archived observations.",
       "sourceName": "riksbank",
       "sourceUrl": null
     }
@@ -209,7 +198,7 @@
       "date": "2026-10-22",
       "previousDate": "2026-10-21",
       "frequency": "Daily",
-      "stalenessDays": 2.0,
+      "stalenessDays": 3.0,
       "freshDaily": true,
       "source": "fred",
       "tier": "delayed"
@@ -223,7 +212,7 @@
       "date": "2026-10-22",
       "previousDate": "2026-10-21",
       "frequency": "Daily",
-      "stalenessDays": 2.0,
+      "stalenessDays": 3.0,
       "freshDaily": true,
       "source": "ecb",
       "tier": "delayed"
@@ -232,113 +221,113 @@
       "id": "united_kingdom",
       "label": "United Kingdom",
       "yield": 5.3693,
-      "previousYield": 5.3342,
-      "changeBp": 3.5,
+      "previousYield": 5.3693,
+      "changeBp": 0.0,
       "date": "2026-10-23",
-      "previousDate": "2026-10-22",
+      "previousDate": "2026-10-23",
       "frequency": "Daily",
-      "stalenessDays": 1.0,
+      "stalenessDays": 2.0,
       "freshDaily": true,
       "source": "riksbank",
-      "tier": "daily"
+      "tier": "delayed"
     },
     {
       "id": "sweden",
       "label": "Sweden",
       "yield": 3.112,
-      "previousYield": 3.123,
-      "changeBp": -1.1,
+      "previousYield": 3.112,
+      "changeBp": 0.0,
       "date": "2026-10-23",
-      "previousDate": "2026-10-22",
+      "previousDate": "2026-10-23",
       "frequency": "Daily",
-      "stalenessDays": 1.0,
+      "stalenessDays": 2.0,
       "freshDaily": true,
       "source": "riksbank",
-      "tier": "daily"
+      "tier": "delayed"
     },
     {
       "id": "germany",
       "label": "Germany",
       "yield": 3.3468,
-      "previousYield": 3.3441,
-      "changeBp": 0.3,
+      "previousYield": 3.3468,
+      "changeBp": 0.0,
       "date": "2026-10-23",
-      "previousDate": "2026-10-22",
+      "previousDate": "2026-10-23",
       "frequency": "Daily",
-      "stalenessDays": 1.0,
+      "stalenessDays": 2.0,
       "freshDaily": true,
       "source": "riksbank",
-      "tier": "daily"
+      "tier": "delayed"
     },
     {
       "id": "france",
       "label": "France",
       "yield": 5.0102,
-      "previousYield": 5.0854,
-      "changeBp": -7.5,
+      "previousYield": 5.0102,
+      "changeBp": 0.0,
       "date": "2026-10-23",
-      "previousDate": "2026-10-22",
+      "previousDate": "2026-10-23",
       "frequency": "Daily",
-      "stalenessDays": 1.0,
+      "stalenessDays": 2.0,
       "freshDaily": true,
       "source": "riksbank",
-      "tier": "daily"
+      "tier": "delayed"
     },
     {
       "id": "netherlands",
       "label": "Netherlands",
       "yield": 3.4525,
-      "previousYield": 3.4513,
-      "changeBp": 0.1,
+      "previousYield": 3.4525,
+      "changeBp": 0.0,
       "date": "2026-10-23",
-      "previousDate": "2026-10-22",
+      "previousDate": "2026-10-23",
       "frequency": "Daily",
-      "stalenessDays": 1.0,
+      "stalenessDays": 2.0,
       "freshDaily": true,
       "source": "riksbank",
-      "tier": "daily"
+      "tier": "delayed"
     },
     {
       "id": "finland",
       "label": "Finland",
       "yield": 3.744,
-      "previousYield": 3.7631,
-      "changeBp": -1.9,
+      "previousYield": 3.744,
+      "changeBp": 0.0,
       "date": "2026-10-23",
-      "previousDate": "2026-10-22",
+      "previousDate": "2026-10-23",
       "frequency": "Daily",
-      "stalenessDays": 1.0,
+      "stalenessDays": 2.0,
       "freshDaily": true,
       "source": "riksbank",
-      "tier": "daily"
+      "tier": "delayed"
     },
     {
       "id": "denmark",
       "label": "Denmark",
       "yield": 3.1508,
-      "previousYield": 3.165,
-      "changeBp": -1.4,
+      "previousYield": 3.1508,
+      "changeBp": 0.0,
       "date": "2026-10-23",
-      "previousDate": "2026-10-22",
+      "previousDate": "2026-10-23",
       "frequency": "Daily",
-      "stalenessDays": 1.0,
+      "stalenessDays": 2.0,
       "freshDaily": true,
       "source": "riksbank",
-      "tier": "daily"
+      "tier": "delayed"
     },
     {
       "id": "norway",
       "label": "Norway",
       "yield": 4.5121,
-      "previousYield": 4.5136,
-      "changeBp": -0.2,
+      "previousYield": 4.5121,
+      "changeBp": 0.0,
       "date": "2026-10-23",
-      "previousDate": "2026-10-22",
+      "previousDate": "2026-10-23",
       "frequency": "Daily",
-      "stalenessDays": 1.0,
+      "stalenessDays": 2.0,
       "freshDaily": true,
       "source": "riksbank",
-      "tier": "daily"
+      "tier": "delayed"
     }
   ],
   "macro": [
