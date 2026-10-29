@@ -1,16 +1,16 @@
 {
   "_bondstatsSnapshot": {
     "source": "macro",
-    "savedAt": "2026-10-28T13:28:03.576360Z",
+    "savedAt": "2026-10-29T13:38:27.282205Z",
     "url": "https://botapi33.github.io/bondstats-macro-data-watch/data/macro.json"
   },
   "payload": {
     "meta": {
       "product": "BondStats Macro Data Watch",
       "version": "1.0.0",
-      "lastChecked": "2026-10-28T13:12:22Z",
-      "lastSuccessfulDataUpdate": "2026-10-11T22:16:17Z",
-      "lastUpdated": "2026-10-11T22:16:17Z",
+      "lastChecked": "2026-10-29T13:19:11Z",
+      "lastSuccessfulDataUpdate": "2026-10-29T13:19:11Z",
+      "lastUpdated": "2026-10-29T13:19:11Z",
       "healthySources": 1,
       "degradedSources": 2,
       "methodology": "Official-source-only. No consensus forecasts. No third-party editorial data. Last-known-good values are retained on parser/source failure.",
@@ -136,13 +136,13 @@
         "group": "Inflation",
         "name": "Core PCE",
         "label": "PCE price index excluding food and energy",
-        "value": 3.0,
+        "value": 3.1,
         "previous": 3.0,
         "unit": "%",
         "transform": "YoY",
-        "period": "Aug 2026",
+        "period": "Sep 2026",
         "frequency": "Monthly",
-        "direction": "flat",
+        "direction": "up",
         "marketRelevance": "Critical",
         "sourceName": "U.S. Bureau of Economic Analysis",
         "sourceUrl": "https://www.bea.gov/data/personal-consumption-expenditures-price-index-excluding-food-and-energy",
@@ -154,13 +154,13 @@
         "group": "Growth",
         "name": "Real GDP",
         "label": "Real GDP growth, annualized",
-        "value": 2.2,
-        "previous": 2.5,
+        "value": 3.4,
+        "previous": 2.2,
         "unit": "%",
         "transform": "QoQ SAAR",
-        "period": "Q2 2026",
+        "period": "Q3 2026",
         "frequency": "Quarterly",
-        "direction": "down",
+        "direction": "up",
         "marketRelevance": "High",
         "sourceName": "U.S. Bureau of Economic Analysis",
         "sourceUrl": "https://www.bea.gov/data/gdp/gross-domestic-product",
@@ -242,16 +242,16 @@
     "sourceHealth": {
       "BLS": {
         "state": "degraded",
-        "lastChecked": "2026-10-28T13:12:22Z",
+        "lastChecked": "2026-10-29T13:19:11Z",
         "error": "could not convert string to float: '-'"
       },
       "BEA": {
         "state": "ok",
-        "lastChecked": "2026-10-28T13:12:22Z"
+        "lastChecked": "2026-10-29T13:19:11Z"
       },
       "EUROSTAT": {
         "state": "degraded",
-        "lastChecked": "2026-10-28T13:12:22Z",
+        "lastChecked": "2026-10-29T13:19:11Z",
         "error": "Eurostat query not singleton on geo"
       }
     }

@@ -1,8 +1,17 @@
 {
   "product": "BondStats Daily Signal Brief",
   "version": "2.0.0",
-  "updatedAt": "2026-10-28T13:28:03.576360Z",
+  "updatedAt": "2026-10-29T13:38:27.282205Z",
   "days": [
+    {
+      "date": "2026-10-29",
+      "marketState": "Rates Repricing Higher",
+      "intensity": 60,
+      "oneThing": "New United States Core PCE observation",
+      "signals": 8,
+      "dislocations": 0,
+      "sourceIntegrity": "Verified live"
+    },
     {
       "date": "2026-10-28",
       "marketState": "Policy Event Window",
