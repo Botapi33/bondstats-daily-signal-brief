@@ -1,33 +1,33 @@
 {
   "meta": {
     "product": "BondStats Daily Signal Brief",
-    "date": "2026-10-29",
-    "generatedAt": "2026-10-29T13:38:27.282205Z",
+    "date": "2026-10-30",
+    "generatedAt": "2026-10-30T13:27:40.221415Z",
     "version": "2.0.0",
     "engine": "BondStats Signal Engine v2",
     "copyrightMethod": "Original deterministic analysis from factual official-source observations and BondStats data feeds; no third-party news articles, headlines, screenshots or editorial text are ingested, summarized or rewritten.",
     "sourceHealth": {
       "macro": {
         "status": "live",
-        "checkedAt": "2026-10-29T13:38:27.282205Z",
+        "checkedAt": "2026-10-30T13:27:40.221415Z",
         "sourceUrl": "https://botapi33.github.io/bondstats-macro-data-watch/data/macro.json",
         "fallback": false
       },
       "policy": {
         "status": "live",
-        "checkedAt": "2026-10-29T13:38:27.282205Z",
+        "checkedAt": "2026-10-30T13:27:40.221415Z",
         "sourceUrl": "https://botapi33.github.io/bondstats-central-bank-watch/data/policy.json",
         "fallback": false
       },
       "calendar": {
         "status": "live",
-        "checkedAt": "2026-10-29T13:38:27.282205Z",
+        "checkedAt": "2026-10-30T13:27:40.221415Z",
         "sourceUrl": "https://botapi33.github.io/bondstats-market-calendar/data/events.json",
         "fallback": false
       },
       "yields": {
         "status": "live",
-        "checkedAt": "2026-10-29T13:38:27.282205Z",
+        "checkedAt": "2026-10-30T13:27:40.221415Z",
         "sourceUrl": "https://botapi33.github.io/bondstats-global-yields/global_yields.json",
         "fallback": false
       }
@@ -41,30 +41,30 @@
     }
   },
   "marketState": {
-    "label": "Rates Repricing Higher",
-    "intensity": 60,
-    "reason": "Qualified sovereign yields are moving higher with meaningful breadth.",
-    "previousLabel": "Policy Event Window",
+    "label": "Macro Firming",
+    "intensity": 48,
+    "reason": "The latest macro direction leans firmer, without a dominant broad rates move.",
+    "previousLabel": "Rates Repricing Higher",
     "freshDailyMarkets": 10,
-    "rising": 8,
-    "falling": 2
+    "rising": 3,
+    "falling": 7
   },
   "oneThing": {
     "kicker": "THE ONE THING",
-    "headline": "New United States Core PCE observation",
-    "body": "Core PCE rose to 3.1% from 3% (Sep 2026). New official observation versus the previous archived Daily Signal Brief.",
-    "score": 82,
-    "tag": "INFLATION"
+    "headline": "Broad rate direction diverges from firmer latest macro data",
+    "body": "The qualified daily rate tape leans lower while the latest macro observations lean firmer. This is an observed cross-signal mismatch only.",
+    "score": 72,
+    "tag": "CROSS-SIGNAL"
   },
   "signalStack": [
     {
       "name": "Rates",
-      "value": "Higher",
+      "value": "Lower",
       "status": "active"
     },
     {
       "name": "Macro",
-      "value": "Mixed",
+      "value": "Firming",
       "status": "active"
     },
     {
@@ -74,42 +74,43 @@
     },
     {
       "name": "Event risk",
-      "value": "Immediate",
-      "status": "watch"
+      "value": "Normal",
+      "status": "active"
     },
     {
       "name": "Divergence",
-      "value": "None qualified",
-      "status": "active"
+      "value": "Active",
+      "status": "watch"
     }
   ],
   "signalMemory": {
-    "previousState": "Policy Event Window",
-    "lastSeenDate": "2026-10-20",
-    "daysSinceLastSeen": 9,
+    "previousState": "Rates Repricing Higher",
+    "lastSeenDate": null,
+    "daysSinceLastSeen": null,
     "consecutiveDays": 1,
-    "archiveObservations": 61
+    "archiveObservations": 62
   },
   "diagnostics": {
     "rates": {
-      "label": "Higher",
-      "score": 32,
+      "label": "Lower",
+      "score": -23,
       "fresh": 10,
-      "rising": 8,
-      "falling": 2,
-      "averageBp": 1.3,
-      "breadth": 0.6
+      "rising": 3,
+      "falling": 7,
+      "averageBp": -1.1,
+      "breadth": -0.4
     },
     "macro": {
-      "label": "Mixed",
-      "score": 25,
+      "label": "Firming",
+      "score": 33,
       "cooling": 3,
-      "heating": 5,
-      "unchanged": 3,
+      "heating": 6,
+      "unchanged": 2,
       "evidence": [
         "US_CPI",
         "US_CORE_CPI",
         "US_PAYROLLS",
+        "US_PCE",
         "US_CORE_PCE",
         "US_GDP",
         "EA_HICP",
@@ -125,40 +126,40 @@
       "netRecentBp": 0.0
     },
     "eventRisk": {
-      "label": "Immediate",
-      "score": 95,
-      "nextCriticalHours": 4.4,
-      "critical72h": 2
+      "label": "Normal",
+      "score": 35,
+      "nextCriticalHours": 77.5,
+      "critical72h": 0
     }
   },
   "signals": [
     {
-      "id": "macro:US_CORE_PCE",
+      "id": "macro:US_PCE",
       "kicker": "INFLATION",
-      "headline": "New United States Core PCE observation",
-      "body": "Core PCE rose to 3.1% from 3% (Sep 2026).",
+      "headline": "New United States PCE Inflation observation",
+      "body": "PCE Inflation rose to 3.6% from 3.4% (Sep 2026).",
       "strength": 82,
       "novelty": 100,
       "memory": "New official observation versus the previous archived Daily Signal Brief.",
       "sourceName": "U.S. Bureau of Economic Analysis",
-      "sourceUrl": "https://www.bea.gov/data/personal-consumption-expenditures-price-index-excluding-food-and-energy"
+      "sourceUrl": "https://www.bea.gov/data/personal-consumption-expenditures-price-index"
     },
     {
-      "id": "policy:FED",
+      "id": "policy:BOJ",
       "kicker": "POLICY",
-      "headline": "Federal Reserve policy setting updated",
-      "body": "Latest decision: Hold · 3.75–4.00% · decision date 2026-10-28.",
+      "headline": "Bank of Japan policy setting updated",
+      "body": "Latest decision: Hold · ~1.25% · decision date 2026-10-30.",
       "strength": 78,
       "novelty": 100,
       "memory": "New central-bank decision versus the previous archived Daily Signal Brief.",
-      "sourceName": "Federal Reserve",
-      "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+      "sourceName": "Bank of Japan",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2026/k260319a.htm"
     },
     {
       "id": "policy:BOC",
       "kicker": "POLICY",
       "headline": "Bank of Canada policy setting updated",
-      "body": "Latest decision: Hold · 3.00% · decision date 2026-10-28.",
+      "body": "Latest decision: Hold · 3.00% · decision date 2026-10-29.",
       "strength": 78,
       "novelty": 100,
       "memory": "New central-bank decision versus the previous archived Daily Signal Brief.",
@@ -166,71 +167,79 @@
       "sourceUrl": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/"
     },
     {
-      "id": "macro:US_GDP",
-      "kicker": "GROWTH",
-      "headline": "New United States Real GDP observation",
-      "body": "Real GDP rose to 3.4% from 2.2% (Q3 2026).",
-      "strength": 70,
-      "novelty": 100,
-      "memory": "New official observation versus the previous archived Daily Signal Brief.",
-      "sourceName": "U.S. Bureau of Economic Analysis",
-      "sourceUrl": "https://www.bea.gov/data/gdp/gross-domestic-product"
+      "id": "rates:united_states",
+      "kicker": "RATES",
+      "headline": "United States yield rose 6.0 bp",
+      "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause.",
+      "strength": 62,
+      "novelty": 70,
+      "memory": "Move ranks around the 70th percentile of 61 prior archived observations.",
+      "sourceName": "fred",
+      "sourceUrl": null
     },
     {
-      "id": "rates:sweden",
+      "id": "rates:united_kingdom",
       "kicker": "RATES",
-      "headline": "Sweden yield rose 4.5 bp",
+      "headline": "United Kingdom yield fell 5.7 bp",
       "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause.",
-      "strength": 56,
-      "novelty": 82,
-      "memory": "Move ranks around the 82th percentile of 60 prior archived observations.",
+      "strength": 61,
+      "novelty": 85,
+      "memory": "Move ranks around the 85th percentile of 61 prior archived observations.",
       "sourceName": "riksbank",
       "sourceUrl": null
     },
     {
       "id": "rates:norway",
       "kicker": "RATES",
-      "headline": "Norway yield rose 3.1 bp",
+      "headline": "Norway yield fell 3.8 bp",
+      "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause.",
+      "strength": 53,
+      "novelty": 82,
+      "memory": "Move ranks around the 82th percentile of 61 prior archived observations.",
+      "sourceName": "riksbank",
+      "sourceUrl": null
+    },
+    {
+      "id": "rates:denmark",
+      "kicker": "RATES",
+      "headline": "Denmark yield fell 3.1 bp",
       "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause.",
       "strength": 50,
-      "novelty": 73,
-      "memory": "Move ranks around the 73th percentile of 60 prior archived observations.",
+      "novelty": 67,
+      "memory": "Move ranks around the 67th percentile of 61 prior archived observations.",
       "sourceName": "riksbank",
       "sourceUrl": null
     },
     {
       "id": "rates:euro_area",
       "kicker": "RATES",
-      "headline": "Euro Area yield rose 2.2 bp",
-      "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause.",
-      "strength": 47,
-      "novelty": 40,
-      "memory": "Move ranks around the 40th percentile of 60 prior archived observations.",
-      "sourceName": "ecb",
-      "sourceUrl": null
-    },
-    {
-      "id": "rates:finland",
-      "kicker": "RATES",
-      "headline": "Finland yield rose 2.0 bp",
+      "headline": "Euro Area yield fell 1.9 bp",
       "body": "A verified fresh daily sovereign-yield move. BondStats reports the observed change without assigning a news-driven cause.",
       "strength": 46,
-      "novelty": 62,
-      "memory": "Move ranks around the 62th percentile of 60 prior archived observations.",
-      "sourceName": "riksbank",
+      "novelty": 36,
+      "memory": "Move ranks around the 36th percentile of 61 prior archived observations.",
+      "sourceName": "ecb",
       "sourceUrl": null
     }
   ],
-  "dislocations": [],
+  "dislocations": [
+    {
+      "id": "broad-rates-lower-macro-firming",
+      "pair": "RATES ↓ / MACRO FIRMING",
+      "title": "Broad rate direction diverges from firmer latest macro data",
+      "body": "The qualified daily rate tape leans lower while the latest macro observations lean firmer. This is an observed cross-signal mismatch only.",
+      "severity": 72
+    }
+  ],
   "markets": [
     {
       "id": "united_states",
       "label": "United States",
-      "yield": 4.99,
-      "previousYield": 5.0,
-      "changeBp": -1.0,
-      "date": "2026-10-27",
-      "previousDate": "2026-10-26",
+      "yield": 5.05,
+      "previousYield": 4.99,
+      "changeBp": 6.0,
+      "date": "2026-10-28",
+      "previousDate": "2026-10-27",
       "frequency": "Daily",
       "stalenessDays": 2.0,
       "freshDaily": true,
@@ -240,11 +249,11 @@
     {
       "id": "euro_area",
       "label": "Euro Area",
-      "yield": 3.3927,
-      "previousYield": 3.3711,
-      "changeBp": 2.2,
-      "date": "2026-10-28",
-      "previousDate": "2026-10-27",
+      "yield": 3.3733,
+      "previousYield": 3.3927,
+      "changeBp": -1.9,
+      "date": "2026-10-29",
+      "previousDate": "2026-10-28",
       "frequency": "Daily",
       "stalenessDays": 1.0,
       "freshDaily": true,
@@ -254,11 +263,11 @@
     {
       "id": "united_kingdom",
       "label": "United Kingdom",
-      "yield": 5.3511,
-      "previousYield": 5.3491,
-      "changeBp": 0.2,
-      "date": "2026-10-28",
-      "previousDate": "2026-10-27",
+      "yield": 5.294,
+      "previousYield": 5.3511,
+      "changeBp": -5.7,
+      "date": "2026-10-29",
+      "previousDate": "2026-10-28",
       "frequency": "Daily",
       "stalenessDays": 1.0,
       "freshDaily": true,
@@ -268,11 +277,11 @@
     {
       "id": "sweden",
       "label": "Sweden",
-      "yield": 3.156,
-      "previousYield": 3.111,
-      "changeBp": 4.5,
-      "date": "2026-10-28",
-      "previousDate": "2026-10-27",
+      "yield": 3.14,
+      "previousYield": 3.156,
+      "changeBp": -1.6,
+      "date": "2026-10-29",
+      "previousDate": "2026-10-28",
       "frequency": "Daily",
       "stalenessDays": 1.0,
       "freshDaily": true,
@@ -282,11 +291,11 @@
     {
       "id": "germany",
       "label": "Germany",
-      "yield": 3.3734,
-      "previousYield": 3.3648,
-      "changeBp": 0.9,
-      "date": "2026-10-28",
-      "previousDate": "2026-10-27",
+      "yield": 3.3647,
+      "previousYield": 3.3734,
+      "changeBp": -0.9,
+      "date": "2026-10-29",
+      "previousDate": "2026-10-28",
       "frequency": "Daily",
       "stalenessDays": 1.0,
       "freshDaily": true,
@@ -296,11 +305,11 @@
     {
       "id": "france",
       "label": "France",
-      "yield": 4.9184,
-      "previousYield": 4.9249,
-      "changeBp": -0.6,
-      "date": "2026-10-28",
-      "previousDate": "2026-10-27",
+      "yield": 4.9255,
+      "previousYield": 4.9184,
+      "changeBp": 0.7,
+      "date": "2026-10-29",
+      "previousDate": "2026-10-28",
       "frequency": "Daily",
       "stalenessDays": 1.0,
       "freshDaily": true,
@@ -310,11 +319,11 @@
     {
       "id": "netherlands",
       "label": "Netherlands",
-      "yield": 3.4651,
-      "previousYield": 3.4631,
-      "changeBp": 0.2,
-      "date": "2026-10-28",
-      "previousDate": "2026-10-27",
+      "yield": 3.453,
+      "previousYield": 3.4651,
+      "changeBp": -1.2,
+      "date": "2026-10-29",
+      "previousDate": "2026-10-28",
       "frequency": "Daily",
       "stalenessDays": 1.0,
       "freshDaily": true,
@@ -324,11 +333,11 @@
     {
       "id": "finland",
       "label": "Finland",
-      "yield": 3.7442,
-      "previousYield": 3.7238,
-      "changeBp": 2.0,
-      "date": "2026-10-28",
-      "previousDate": "2026-10-27",
+      "yield": 3.7491,
+      "previousYield": 3.7442,
+      "changeBp": 0.5,
+      "date": "2026-10-29",
+      "previousDate": "2026-10-28",
       "frequency": "Daily",
       "stalenessDays": 1.0,
       "freshDaily": true,
@@ -338,11 +347,11 @@
     {
       "id": "denmark",
       "label": "Denmark",
-      "yield": 3.1925,
-      "previousYield": 3.1817,
-      "changeBp": 1.1,
-      "date": "2026-10-28",
-      "previousDate": "2026-10-27",
+      "yield": 3.1611,
+      "previousYield": 3.1925,
+      "changeBp": -3.1,
+      "date": "2026-10-29",
+      "previousDate": "2026-10-28",
       "frequency": "Daily",
       "stalenessDays": 1.0,
       "freshDaily": true,
@@ -352,11 +361,11 @@
     {
       "id": "norway",
       "label": "Norway",
-      "yield": 4.5058,
-      "previousYield": 4.4748,
-      "changeBp": 3.1,
-      "date": "2026-10-28",
-      "previousDate": "2026-10-27",
+      "yield": 4.468,
+      "previousYield": 4.5058,
+      "changeBp": -3.8,
+      "date": "2026-10-29",
+      "previousDate": "2026-10-28",
       "frequency": "Daily",
       "stalenessDays": 1.0,
       "freshDaily": true,
@@ -443,13 +452,13 @@
       "label": "PCE price index",
       "region": "United States",
       "group": "Inflation",
-      "value": 3.4,
+      "value": 3.6,
       "previous": 3.4,
       "unit": "%",
       "transform": "YoY",
-      "period": "Aug 2026",
+      "period": "Sep 2026",
       "frequency": "Monthly",
-      "direction": "flat",
+      "direction": "up",
       "relevance": "Critical",
       "sourceName": "U.S. Bureau of Economic Analysis",
       "sourceUrl": "https://www.bea.gov/data/personal-consumption-expenditures-price-index",
@@ -606,10 +615,10 @@
       "name": "Bank of Japan",
       "displayRate": "~1.25%",
       "decision": "Hold",
-      "decisionDate": "2026-09-18",
+      "decisionDate": "2026-10-30",
       "changeBp": 0.0,
       "stance": "Accommodative",
-      "nextMeeting": "2026-10-30",
+      "nextMeeting": "2026-12-18",
       "sourceName": "Bank of Japan",
       "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2026/k260319a.htm"
     },
@@ -630,7 +639,7 @@
       "name": "Bank of Canada",
       "displayRate": "3.00%",
       "decision": "Hold",
-      "decisionDate": "2026-10-28",
+      "decisionDate": "2026-10-29",
       "changeBp": 0.0,
       "stance": "Neutral",
       "nextMeeting": "2026-12-09",
@@ -651,57 +660,6 @@
     }
   ],
   "nextEvents": [
-    {
-      "id": "treasury-93bc83c1d127",
-      "title": "U.S. Treasury NOTE Auction",
-      "dateTime": "2026-10-29T17:00:00Z",
-      "timePrecision": "date",
-      "impactScore": 58.0,
-      "impact": "MEDIUM",
-      "category": "Sovereign Funding",
-      "primaryExposure": [
-        "Treasuries",
-        "Term premium",
-        "Funding conditions"
-      ],
-      "sourceName": "U.S. Treasury Auctions",
-      "sourceUrl": "https://www.treasurydirect.gov/xml/PendingAuctions.xml",
-      "official": true
-    },
-    {
-      "id": "fed-800eef6b3355",
-      "title": "Federal Reserve FOMC Decision",
-      "dateTime": "2026-10-29T18:00:00Z",
-      "timePrecision": "convention",
-      "impactScore": 100.0,
-      "impact": "CRITICAL",
-      "category": "Central Bank",
-      "primaryExposure": [
-        "Sovereign bonds",
-        "FX",
-        "Rate expectations"
-      ],
-      "sourceName": "Federal Reserve",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
-      "official": true
-    },
-    {
-      "id": "boj-693a51395b79",
-      "title": "Bank of Japan Monetary Policy Decision",
-      "dateTime": "2026-10-30T03:00:00Z",
-      "timePrecision": "date",
-      "impactScore": 94.0,
-      "impact": "CRITICAL",
-      "category": "Central Bank",
-      "primaryExposure": [
-        "Sovereign bonds",
-        "FX",
-        "Rate expectations"
-      ],
-      "sourceName": "Bank of Japan",
-      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
-      "official": true
-    },
     {
       "id": "fed-f9c8bbf4c49d",
       "title": "Federal Reserve FOMC Decision",
@@ -789,20 +747,6 @@
   ],
   "nextPolicy": [
     {
-      "id": "BOJ",
-      "bank": "Bank of Japan",
-      "date": "2026-10-30",
-      "displayRate": "~1.25%",
-      "decision": "Hold",
-      "decisionDate": "2026-09-18",
-      "changeBp": 0.0,
-      "stance": "Accommodative",
-      "direction": "Hold",
-      "sourceName": "Bank of Japan",
-      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2026/k260319a.htm",
-      "scheduleUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
-    },
-    {
       "id": "RBA",
       "bank": "Reserve Bank of Australia",
       "date": "2026-11-03",
@@ -850,7 +794,7 @@
       "date": "2026-12-09",
       "displayRate": "3.00%",
       "decision": "Hold",
-      "decisionDate": "2026-10-28",
+      "decisionDate": "2026-10-29",
       "changeBp": 0.0,
       "stance": "Neutral",
       "direction": "Hold",
@@ -871,6 +815,20 @@
       "sourceName": "Swiss National Bank",
       "sourceUrl": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260924",
       "scheduleUrl": "https://www.snb.ch/en/services-events/digital-services/event-schedule"
+    },
+    {
+      "id": "BOJ",
+      "bank": "Bank of Japan",
+      "date": "2026-12-18",
+      "displayRate": "~1.25%",
+      "decision": "Hold",
+      "decisionDate": "2026-10-30",
+      "changeBp": 0.0,
+      "stance": "Accommodative",
+      "direction": "Hold",
+      "sourceName": "Bank of Japan",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2026/k260319a.htm",
+      "scheduleUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/"
     }
   ],
   "methodology": [

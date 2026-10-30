@@ -1,8 +1,17 @@
 {
   "product": "BondStats Daily Signal Brief",
   "version": "2.0.0",
-  "updatedAt": "2026-10-29T13:38:27.282205Z",
+  "updatedAt": "2026-10-30T13:27:40.221415Z",
   "days": [
+    {
+      "date": "2026-10-30",
+      "marketState": "Macro Firming",
+      "intensity": 48,
+      "oneThing": "Broad rate direction diverges from firmer latest macro data",
+      "signals": 8,
+      "dislocations": 1,
+      "sourceIntegrity": "Verified live"
+    },
     {
       "date": "2026-10-29",
       "marketState": "Rates Repricing Higher",

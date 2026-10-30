@@ -1,16 +1,16 @@
 {
   "_bondstatsSnapshot": {
     "source": "macro",
-    "savedAt": "2026-10-29T13:38:27.282205Z",
+    "savedAt": "2026-10-30T13:27:40.221415Z",
     "url": "https://botapi33.github.io/bondstats-macro-data-watch/data/macro.json"
   },
   "payload": {
     "meta": {
       "product": "BondStats Macro Data Watch",
       "version": "1.0.0",
-      "lastChecked": "2026-10-29T13:19:11Z",
-      "lastSuccessfulDataUpdate": "2026-10-29T13:19:11Z",
-      "lastUpdated": "2026-10-29T13:19:11Z",
+      "lastChecked": "2026-10-30T13:10:47Z",
+      "lastSuccessfulDataUpdate": "2026-10-29T22:50:51Z",
+      "lastUpdated": "2026-10-29T22:50:51Z",
       "healthySources": 1,
       "degradedSources": 2,
       "methodology": "Official-source-only. No consensus forecasts. No third-party editorial data. Last-known-good values are retained on parser/source failure.",
@@ -118,13 +118,13 @@
         "group": "Inflation",
         "name": "PCE Inflation",
         "label": "PCE price index",
-        "value": 3.4,
+        "value": 3.6,
         "previous": 3.4,
         "unit": "%",
         "transform": "YoY",
-        "period": "Aug 2026",
+        "period": "Sep 2026",
         "frequency": "Monthly",
-        "direction": "flat",
+        "direction": "up",
         "marketRelevance": "Critical",
         "sourceName": "U.S. Bureau of Economic Analysis",
         "sourceUrl": "https://www.bea.gov/data/personal-consumption-expenditures-price-index",
@@ -242,16 +242,16 @@
     "sourceHealth": {
       "BLS": {
         "state": "degraded",
-        "lastChecked": "2026-10-29T13:19:11Z",
+        "lastChecked": "2026-10-30T13:10:47Z",
         "error": "could not convert string to float: '-'"
       },
       "BEA": {
         "state": "ok",
-        "lastChecked": "2026-10-29T13:19:11Z"
+        "lastChecked": "2026-10-30T13:10:47Z"
       },
       "EUROSTAT": {
         "state": "degraded",
-        "lastChecked": "2026-10-29T13:19:11Z",
+        "lastChecked": "2026-10-30T13:10:47Z",
         "error": "Eurostat query not singleton on geo"
       }
     }
