@@ -1,8 +1,17 @@
 {
   "product": "BondStats Daily Signal Brief",
   "version": "2.0.0",
-  "updatedAt": "2026-10-31T12:59:20.285251Z",
+  "updatedAt": "2026-11-01T13:43:50.908086Z",
   "days": [
+    {
+      "date": "2026-11-01",
+      "marketState": "Macro Firming",
+      "intensity": 48,
+      "oneThing": "United States yield fell 7.0 bp",
+      "signals": 5,
+      "dislocations": 0,
+      "sourceIntegrity": "Verified live"
+    },
     {
       "date": "2026-10-31",
       "marketState": "Macro Firming",
