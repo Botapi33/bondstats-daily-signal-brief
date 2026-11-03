@@ -1,18 +1,18 @@
 {
   "_bondstatsSnapshot": {
     "source": "policy",
-    "savedAt": "2026-11-02T16:29:05.071594Z",
+    "savedAt": "2026-11-03T14:36:09.819718Z",
     "url": "https://botapi33.github.io/bondstats-central-bank-watch/data/policy.json"
   },
   "payload": {
     "meta": {
       "title": "BondStats Central Bank Watch",
-      "lastUpdated": "2026-10-30T05:51:58Z",
+      "lastUpdated": "2026-11-03T14:18:44Z",
       "methodology": "Official central-bank sources only. Last-known-good values are retained if a refresh fails.",
       "version": "2.0.0",
       "automation": "V3 autonomous official-source discovery: latest/current policy source, decision date and next meeting are rediscovered on each scheduled run. Last-known-good data is retained on source/parser failure.",
-      "lastChecked": "2026-11-02T15:58:13Z",
-      "lastSuccessfulDataUpdate": "2026-10-30T05:51:58Z",
+      "lastChecked": "2026-11-03T14:18:44Z",
+      "lastSuccessfulDataUpdate": "2026-11-03T14:18:44Z",
       "verifiedAgainstOfficialSources": "2026-08-28",
       "verificationNote": "Seed policy rates and next-meeting dates verified against official central-bank sources before release.",
       "refreshResults": {
@@ -47,14 +47,14 @@
         "BOC": {
           "state": "ok",
           "source": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/",
-          "decisionDate": "2026-10-29",
+          "decisionDate": "2026-11-02",
           "nextMeeting": "2026-12-09"
         },
         "RBA": {
           "state": "ok",
-          "source": "https://www.rba.gov.au/media-releases/2026/mr-26-27.html",
-          "decisionDate": "2026-08-11",
-          "nextMeeting": "2026-11-03"
+          "source": "https://www.rba.gov.au/media-releases/2026/mr-26-30.html",
+          "decisionDate": "2026-11-03",
+          "nextMeeting": "2026-12-08"
         }
       },
       "healthySources": 6,
@@ -84,7 +84,7 @@
         "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
         "scheduleUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
         "status": "official",
-        "lastChecked": "2026-11-02T15:58:13Z",
+        "lastChecked": "2026-11-03T14:18:44Z",
         "refreshState": "ok",
         "lastSuccessfulDataUpdate": "2026-10-28T22:37:10Z"
       },
@@ -121,7 +121,7 @@
         "scheduleUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
         "status": "official",
         "refreshState": "degraded",
-        "lastChecked": "2026-11-02T15:58:13Z"
+        "lastChecked": "2026-11-03T14:18:44Z"
       },
       {
         "id": "BOE",
@@ -146,7 +146,7 @@
         "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
         "scheduleUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
         "status": "official",
-        "lastChecked": "2026-11-02T15:58:13Z",
+        "lastChecked": "2026-11-03T14:18:44Z",
         "refreshState": "ok",
         "lastSuccessfulDataUpdate": "2026-09-17T11:44:22Z"
       },
@@ -172,7 +172,7 @@
         "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2026/k260319a.htm",
         "scheduleUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/",
         "status": "official",
-        "lastChecked": "2026-11-02T15:58:13Z",
+        "lastChecked": "2026-11-03T14:18:44Z",
         "refreshState": "ok",
         "lastSuccessfulDataUpdate": "2026-10-30T05:51:58Z"
       },
@@ -198,7 +198,7 @@
         "sourceUrl": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260924",
         "scheduleUrl": "https://www.snb.ch/en/services-events/digital-services/event-schedule",
         "status": "official",
-        "lastChecked": "2026-11-02T15:58:13Z",
+        "lastChecked": "2026-11-03T14:18:44Z",
         "refreshState": "ok",
         "lastSuccessfulDataUpdate": "2026-10-29T13:05:02Z"
       },
@@ -222,7 +222,7 @@
           ]
         ],
         "decision": "Hold",
-        "decisionDate": "2026-10-29",
+        "decisionDate": "2026-11-02",
         "previousDisplayRate": "2.25%",
         "changeBp": 0,
         "nextMeeting": "2026-12-09",
@@ -234,9 +234,9 @@
         "sourceUrl": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/",
         "scheduleUrl": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/",
         "status": "official",
-        "lastChecked": "2026-11-02T15:58:13Z",
+        "lastChecked": "2026-11-03T14:18:44Z",
         "refreshState": "ok",
-        "lastSuccessfulDataUpdate": "2026-10-29T22:46:42Z"
+        "lastSuccessfulDataUpdate": "2026-11-03T00:59:22Z"
       },
       {
         "id": "RBA",
@@ -245,24 +245,24 @@
         "currency": "AUD",
         "rateLabel": "Cash rate target",
         "rateType": "single",
-        "rate": 4.6,
-        "displayRate": "4.60%",
-        "decision": "Hold",
-        "decisionDate": "2026-08-11",
+        "rate": 4.85,
+        "displayRate": "4.85%",
+        "decision": "Hike",
+        "decisionDate": "2026-11-03",
         "previousDisplayRate": "4.35%",
-        "changeBp": 0,
-        "nextMeeting": "2026-11-03",
-        "nextMeetingLabel": "26–3 November 2026",
+        "changeBp": 25,
+        "nextMeeting": "2026-12-08",
+        "nextMeetingLabel": "26–8 December 2026",
         "target": "2–3% inflation range",
         "stance": "Restrictive",
         "direction": "Hold",
         "sourceName": "Reserve Bank of Australia",
-        "sourceUrl": "https://www.rba.gov.au/media-releases/2026/mr-26-27.html",
+        "sourceUrl": "https://www.rba.gov.au/media-releases/2026/mr-26-30.html",
         "scheduleUrl": "https://www.rba.gov.au/coming-up/",
         "status": "official",
-        "lastChecked": "2026-11-02T15:58:13Z",
+        "lastChecked": "2026-11-03T14:18:44Z",
         "refreshState": "ok",
-        "lastSuccessfulDataUpdate": "2026-09-29T05:46:02Z"
+        "lastSuccessfulDataUpdate": "2026-11-03T14:18:44Z"
       }
     ]
   }
