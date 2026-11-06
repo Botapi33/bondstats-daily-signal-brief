@@ -1,14 +1,14 @@
 {
   "_bondstatsSnapshot": {
     "source": "calendar",
-    "savedAt": "2026-11-05T14:54:47.097049Z",
+    "savedAt": "2026-11-06T14:33:00.424519Z",
     "url": "https://botapi33.github.io/bondstats-market-calendar/data/events.json"
   },
   "payload": {
     "meta": {
       "name": "BondStats Market Calendar",
       "version": "2.0.0-final",
-      "generatedAt": "2026-11-05T06:42:40.716119Z",
+      "generatedAt": "2026-11-06T06:40:22.921061Z",
       "timezone": "UTC",
       "method": "Official-source ingestion + deterministic BondStats market-impact model",
       "coverage": [
@@ -29,30 +29,6 @@
       ]
     },
     "events": [
-      {
-        "id": "fed-2a031bbe9980",
-        "title": "Federal Reserve FOMC Decision",
-        "country": "US",
-        "region": "North America",
-        "category": "Central Bank",
-        "eventType": "policy",
-        "timestamp": "2026-11-03T19:00:00Z",
-        "timePrecision": "convention",
-        "impactScore": 100,
-        "impactLabel": "CRITICAL",
-        "primaryExposure": [
-          "Sovereign bonds",
-          "FX",
-          "Rate expectations"
-        ],
-        "source": "Federal Reserve",
-        "sourceShort": "Fed",
-        "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
-        "official": true,
-        "status": "scheduled",
-        "description": "Federal Open Market Committee policy decision.",
-        "timingNote": "Meeting date is official. Timestamp uses the standard scheduled FOMC decision-release convention."
-      },
       {
         "id": "boe-c916e3f42484",
         "title": "Bank of England MPC Decision",
@@ -867,7 +843,7 @@
         "name": "Federal Reserve",
         "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
         "status": "healthy",
-        "lastChecked": "2026-11-05T06:42:40.716119Z",
+        "lastChecked": "2026-11-06T06:40:22.921061Z",
         "eventsParsed": 93
       },
       {
@@ -875,7 +851,7 @@
         "name": "U.S. Bureau of Labor Statistics",
         "url": "https://www.bls.gov/schedule/news_release/bls.ics",
         "status": "degraded",
-        "lastChecked": "2026-11-05T06:42:40.716119Z",
+        "lastChecked": "2026-11-06T06:40:22.921061Z",
         "warning": "'No time zone found with key US-Eastern'",
         "eventsParsed": 0,
         "fallback": "previous feed"
@@ -885,7 +861,7 @@
         "name": "U.S. Bureau of Economic Analysis",
         "url": "https://www.bea.gov/news/schedule",
         "status": "healthy",
-        "lastChecked": "2026-11-05T06:42:40.716119Z",
+        "lastChecked": "2026-11-06T06:40:22.921061Z",
         "eventsParsed": 3
       },
       {
@@ -893,7 +869,7 @@
         "name": "European Central Bank",
         "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
         "status": "degraded",
-        "lastChecked": "2026-11-05T06:42:40.716119Z",
+        "lastChecked": "2026-11-06T06:40:22.921061Z",
         "warning": "'No time zone found with key Europe/Frankfurt'",
         "eventsParsed": 1,
         "fallback": "previous feed"
@@ -903,7 +879,7 @@
         "name": "Bank of England",
         "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
         "status": "healthy",
-        "lastChecked": "2026-11-05T06:42:40.716119Z",
+        "lastChecked": "2026-11-06T06:40:22.921061Z",
         "eventsParsed": 16
       },
       {
@@ -911,7 +887,7 @@
         "name": "Bank of Japan",
         "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
         "status": "healthy",
-        "lastChecked": "2026-11-05T06:42:40.716119Z",
+        "lastChecked": "2026-11-06T06:40:22.921061Z",
         "eventsParsed": 26
       },
       {
@@ -919,7 +895,7 @@
         "name": "Swiss National Bank",
         "url": "https://www.snb.ch/en/services-events/digital-services/event-schedule",
         "status": "healthy",
-        "lastChecked": "2026-11-05T06:42:40.716119Z",
+        "lastChecked": "2026-11-06T06:40:22.921061Z",
         "eventsParsed": 10
       },
       {
@@ -927,7 +903,7 @@
         "name": "U.S. Treasury Auctions",
         "url": "https://www.treasurydirect.gov/xml/PendingAuctions.xml",
         "status": "degraded",
-        "lastChecked": "2026-11-05T06:42:40.716119Z",
+        "lastChecked": "2026-11-06T06:40:22.921061Z",
         "warning": "HTTP Error 404: The requested content does not exist.",
         "eventsParsed": 0,
         "fallback": "previous feed"
