@@ -1,14 +1,14 @@
 {
   "_bondstatsSnapshot": {
     "source": "calendar",
-    "savedAt": "2026-11-06T14:33:00.424519Z",
+    "savedAt": "2026-11-07T13:28:40.067587Z",
     "url": "https://botapi33.github.io/bondstats-market-calendar/data/events.json"
   },
   "payload": {
     "meta": {
       "name": "BondStats Market Calendar",
       "version": "2.0.0-final",
-      "generatedAt": "2026-11-06T06:40:22.921061Z",
+      "generatedAt": "2026-11-07T12:57:49.535984Z",
       "timezone": "UTC",
       "method": "Official-source ingestion + deterministic BondStats market-impact model",
       "coverage": [
@@ -29,54 +29,6 @@
       ]
     },
     "events": [
-      {
-        "id": "boe-c916e3f42484",
-        "title": "Bank of England MPC Decision",
-        "country": "GB",
-        "region": "Europe",
-        "category": "Central Bank",
-        "eventType": "policy",
-        "timestamp": "2026-11-04T12:00:00Z",
-        "timePrecision": "convention",
-        "impactScore": 96,
-        "impactLabel": "CRITICAL",
-        "primaryExposure": [
-          "Sovereign bonds",
-          "FX",
-          "Rate expectations"
-        ],
-        "source": "Bank of England",
-        "sourceShort": "BoE",
-        "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
-        "official": true,
-        "status": "scheduled",
-        "description": "Monetary Policy Committee decision, summary and minutes.",
-        "timingNote": "Official decision date; timestamp follows the Bank's standard noon-London publication convention."
-      },
-      {
-        "id": "boe-c722ff339c53",
-        "title": "Bank of England MPC Decision",
-        "country": "GB",
-        "region": "Europe",
-        "category": "Central Bank",
-        "eventType": "policy",
-        "timestamp": "2026-11-05T12:00:00Z",
-        "timePrecision": "convention",
-        "impactScore": 96,
-        "impactLabel": "CRITICAL",
-        "primaryExposure": [
-          "Sovereign bonds",
-          "FX",
-          "Rate expectations"
-        ],
-        "source": "Bank of England",
-        "sourceShort": "BoE",
-        "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
-        "official": true,
-        "status": "scheduled",
-        "description": "Monetary Policy Committee decision, summary and minutes.",
-        "timingNote": "Official decision date; timestamp follows the Bank's standard noon-London publication convention."
-      },
       {
         "id": "fed-24d32610b79d",
         "title": "Federal Reserve FOMC Decision",
@@ -843,7 +795,7 @@
         "name": "Federal Reserve",
         "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
         "status": "healthy",
-        "lastChecked": "2026-11-06T06:40:22.921061Z",
+        "lastChecked": "2026-11-07T12:57:49.535984Z",
         "eventsParsed": 93
       },
       {
@@ -851,7 +803,7 @@
         "name": "U.S. Bureau of Labor Statistics",
         "url": "https://www.bls.gov/schedule/news_release/bls.ics",
         "status": "degraded",
-        "lastChecked": "2026-11-06T06:40:22.921061Z",
+        "lastChecked": "2026-11-07T12:57:49.535984Z",
         "warning": "'No time zone found with key US-Eastern'",
         "eventsParsed": 0,
         "fallback": "previous feed"
@@ -861,7 +813,7 @@
         "name": "U.S. Bureau of Economic Analysis",
         "url": "https://www.bea.gov/news/schedule",
         "status": "healthy",
-        "lastChecked": "2026-11-06T06:40:22.921061Z",
+        "lastChecked": "2026-11-07T12:57:49.535984Z",
         "eventsParsed": 3
       },
       {
@@ -869,7 +821,7 @@
         "name": "European Central Bank",
         "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
         "status": "degraded",
-        "lastChecked": "2026-11-06T06:40:22.921061Z",
+        "lastChecked": "2026-11-07T12:57:49.535984Z",
         "warning": "'No time zone found with key Europe/Frankfurt'",
         "eventsParsed": 1,
         "fallback": "previous feed"
@@ -879,7 +831,7 @@
         "name": "Bank of England",
         "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
         "status": "healthy",
-        "lastChecked": "2026-11-06T06:40:22.921061Z",
+        "lastChecked": "2026-11-07T12:57:49.535984Z",
         "eventsParsed": 16
       },
       {
@@ -887,7 +839,7 @@
         "name": "Bank of Japan",
         "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
         "status": "healthy",
-        "lastChecked": "2026-11-06T06:40:22.921061Z",
+        "lastChecked": "2026-11-07T12:57:49.535984Z",
         "eventsParsed": 26
       },
       {
@@ -895,7 +847,7 @@
         "name": "Swiss National Bank",
         "url": "https://www.snb.ch/en/services-events/digital-services/event-schedule",
         "status": "healthy",
-        "lastChecked": "2026-11-06T06:40:22.921061Z",
+        "lastChecked": "2026-11-07T12:57:49.535984Z",
         "eventsParsed": 10
       },
       {
@@ -903,7 +855,7 @@
         "name": "U.S. Treasury Auctions",
         "url": "https://www.treasurydirect.gov/xml/PendingAuctions.xml",
         "status": "degraded",
-        "lastChecked": "2026-11-06T06:40:22.921061Z",
+        "lastChecked": "2026-11-07T12:57:49.535984Z",
         "warning": "HTTP Error 404: The requested content does not exist.",
         "eventsParsed": 0,
         "fallback": "previous feed"

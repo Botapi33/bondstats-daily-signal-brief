@@ -1,8 +1,17 @@
 {
   "product": "BondStats Daily Signal Brief",
   "version": "2.0.0",
-  "updatedAt": "2026-11-06T14:33:00.424519Z",
+  "updatedAt": "2026-11-07T13:28:40.067587Z",
   "days": [
+    {
+      "date": "2026-11-07",
+      "marketState": "Policy Event Window",
+      "intensity": 66,
+      "oneThing": "United States yield fell 6.0 bp",
+      "signals": 5,
+      "dislocations": 0,
+      "sourceIntegrity": "Verified live"
+    },
     {
       "date": "2026-11-06",
       "marketState": "Cross-Signal Tension",
