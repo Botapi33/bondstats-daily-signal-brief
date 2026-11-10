@@ -1,8 +1,17 @@
 {
   "product": "BondStats Daily Signal Brief",
   "version": "2.0.0",
-  "updatedAt": "2026-11-09T16:48:04.229432Z",
+  "updatedAt": "2026-11-10T15:10:57.392311Z",
   "days": [
+    {
+      "date": "2026-11-10",
+      "marketState": "Macro Firming",
+      "intensity": 48,
+      "oneThing": "Bank of Canada policy setting updated",
+      "signals": 6,
+      "dislocations": 0,
+      "sourceIntegrity": "Verified live"
+    },
     {
       "date": "2026-11-09",
       "marketState": "Macro Firming",
