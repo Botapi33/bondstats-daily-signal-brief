@@ -1,8 +1,17 @@
 {
   "product": "BondStats Daily Signal Brief",
   "version": "2.0.0",
-  "updatedAt": "2026-11-11T14:40:19.153194Z",
+  "updatedAt": "2026-11-12T15:32:45.441608Z",
   "days": [
+    {
+      "date": "2026-11-12",
+      "marketState": "Macro Firming",
+      "intensity": 48,
+      "oneThing": "Sweden yield rose 5.4 bp",
+      "signals": 5,
+      "dislocations": 0,
+      "sourceIntegrity": "Verified live"
+    },
     {
       "date": "2026-11-11",
       "marketState": "Rates Repricing Higher",
