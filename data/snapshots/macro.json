@@ -1,14 +1,14 @@
 {
   "_bondstatsSnapshot": {
     "source": "macro",
-    "savedAt": "2026-11-16T16:19:55.830619Z",
+    "savedAt": "2026-11-17T16:24:59.398917Z",
     "url": "https://botapi33.github.io/bondstats-macro-data-watch/data/macro.json"
   },
   "payload": {
     "meta": {
       "product": "BondStats Macro Data Watch",
       "version": "1.0.0",
-      "lastChecked": "2026-11-16T06:47:55Z",
+      "lastChecked": "2026-11-17T08:07:35Z",
       "lastSuccessfulDataUpdate": "2026-10-29T22:50:51Z",
       "lastUpdated": "2026-10-29T22:50:51Z",
       "healthySources": 1,
@@ -242,16 +242,16 @@
     "sourceHealth": {
       "BLS": {
         "state": "degraded",
-        "lastChecked": "2026-11-16T06:47:55Z",
+        "lastChecked": "2026-11-17T08:07:35Z",
         "error": "could not convert string to float: '-'"
       },
       "BEA": {
         "state": "ok",
-        "lastChecked": "2026-11-16T06:47:55Z"
+        "lastChecked": "2026-11-17T08:07:35Z"
       },
       "EUROSTAT": {
         "state": "degraded",
-        "lastChecked": "2026-11-16T06:47:55Z",
+        "lastChecked": "2026-11-17T08:07:35Z",
         "error": "Eurostat query not singleton on geo"
       }
     }
