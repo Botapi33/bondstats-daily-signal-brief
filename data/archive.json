@@ -1,8 +1,17 @@
 {
   "product": "BondStats Daily Signal Brief",
   "version": "2.0.0",
-  "updatedAt": "2026-11-23T18:41:03.723315Z",
+  "updatedAt": "2026-11-24T18:12:46.071191Z",
   "days": [
+    {
+      "date": "2026-11-24",
+      "marketState": "Cross-Signal Tension",
+      "intensity": 74,
+      "oneThing": "Broad rate direction diverges from firmer latest macro data",
+      "signals": 5,
+      "dislocations": 1,
+      "sourceIntegrity": "Verified live"
+    },
     {
       "date": "2026-11-23",
       "marketState": "Policy Event Window",
