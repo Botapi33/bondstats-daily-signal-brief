@@ -1,16 +1,16 @@
 {
   "_bondstatsSnapshot": {
     "source": "macro",
-    "savedAt": "2026-11-25T17:33:37.693266Z",
+    "savedAt": "2026-11-26T17:15:45.190335Z",
     "url": "https://botapi33.github.io/bondstats-macro-data-watch/data/macro.json"
   },
   "payload": {
     "meta": {
       "product": "BondStats Macro Data Watch",
       "version": "1.0.0",
-      "lastChecked": "2026-11-25T08:50:38Z",
-      "lastSuccessfulDataUpdate": "2026-10-29T22:50:51Z",
-      "lastUpdated": "2026-10-29T22:50:51Z",
+      "lastChecked": "2026-11-26T08:36:23Z",
+      "lastSuccessfulDataUpdate": "2026-11-25T21:49:45Z",
+      "lastUpdated": "2026-11-25T21:49:45Z",
       "healthySources": 1,
       "degradedSources": 2,
       "methodology": "Official-source-only. No consensus forecasts. No third-party editorial data. Last-known-good values are retained on parser/source failure.",
@@ -118,11 +118,11 @@
         "group": "Inflation",
         "name": "PCE Inflation",
         "label": "PCE price index",
-        "value": 3.6,
-        "previous": 3.4,
+        "value": 3.8,
+        "previous": 3.7,
         "unit": "%",
         "transform": "YoY",
-        "period": "Sep 2026",
+        "period": "Oct 2026",
         "frequency": "Monthly",
         "direction": "up",
         "marketRelevance": "Critical",
@@ -136,11 +136,11 @@
         "group": "Inflation",
         "name": "Core PCE",
         "label": "PCE price index excluding food and energy",
-        "value": 3.1,
-        "previous": 3.0,
+        "value": 3.3,
+        "previous": 3.1,
         "unit": "%",
         "transform": "YoY",
-        "period": "Sep 2026",
+        "period": "Oct 2026",
         "frequency": "Monthly",
         "direction": "up",
         "marketRelevance": "Critical",
@@ -154,7 +154,7 @@
         "group": "Growth",
         "name": "Real GDP",
         "label": "Real GDP growth, annualized",
-        "value": 3.4,
+        "value": 4.3,
         "previous": 2.2,
         "unit": "%",
         "transform": "QoQ SAAR",
@@ -242,16 +242,16 @@
     "sourceHealth": {
       "BLS": {
         "state": "degraded",
-        "lastChecked": "2026-11-25T08:50:38Z",
+        "lastChecked": "2026-11-26T08:36:23Z",
         "error": "could not convert string to float: '-'"
       },
       "BEA": {
         "state": "ok",
-        "lastChecked": "2026-11-25T08:50:38Z"
+        "lastChecked": "2026-11-26T08:36:23Z"
       },
       "EUROSTAT": {
         "state": "degraded",
-        "lastChecked": "2026-11-25T08:50:38Z",
+        "lastChecked": "2026-11-26T08:36:23Z",
         "error": "Eurostat query not singleton on geo"
       }
     }
