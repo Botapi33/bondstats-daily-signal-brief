@@ -1,13 +1,13 @@
 {
   "_bondstatsSnapshot": {
     "source": "yields",
-    "savedAt": "2026-11-26T17:15:45.190335Z",
+    "savedAt": "2026-11-27T16:56:22.037209Z",
     "url": "https://botapi33.github.io/bondstats-global-yields/global_yields.json"
   },
   "payload": {
     "meta": {
       "title": "BondStats Global Yields",
-      "lastUpdated": "2026-11-26"
+      "lastUpdated": "2026-11-27"
     },
     "countries": {
       "united_states": {
@@ -19,7 +19,7 @@
         "previousDate": "2026-11-23",
         "previousValue": 4.92,
         "change": -0.01,
-        "stalenessDays": 2,
+        "stalenessDays": 3,
         "tier": "delayed",
         "isFallback": false
       },
@@ -27,11 +27,11 @@
         "label": "Euro Area",
         "source": "ecb",
         "frequency": "Daily",
-        "date": "2026-11-25",
-        "value": 3.2592,
-        "previousDate": "2026-11-24",
-        "previousValue": 3.3121,
-        "change": -0.0529,
+        "date": "2026-11-26",
+        "value": 3.3053,
+        "previousDate": "2026-11-25",
+        "previousValue": 3.2592,
+        "change": 0.0462,
         "stalenessDays": 1,
         "tier": "daily",
         "isFallback": false
@@ -40,11 +40,11 @@
         "label": "United Kingdom",
         "source": "riksbank",
         "frequency": "Daily",
-        "date": "2026-11-25",
-        "value": 5.136,
-        "previousDate": "2026-11-24",
-        "previousValue": 5.1936,
-        "change": -0.0576,
+        "date": "2026-11-26",
+        "value": 5.1575,
+        "previousDate": "2026-11-25",
+        "previousValue": 5.136,
+        "change": 0.0215,
         "stalenessDays": 1,
         "tier": "daily",
         "isFallback": false
@@ -58,7 +58,7 @@
         "previousDate": "2026-09-01",
         "previousValue": 3.8825,
         "change": -0.0077,
-        "stalenessDays": 56,
+        "stalenessDays": 57,
         "tier": "monthly",
         "isFallback": true
       },
@@ -71,7 +71,7 @@
         "previousDate": "2026-09-01",
         "previousValue": 5.283,
         "change": -0.018,
-        "stalenessDays": 56,
+        "stalenessDays": 57,
         "tier": "monthly",
         "isFallback": true
       },
@@ -79,11 +79,11 @@
         "label": "Sweden",
         "source": "riksbank",
         "frequency": "Daily",
-        "date": "2026-11-25",
-        "value": 2.928,
-        "previousDate": "2026-11-24",
-        "previousValue": 2.955,
-        "change": -0.027,
+        "date": "2026-11-26",
+        "value": 3.015,
+        "previousDate": "2026-11-25",
+        "previousValue": 2.928,
+        "change": 0.087,
         "stalenessDays": 1,
         "tier": "daily",
         "isFallback": false
@@ -92,11 +92,11 @@
         "label": "Germany",
         "source": "riksbank",
         "frequency": "Daily",
-        "date": "2026-11-25",
-        "value": 3.2334,
-        "previousDate": "2026-11-24",
-        "previousValue": 3.2694,
-        "change": -0.036,
+        "date": "2026-11-26",
+        "value": 3.2577,
+        "previousDate": "2026-11-25",
+        "previousValue": 3.2334,
+        "change": 0.0243,
         "stalenessDays": 1,
         "tier": "daily",
         "isFallback": false
@@ -105,11 +105,11 @@
         "label": "France",
         "source": "riksbank",
         "frequency": "Daily",
-        "date": "2026-11-25",
-        "value": 4.7388,
-        "previousDate": "2026-11-24",
-        "previousValue": 4.7947,
-        "change": -0.0559,
+        "date": "2026-11-26",
+        "value": 4.7262,
+        "previousDate": "2026-11-25",
+        "previousValue": 4.7388,
+        "change": -0.0126,
         "stalenessDays": 1,
         "tier": "daily",
         "isFallback": false
@@ -123,7 +123,7 @@
         "previousDate": "2026-09-01",
         "previousValue": 4.362,
         "change": 0.318,
-        "stalenessDays": 56,
+        "stalenessDays": 57,
         "tier": "monthly",
         "isFallback": false
       },
@@ -136,7 +136,7 @@
         "previousDate": "2026-09-01",
         "previousValue": 3.9314,
         "change": 0.14,
-        "stalenessDays": 56,
+        "stalenessDays": 57,
         "tier": "monthly",
         "isFallback": false
       },
@@ -144,11 +144,11 @@
         "label": "Netherlands",
         "source": "riksbank",
         "frequency": "Daily",
-        "date": "2026-11-25",
-        "value": 3.3638,
-        "previousDate": "2026-11-24",
-        "previousValue": 3.4033,
-        "change": -0.0395,
+        "date": "2026-11-26",
+        "value": 3.3817,
+        "previousDate": "2026-11-25",
+        "previousValue": 3.3638,
+        "change": 0.0179,
         "stalenessDays": 1,
         "tier": "daily",
         "isFallback": false
@@ -162,7 +162,7 @@
         "previousDate": "2026-09-01",
         "previousValue": 0.59,
         "change": -0.08,
-        "stalenessDays": 56,
+        "stalenessDays": 57,
         "tier": "monthly",
         "isFallback": false
       },
@@ -175,7 +175,7 @@
         "previousDate": "2026-09-01",
         "previousValue": 3.1924,
         "change": -0.024,
-        "stalenessDays": 56,
+        "stalenessDays": 57,
         "tier": "monthly",
         "isFallback": false
       },
@@ -188,7 +188,7 @@
         "previousDate": "2026-09-01",
         "previousValue": 4.12,
         "change": 0.26,
-        "stalenessDays": 56,
+        "stalenessDays": 57,
         "tier": "monthly",
         "isFallback": false
       },
@@ -201,7 +201,7 @@
         "previousDate": "2026-09-01",
         "previousValue": 3.6867,
         "change": 0.0031,
-        "stalenessDays": 56,
+        "stalenessDays": 57,
         "tier": "monthly",
         "isFallback": false
       },
@@ -214,7 +214,7 @@
         "previousDate": "2026-09-01",
         "previousValue": 3.85,
         "change": 0.07,
-        "stalenessDays": 56,
+        "stalenessDays": 57,
         "tier": "monthly",
         "isFallback": false
       },
@@ -222,11 +222,11 @@
         "label": "Finland",
         "source": "riksbank",
         "frequency": "Daily",
-        "date": "2026-11-25",
-        "value": 3.6364,
-        "previousDate": "2026-11-24",
-        "previousValue": 3.6762,
-        "change": -0.0398,
+        "date": "2026-11-26",
+        "value": 3.6833,
+        "previousDate": "2026-11-25",
+        "previousValue": 3.6364,
+        "change": 0.0469,
         "stalenessDays": 1,
         "tier": "daily",
         "isFallback": false
@@ -240,7 +240,7 @@
         "previousDate": "2026-09-01",
         "previousValue": 3.5911,
         "change": -0.0386,
-        "stalenessDays": 56,
+        "stalenessDays": 57,
         "tier": "monthly",
         "isFallback": false
       },
@@ -248,11 +248,11 @@
         "label": "Denmark",
         "source": "riksbank",
         "frequency": "Daily",
-        "date": "2026-11-25",
-        "value": 3.0586,
-        "previousDate": "2026-11-24",
-        "previousValue": 3.0834,
-        "change": -0.0248,
+        "date": "2026-11-26",
+        "value": 3.1026,
+        "previousDate": "2026-11-25",
+        "previousValue": 3.0586,
+        "change": 0.044,
         "stalenessDays": 1,
         "tier": "daily",
         "isFallback": false
@@ -261,11 +261,11 @@
         "label": "Norway",
         "source": "riksbank",
         "frequency": "Daily",
-        "date": "2026-11-25",
-        "value": 4.1244,
-        "previousDate": "2026-11-24",
-        "previousValue": 4.1644,
-        "change": -0.04,
+        "date": "2026-11-26",
+        "value": 4.1845,
+        "previousDate": "2026-11-25",
+        "previousValue": 4.1244,
+        "change": 0.0601,
         "stalenessDays": 1,
         "tier": "daily",
         "isFallback": false
@@ -279,7 +279,7 @@
         "previousDate": "2026-09-01",
         "previousValue": 7.06,
         "change": 0.32,
-        "stalenessDays": 56,
+        "stalenessDays": 57,
         "tier": "monthly",
         "isFallback": false
       },
@@ -292,7 +292,7 @@
         "previousDate": "2026-09-01",
         "previousValue": 4.454,
         "change": -0.244,
-        "stalenessDays": 56,
+        "stalenessDays": 57,
         "tier": "monthly",
         "isFallback": false
       },
@@ -305,7 +305,7 @@
         "previousDate": "2026-09-01",
         "previousValue": 4.94,
         "change": 0.07,
-        "stalenessDays": 56,
+        "stalenessDays": 57,
         "tier": "monthly",
         "isFallback": false
       },
@@ -318,7 +318,7 @@
         "previousDate": "2026-09-01",
         "previousValue": 4.23,
         "change": 0.18,
-        "stalenessDays": 56,
+        "stalenessDays": 57,
         "tier": "monthly",
         "isFallback": false
       },
@@ -331,7 +331,7 @@
         "previousDate": "2026-09-01",
         "previousValue": 4.08,
         "change": 0.17,
-        "stalenessDays": 56,
+        "stalenessDays": 57,
         "tier": "monthly",
         "isFallback": false
       },
@@ -344,7 +344,7 @@
         "previousDate": "2026-09-01",
         "previousValue": 9.35,
         "change": -0.1,
-        "stalenessDays": 56,
+        "stalenessDays": 57,
         "tier": "monthly",
         "isFallback": false
       },
@@ -357,7 +357,7 @@
         "previousDate": "2026-09-01",
         "previousValue": 6.23,
         "change": 0.09,
-        "stalenessDays": 56,
+        "stalenessDays": 57,
         "tier": "monthly",
         "isFallback": false
       },
@@ -370,7 +370,7 @@
         "previousDate": "2026-09-01",
         "previousValue": 5.2444,
         "change": 0.1281,
-        "stalenessDays": 56,
+        "stalenessDays": 57,
         "tier": "monthly",
         "isFallback": false
       },
@@ -383,7 +383,7 @@
         "previousDate": "2026-09-01",
         "previousValue": 5.69,
         "change": -0.12,
-        "stalenessDays": 56,
+        "stalenessDays": 57,
         "tier": "monthly",
         "isFallback": false
       },
@@ -396,7 +396,7 @@
         "previousDate": "2026-09-01",
         "previousValue": 4.1637,
         "change": 0.1463,
-        "stalenessDays": 56,
+        "stalenessDays": 57,
         "tier": "monthly",
         "isFallback": false
       },
@@ -409,7 +409,7 @@
         "previousDate": "2026-09-01",
         "previousValue": 3.86,
         "change": 0.13,
-        "stalenessDays": 56,
+        "stalenessDays": 57,
         "tier": "monthly",
         "isFallback": false
       },
@@ -422,7 +422,7 @@
         "previousDate": "2026-09-01",
         "previousValue": 2.88,
         "change": 0.0,
-        "stalenessDays": 56,
+        "stalenessDays": 57,
         "tier": "monthly",
         "isFallback": false
       },
@@ -435,7 +435,7 @@
         "previousDate": "2026-09-01",
         "previousValue": 6.01,
         "change": 0.04,
-        "stalenessDays": 56,
+        "stalenessDays": 57,
         "tier": "monthly",
         "isFallback": false
       },
@@ -448,7 +448,7 @@
         "previousDate": "2026-09-01",
         "previousValue": 8.9471,
         "change": -0.0071,
-        "stalenessDays": 56,
+        "stalenessDays": 57,
         "tier": "monthly",
         "isFallback": false
       }
