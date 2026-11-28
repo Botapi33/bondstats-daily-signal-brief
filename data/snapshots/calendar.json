@@ -1,14 +1,14 @@
 {
   "_bondstatsSnapshot": {
     "source": "calendar",
-    "savedAt": "2026-11-27T16:56:22.037209Z",
+    "savedAt": "2026-11-28T15:46:49.211086Z",
     "url": "https://botapi33.github.io/bondstats-market-calendar/data/events.json"
   },
   "payload": {
     "meta": {
       "name": "BondStats Market Calendar",
       "version": "2.0.0-final",
-      "generatedAt": "2026-11-27T08:26:24.915529Z",
+      "generatedAt": "2026-11-28T07:44:43.887146Z",
       "timezone": "UTC",
       "method": "Official-source ingestion + deterministic BondStats market-impact model",
       "coverage": [
@@ -719,7 +719,7 @@
         "name": "Federal Reserve",
         "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
         "status": "healthy",
-        "lastChecked": "2026-11-27T08:26:24.915529Z",
+        "lastChecked": "2026-11-28T07:44:43.887146Z",
         "eventsParsed": 94
       },
       {
@@ -727,7 +727,7 @@
         "name": "U.S. Bureau of Labor Statistics",
         "url": "https://www.bls.gov/schedule/news_release/bls.ics",
         "status": "degraded",
-        "lastChecked": "2026-11-27T08:26:24.915529Z",
+        "lastChecked": "2026-11-28T07:44:43.887146Z",
         "warning": "'No time zone found with key US-Eastern'",
         "eventsParsed": 0,
         "fallback": "previous feed"
@@ -737,7 +737,7 @@
         "name": "U.S. Bureau of Economic Analysis",
         "url": "https://www.bea.gov/news/schedule",
         "status": "healthy",
-        "lastChecked": "2026-11-27T08:26:24.915529Z",
+        "lastChecked": "2026-11-28T07:44:43.887146Z",
         "eventsParsed": 2
       },
       {
@@ -745,7 +745,7 @@
         "name": "European Central Bank",
         "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
         "status": "degraded",
-        "lastChecked": "2026-11-27T08:26:24.915529Z",
+        "lastChecked": "2026-11-28T07:44:43.887146Z",
         "warning": "'No time zone found with key Europe/Frankfurt'",
         "eventsParsed": 1,
         "fallback": "previous feed"
@@ -755,7 +755,7 @@
         "name": "Bank of England",
         "url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
         "status": "healthy",
-        "lastChecked": "2026-11-27T08:26:24.915529Z",
+        "lastChecked": "2026-11-28T07:44:43.887146Z",
         "eventsParsed": 16
       },
       {
@@ -763,7 +763,7 @@
         "name": "Bank of Japan",
         "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
         "status": "healthy",
-        "lastChecked": "2026-11-27T08:26:24.915529Z",
+        "lastChecked": "2026-11-28T07:44:43.887146Z",
         "eventsParsed": 26
       },
       {
@@ -771,7 +771,7 @@
         "name": "Swiss National Bank",
         "url": "https://www.snb.ch/en/services-events/digital-services/event-schedule",
         "status": "healthy",
-        "lastChecked": "2026-11-27T08:26:24.915529Z",
+        "lastChecked": "2026-11-28T07:44:43.887146Z",
         "eventsParsed": 18
       },
       {
@@ -779,7 +779,7 @@
         "name": "U.S. Treasury Auctions",
         "url": "https://www.treasurydirect.gov/xml/PendingAuctions.xml",
         "status": "degraded",
-        "lastChecked": "2026-11-27T08:26:24.915529Z",
+        "lastChecked": "2026-11-28T07:44:43.887146Z",
         "warning": "HTTP Error 404: The requested content does not exist.",
         "eventsParsed": 0,
         "fallback": "previous feed"
